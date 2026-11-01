@@ -1,0 +1,20 @@
+# Security headers + caching (Cloudflare Pages).
+# The site loads nothing from third parties: fonts, scripts, images and the ALTCHA
+# spam check are all self-hosted. Add origins here only if you add a third-party tool.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self' 'sha256-wd+sIL4k32A2awREY0upVRobctPoc6p9BNvvJRXZfVY=' 'sha256-w8mXLdDNC6BeYoV3P9MtJs8lLZdzJLxxTA298P4Gob8=' https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; frame-src 'none'
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+/images/*
+  Cache-Control: public, max-age=2592000

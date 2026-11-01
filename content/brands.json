@@ -1,0 +1,322 @@
+[
+  {
+    "slug": "bosch",
+    "name": "Bosch Healthcare Solutions",
+    "logo": "bosch.png",
+    "website": "https://www.bosch-vivalytic.com/",
+    "country": {
+      "en": "Germany",
+      "ar": "ألمانيا"
+    },
+    "en": {
+      "about": "Bosch brings its engineering heritage to healthcare with the Vivalytic all-in-one molecular testing platform and the Vivatmo devices for FeNO breath measurement."
+    },
+    "ar": {
+      "about": "تنقل Bosch إرثها الهندسي إلى قطاع الرعاية الصحية من خلال منصة Vivalytic المتكاملة للفحوصات الجزيئية، وأجهزة Vivatmo لقياس أكسيد النيتريك في هواء الزفير."
+    }
+  },
+  {
+    "slug": "3dhistech",
+    "name": "3DHISTECH",
+    "logo": "3dhistech.png",
+    "website": "https://www.3dhistech.com/",
+    "country": {
+      "en": "Hungary",
+      "ar": "المجر"
+    },
+    "en": {
+      "about": "3DHISTECH provides clinical pathologists, researchers and universities with digital pathology solutions, including the flagship Pannoramic whole slide scanner range and tissue microarray instruments."
+    },
+    "ar": {
+      "about": "تقدم 3DHISTECH لأطباء علم الأمراض والباحثين والجامعات حلول علم الأمراض الرقمي، ومنها مجموعة ماسحات الشرائح الكاملة Pannoramic وأجهزة المصفوفات النسيجية الدقيقة."
+    }
+  },
+  {
+    "slug": "geneproof",
+    "name": "GeneProof",
+    "logo": "geneproof.svg",
+    "website": "https://www.geneproof.com/",
+    "country": {
+      "en": "Czech Republic",
+      "ar": "التشيك"
+    },
+    "en": {
+      "about": "Brno-based GeneProof develops CE-IVD real-time PCR kits for serious infections and genetic conditions, plus extraction and automation systems. Since 2022 it has been part of NuvinkaDx."
+    },
+    "ar": {
+      "about": "تطوّر GeneProof، ومقرها برنو، أطقم PCR في الوقت الحقيقي تحمل علامة CE-IVD للعدوى الخطيرة والحالات الوراثية، إضافة إلى أنظمة الاستخلاص والأتمتة، وهي منذ عام 2022 جزء من NuvinkaDx."
+    }
+  },
+  {
+    "slug": "vircell",
+    "name": "Vircell",
+    "logo": "vircell.svg",
+    "website": "https://www.vircell.com/en",
+    "country": {
+      "en": "Spain",
+      "ar": "إسبانيا"
+    },
+    "en": {
+      "about": "Founded in Granada in 1991, Vircell develops diagnostic reagents for human infectious diseases — VIRPLEX real-time PCR kits, AMPLIRUN® molecular controls and serology — and is present in 95+ countries."
+    },
+    "ar": {
+      "about": "تأسست Vircell في غرناطة عام 1991، وتطوّر كواشف تشخيصية للأمراض المعدية لدى الإنسان — أطقم VIRPLEX لتفاعل PCR في الوقت الحقيقي ومواد الضبط الجزيئية AMPLIRUN® والفحوصات المصلية — ولها حضور في أكثر من 95 دولة."
+    }
+  },
+  {
+    "slug": "bdr",
+    "name": "BDR Diagnostics",
+    "logo": "bdr.svg",
+    "website": "https://www.bdrdiagnostics.com/",
+    "country": {
+      "en": "Spain",
+      "ar": "إسبانيا"
+    },
+    "en": {
+      "about": "Founded in Zaragoza in 2012, BDR develops and manufactures genetic diagnostic kits in-house — real-time PCR, fragment analysis and NGS — supported by its own bioinformatics team."
+    },
+    "ar": {
+      "about": "تأسست BDR في سرقسطة عام 2012، وتطوّر أطقم التشخيص الوراثي وتصنّعها داخليًا — PCR في الوقت الحقيقي وتحليل الأجزاء والتسلسل من الجيل التالي — بدعم من فريقها الخاص في المعلوماتية الحيوية."
+    }
+  },
+  {
+    "slug": "tianlong",
+    "name": "Tianlong",
+    "logo": "tianlong.png",
+    "website": "https://www.medtl.net/",
+    "country": {
+      "en": "China",
+      "ar": "الصين"
+    },
+    "en": {
+      "about": "Established in Xi'an in 1997, Tianlong is a pioneer in nucleic-acid testing — extractors, real-time PCR systems and automated workstations, with 600+ compatible kits sold in more than 100 countries."
+    },
+    "ar": {
+      "about": "تأسست Tianlong في شيآن عام 1997، وهي من الرواد في فحص الأحماض النووية — أجهزة الاستخلاص وأنظمة PCR في الوقت الحقيقي ومحطات العمل المؤتمتة، مع أكثر من 600 طقم متوافق تُباع في أكثر من 100 دولة."
+    }
+  },
+  {
+    "slug": "credo",
+    "name": "Credo Diagnostics",
+    "logo": "credo.png",
+    "website": "https://www.credodxbiomed.com/",
+    "country": {
+      "en": "Singapore",
+      "ar": "سنغافورة"
+    },
+    "en": {
+      "about": "Credo commercialises accurate, rapid and affordable molecular diagnostic platforms designed for point-of-care use, with a focus on respiratory testing."
+    },
+    "ar": {
+      "about": "تقدم Credo منصات تشخيص جزيئي دقيقة وسريعة وبتكلفة مناسبة مصممة للاستخدام في نقطة الرعاية، مع تركيز على فحوصات الجهاز التنفسي."
+    }
+  },
+  {
+    "slug": "biogram",
+    "name": "Bio-Gram",
+    "logo": "biogram.png",
+    "website": "https://www.bio-gram.net/",
+    "country": {
+      "en": "Germany",
+      "ar": "ألمانيا"
+    },
+    "en": {
+      "about": "Since 2019, Bio-Gram has focused on in vitro diagnostic solutions for smear staining and sample preparation in haematology and microbiology."
+    },
+    "ar": {
+      "about": "منذ عام 2019، تركز Bio-Gram على حلول التشخيص المخبري لصبغ المسحات وتحضير العينات في مجالي أمراض الدم والأحياء الدقيقة."
+    }
+  },
+  {
+    "slug": "era-biology",
+    "name": "Era Biology",
+    "logo": "era-biology.png",
+    "website": "https://www.era-bio.com/",
+    "country": {
+      "en": "China",
+      "ar": "الصين"
+    },
+    "en": {
+      "about": "Tianjin-based Era Biology specialises in diagnostics for invasive fungal disease, from FungiXpert™ chemiluminescence assays and analysers to chromogenic, lateral-flow and PCR tests."
+    },
+    "ar": {
+      "about": "تتخصص Era Biology، ومقرها تيانجين، في تشخيص الأمراض الفطرية الغازية، من اختبارات وأجهزة FungiXpert™ بالتألق الكيميائي إلى الاختبارات اللونية واختبارات التدفق الجانبي وPCR."
+    }
+  },
+  {
+    "slug": "gulf-coast",
+    "name": "Gulf Coast Scientific",
+    "logo": "gulf-coast.png",
+    "website": "https://www.gulfcoastscientific.com/",
+    "country": {
+      "en": "United States",
+      "ar": "الولايات المتحدة"
+    },
+    "en": {
+      "about": "Gulf Coast Scientific develops H. pylori diagnostics under the PyloPLUS+ name, including the PyloPLUS+ UBT2 urea breath test and the PyloPLUS+ Ultra Rapid Urease Test."
+    },
+    "ar": {
+      "about": "تطوّر Gulf Coast Scientific حلول تشخيص جرثومة المعدة تحت اسم PyloPLUS+، ومنها اختبار تنفس اليوريا PyloPLUS+ UBT2 واختبار اليورياز فائق السرعة PyloPLUS+."
+    }
+  },
+  {
+    "slug": "fan",
+    "name": "FAN GmbH",
+    "logo": "fan.png",
+    "website": "https://fan-gmbh.de/",
+    "country": {
+      "en": "Germany",
+      "ar": "ألمانيا"
+    },
+    "en": {
+      "about": "Leipzig-based FAN develops breath-test analysers for practices, check-up centres and hospitals, including FANhp for 13C breath testing and the LactoFAN2 hydrogen breath monitor."
+    },
+    "ar": {
+      "about": "تطوّر FAN، ومقرها لايبزيغ، أجهزة تحليل اختبارات التنفس للعيادات ومراكز الفحص والمستشفيات، ومنها FANhp لاختبارات التنفس 13C وجهاز LactoFAN2 لقياس الهيدروجين في النَّفَس."
+    }
+  },
+  {
+    "slug": "c-luminary",
+    "name": "C-Luminary",
+    "logo": "c-luminary.png",
+    "website": "https://www.c-luminary.com/",
+    "country": {
+      "en": "China",
+      "ar": "الصين"
+    },
+    "en": {
+      "about": "Chengdu-based C-Luminary Biotech develops and manufactures IVD products with a focus on chemiluminescence immunoassay, including the Sharay range of fully automated analysers and reagents."
+    },
+    "ar": {
+      "about": "تطوّر C-Luminary Biotech، ومقرها تشنغدو، منتجات التشخيص المخبري وتصنّعها، مع تركيز على المقايسة المناعية بالتألق الكيميائي، ومنها مجموعة Sharay من الأجهزة المؤتمتة بالكامل وكواشفها."
+    }
+  },
+  {
+    "slug": "wantai",
+    "name": "Wantai BioPharm",
+    "logo": "wantai.png",
+    "website": "https://www.ystwt.cn/",
+    "country": {
+      "en": "China",
+      "ar": "الصين"
+    },
+    "en": {
+      "about": "Founded in Beijing in 1991, Wantai BioPharm is a diagnostics and vaccines group with seven subsidiaries, covering immunoassay, biochemistry, rapid tests, molecular diagnostics and quality controls."
+    },
+    "ar": {
+      "about": "تأسست Wantai BioPharm في بكين عام 1991، وهي مجموعة للتشخيص واللقاحات تضم سبع شركات تابعة، وتغطي المقايسات المناعية والكيمياء الحيوية والاختبارات السريعة والتشخيص الجزيئي ومواد ضبط الجودة."
+    }
+  },
+  {
+    "slug": "d-tek",
+    "name": "D-tek",
+    "logo": "d-tek.png",
+    "website": "https://www.d-tek.be/en/",
+    "country": {
+      "en": "Belgium",
+      "ar": "بلجيكا"
+    },
+    "en": {
+      "about": "Founded in 1995 in Mons, Belgium, D-tek develops CE-IVD diagnostic kits for human autoimmune diseases in ELISA, immunodot and microarray formats, with the BlueDiver automation platform."
+    },
+    "ar": {
+      "about": "تأسست D-tek عام 1995 في مونس ببلجيكا، وتطوّر أطقمًا تشخيصية تحمل علامة CE-IVD لأمراض المناعة الذاتية بصيغ ELISA وimmunodot والمصفوفات الدقيقة، مع منصة BlueDiver للأتمتة."
+    }
+  },
+  {
+    "slug": "terraplasma",
+    "name": "terraplasma medical",
+    "logo": "terraplasma.png",
+    "website": "https://www.terraplasma-medical.com/en/",
+    "country": {
+      "en": "Germany",
+      "ar": "ألمانيا"
+    },
+    "en": {
+      "about": "terraplasma medical develops cold atmospheric plasma technology for medicine, including plasma care®, a handheld, portable device for wound treatment."
+    },
+    "ar": {
+      "about": "تطوّر terraplasma medical تقنية البلازما الجوية الباردة للاستخدامات الطبية، ومنها جهاز plasma care® المحمول لعلاج الجروح."
+    }
+  },
+  {
+    "slug": "rimos",
+    "name": "RI.MOS.",
+    "logo": "rimos.png",
+    "website": "https://www.rimoscare.com/en",
+    "country": {
+      "en": "Italy",
+      "ar": "إيطاليا"
+    },
+    "en": {
+      "about": "RI.MOS. of Mirandola, Italy, creates plant-based medical devices for skin health, including the Hyperoil® range of interactive, multifunctional dressings for wounds and skin injuries."
+    },
+    "ar": {
+      "about": "تبتكر RI.MOS. ومقرها ميراندولا في إيطاليا أجهزة طبية نباتية الأصل لصحة الجلد، ومنها مجموعة Hyperoil® من الضمادات التفاعلية متعددة الوظائف للجروح وإصابات الجلد."
+    }
+  },
+  {
+    "slug": "blue-ray",
+    "name": "Blue-Ray Biotech",
+    "logo": "blue-ray.svg",
+    "website": "https://www.blue-raybio.com/",
+    "country": {
+      "en": "Taiwan",
+      "ar": "تايوان"
+    },
+    "en": {
+      "about": "Blue-Ray Biotech is a Taiwanese life-science company that develops and manufactures high-precision laboratory equipment for molecular biology, genomics and cell biology research."
+    },
+    "ar": {
+      "about": "Blue-Ray Biotech شركة تايوانية في مجال علوم الحياة تطوّر وتصنّع أجهزة مخبرية عالية الدقة لأبحاث البيولوجيا الجزيئية وعلم الجينوم وبيولوجيا الخلية."
+    }
+  },
+  {
+    "slug": "diana",
+    "name": "DIANA Biotechnologies",
+    "logo": "diana.png",
+    "website": "https://www.dianabiotech.com/",
+    "country": {
+      "en": "Czech Republic",
+      "ar": "التشيك"
+    },
+    "en": {
+      "about": "Founded in 2018 as a spin-off from IOCB Prague, DIANA Biotechnologies works across molecular reagents, antibodies, diagnostics and drug discovery, built on its proprietary DIANA technology."
+    },
+    "ar": {
+      "about": "تأسست DIANA Biotechnologies عام 2018 كشركة منبثقة عن معهد IOCB في براغ، وتعمل في مجالات الكواشف الجزيئية والأجسام المضادة والتشخيص واكتشاف الأدوية، معتمدة على تقنيتها الخاصة DIANA."
+    }
+  },
+  {
+    "slug": "geneaid",
+    "name": "Geneaid",
+    "logo": "geneaid.png",
+    "website": "https://geneaid.com/",
+    "country": {
+      "en": "Taiwan",
+      "ar": "تايوان"
+    },
+    "en": {
+      "about": "Established in 2002 and based in Taiwan, Geneaid is an international manufacturer specialising in nucleic-acid purification products for life-science research and biotechnology."
+    },
+    "ar": {
+      "about": "تأسست Geneaid عام 2002 ومقرها تايوان، وهي شركة تصنيع دولية متخصصة في منتجات تنقية الأحماض النووية لأبحاث علوم الحياة والتقنية الحيوية."
+    }
+  },
+  {
+    "slug": "jena-bioscience",
+    "name": "Jena Bioscience",
+    "logo": "jena-bioscience.svg",
+    "website": "https://www.jenabioscience.com/",
+    "country": {
+      "en": "Germany",
+      "ar": "ألمانيا"
+    },
+    "en": {
+      "about": "Founded in 1998 by Max Planck scientists, Jena Bioscience makes reagents for life-science research and OEM raw materials for diagnostic kit manufacturers, supplying customers in over 100 countries."
+    },
+    "ar": {
+      "about": "تأسست Jena Bioscience عام 1998 على يد علماء من معهد ماكس بلانك، وتصنّع كواشف لأبحاث علوم الحياة ومواد خام OEM لمصنّعي أطقم التشخيص، وتخدم عملاء في أكثر من 100 دولة."
+    }
+  }
+]

@@ -1,0 +1,55 @@
+# Old WordPress URLs (binarysys.net before the 2026 redesign) -> new clean URLs.
+/about-us/                                   /about                                 301
+/about-us                                    /about                                 301
+/contact-us/                                 /contact                               301
+/contact-us                                  /contact                               301
+/our-blog/                                   /insights/                             301
+/our-blog                                    /insights/                             301
+/quotation/                                  /quote                                 301
+/quotation                                   /quote                                 301
+/feed/                                       /insights/                             301
+/comments/feed/                              /insights/                             301
+/product-category/in-vitro-diagnostics-ivd/  /solutions/in-vitro-diagnostics        301
+/product-category/medical-devices-md/        /solutions/medical-devices             301
+/product-category/research-use-only-ruo-solutions/ /solutions/research-use-only     301
+/product-category/core-lab/                  /solutions/in-vitro-diagnostics#core-lab 301
+/product-category/molecular/                 /solutions/in-vitro-diagnostics#molecular 301
+/product-category/histology-cytology/        /solutions/in-vitro-diagnostics#histology-cytology 301
+/product-category/point-of-care-testing-poct/ /solutions/in-vitro-diagnostics#poct  301
+/product-category/respiratory/               /solutions/medical-devices#respiratory 301
+/product-category/wound-care/                /solutions/medical-devices#wound-care  301
+/product-category/*                          /products/                             301
+/gene-detection-revolutionizing-modern-healthcare/ /insights/gene-detection-revolutionizing-modern-healthcare 301
+/urea-breath-test-ubt-the-gold-standard-for-h-pylori-detection/ /insights/urea-breath-test-ubt-the-gold-standard-for-h-pylori-detection 301
+/why-regular-sti-testing-is-essential-for-your-health/ /insights/why-regular-sti-testing-is-essential-for-your-health 301
+/wp-content/*                                /                                      301
+/wp-admin/*                                  /                                      301
+/wp-login.php                                /                                      301
+/xmlrpc.php                                  /                                      301
+/solutions                                   /products/                             301
+/solutions/                                  /products/                             301
+/ar/solutions                                /ar/products/                          301
+/ar/solutions/                               /ar/products/                          301
+
+# Common aliases
+/home                                        /                                      301
+/index.html                                  /                                      301
+/blog                                        /insights/                             301
+/news                                        /insights/                             301
+/quotation-request                           /quote                                 301
+/careers                                     /about#careers                         301
+/en                                          /                                      301
+/en/*                                        /:splat                                301
+
+# Repo internals are not site content: keep them off the public site.
+/CONTEXT.md                                  /                                      301
+/README.md                                   /                                      301
+/package.json                                /                                      301
+/site.config.json                            /                                      301
+/.gitignore                                  /                                      301
+/.gitattributes                              /                                      301
+/content/*                                   /                                      301
+/scripts/*                                   /                                      301
+/tests/*                                     /                                      301
+/functions/*                                 /                                      301
+/.claude/*                                   /                                      301

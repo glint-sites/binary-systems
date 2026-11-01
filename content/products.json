@@ -1,0 +1,1181 @@
+[
+  {
+    "slug": "vivalytic",
+    "brand": "bosch",
+    "division": "ivd",
+    "discipline": "poct",
+    "order": 1,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://www.bosch-vivalytic.com/",
+    "en": {
+      "name": "Vivalytic",
+      "summary": "A compact Bosch analyser that runs fully automated PCR tests from single-use cartridges — at the point of care or in the laboratory, with results in as little as 30 minutes.",
+      "body": [
+        "Vivalytic from Bosch Healthcare Solutions unites sample preparation, amplification and detection in one compact device. Each single-use cartridge contains everything the test needs, so different sample types can be tested fully automatically with minimal hands-on time.",
+        "Tests from Bosch and partner companies cover respiratory, sexually transmitted, gastrointestinal and hospital-acquired infections. Test menus and regulatory status vary by market — talk to BSM about the assays available in Saudi Arabia."
+      ],
+      "highlights": [
+        "Fully automated PCR from a single-use cartridge",
+        "Results in as little as 30 minutes, depending on the test",
+        "Supports end-point PCR, real-time PCR, melting curve and microarray",
+        "Touchscreen and integrated scanner — no extra peripherals",
+        "Developed and produced in Germany"
+      ],
+      "applications": [
+        "Respiratory infections",
+        "Sexually transmitted infections",
+        "Hospital-acquired infections",
+        "Point-of-care PCR"
+      ]
+    },
+    "ar": {
+      "name": "Vivalytic",
+      "summary": "جهاز تحليل صغير من Bosch يُجري فحوصات PCR مؤتمتة بالكامل من خراطيش أحادية الاستخدام — في نقطة الرعاية أو في المختبر، مع نتائج خلال 30 دقيقة فقط في بعض الفحوصات.",
+      "body": [
+        "يجمع Vivalytic من Bosch Healthcare Solutions تحضير العينة والتضخيم والكشف في جهاز واحد صغير الحجم. وتحتوي كل خرطوشة أحادية الاستخدام على كل ما يحتاجه الفحص، مما يتيح فحص أنواع مختلفة من العينات بشكل مؤتمت بالكامل وبأقل جهد يدوي.",
+        "وتغطي الفحوصات المقدمة من Bosch وشركائها عدوى الجهاز التنفسي والأمراض المنقولة جنسيًا وعدوى الجهاز الهضمي والعدوى المكتسبة في المستشفيات. وتختلف قوائم الفحوصات وحالتها التنظيمية من سوق لآخر — تواصل مع BSM لمعرفة الفحوصات المتاحة في المملكة."
+      ],
+      "highlights": [
+        "فحص PCR مؤتمت بالكامل ضمن خرطوشة أحادية الاستخدام",
+        "نتائج في غضون 30 دقيقة فقط لبعض الفحوصات",
+        "يدعم PCR نقطة النهاية وPCR في الوقت الحقيقي وتحليل منحنى الانصهار والمصفوفات الدقيقة",
+        "شاشة لمس وماسح ضوئي مدمج، دون الحاجة إلى ملحقات إضافية",
+        "مطوَّر ومصنَّع في ألمانيا"
+      ],
+      "applications": [
+        "عدوى الجهاز التنفسي",
+        "الأمراض المنقولة جنسيًا",
+        "العدوى المكتسبة في المستشفيات",
+        "PCR في نقطة الرعاية"
+      ]
+    }
+  },
+  {
+    "slug": "vitapcr",
+    "brand": "credo",
+    "division": "ivd",
+    "discipline": "poct",
+    "order": 2,
+    "featured": true,
+    "fit": "contain",
+    "website": "https://www.credodxbiomed.com/",
+    "en": {
+      "name": "VitaPCR™ & VitaSIRO solo™",
+      "summary": "Point-of-care molecular platforms from Credo: VitaPCR™ delivers real-time PCR results in about 20 minutes, and VitaSIRO solo™ combines extraction and multiplex PCR in a single cartridge.",
+      "body": [
+        "Credo Diagnostics develops accurate, rapid and affordable molecular platforms designed for use at the point of care, with a strong focus on respiratory testing.",
+        "VitaPCR™ is a compact real-time PCR analyser with sample-to-result times of about 20 minutes and roughly one minute of hands-on time. VitaSIRO solo™ integrates nucleic-acid extraction and multiplex real-time PCR for up to six targets in one cartridge; its SARS-CoV-2/Flu/RSV assay returns results in about 40 minutes."
+      ],
+      "highlights": [
+        "VitaPCR™: sample to result in about 20 minutes",
+        "About one minute of hands-on time",
+        "VitaSIRO solo™: extraction and PCR in one cartridge, up to 6 targets",
+        "VitaSIRO solo™ SARS-CoV-2/Flu/RSV: about 40 minutes",
+        "Results shown with Ct values and fluorescence curves"
+      ],
+      "applications": [
+        "Respiratory infections",
+        "Influenza & SARS-CoV-2",
+        "Point-of-care PCR",
+        "Emergency & urgent care"
+      ]
+    },
+    "ar": {
+      "name": "VitaPCR™ وVitaSIRO solo™",
+      "summary": "منصات جزيئية في نقطة الرعاية من Credo: يقدم VitaPCR™ نتائج PCR في الوقت الحقيقي خلال نحو 20 دقيقة، بينما يجمع VitaSIRO solo™ الاستخلاص وPCR متعدد الأهداف في خرطوشة واحدة.",
+      "body": [
+        "تطوّر Credo Diagnostics منصات جزيئية دقيقة وسريعة وبتكلفة مناسبة مصممة للاستخدام في نقطة الرعاية، مع تركيز خاص على فحوصات الجهاز التنفسي.",
+        "VitaPCR™ جهاز صغير لتفاعل PCR في الوقت الحقيقي يقدم النتيجة خلال نحو 20 دقيقة من إدخال العينة، مع نحو دقيقة واحدة فقط من العمل اليدوي. أما VitaSIRO solo™ فيجمع استخلاص الأحماض النووية وPCR متعدد الأهداف في الوقت الحقيقي لما يصل إلى ستة أهداف في خرطوشة واحدة، ويقدم فحص SARS-CoV-2/الإنفلونزا/RSV نتائجه خلال نحو 40 دقيقة."
+      ],
+      "highlights": [
+        "VitaPCR™: النتيجة خلال نحو 20 دقيقة",
+        "نحو دقيقة واحدة فقط من العمل اليدوي",
+        "VitaSIRO solo™: الاستخلاص وPCR في خرطوشة واحدة، لما يصل إلى 6 أهداف",
+        "فحص SARS-CoV-2/الإنفلونزا/RSV على VitaSIRO solo™: نحو 40 دقيقة",
+        "عرض النتائج مع قيم Ct ومنحنيات التألق"
+      ],
+      "applications": [
+        "عدوى الجهاز التنفسي",
+        "الإنفلونزا وSARS-CoV-2",
+        "PCR في نقطة الرعاية",
+        "الطوارئ والرعاية العاجلة"
+      ]
+    }
+  },
+  {
+    "slug": "pannoramic",
+    "brand": "3dhistech",
+    "division": "ivd",
+    "discipline": "histology-cytology",
+    "order": 3,
+    "featured": true,
+    "fit": "contain",
+    "website": "https://www.3dhistech.com/",
+    "en": {
+      "name": "Pannoramic Digital Pathology",
+      "summary": "3DHISTECH Pannoramic whole slide scanners and software — from high-capacity DX scanners for diagnostics to research models with fluorescence imaging.",
+      "body": [
+        "3DHISTECH provides clinical pathologists, researchers and universities with digital pathology solutions that support fast, accurate diagnostics, medical discovery and education.",
+        "The Pannoramic range spans diagnostic DX scanners — such as the Pannoramic 1000 DX for high-volume laboratories — and research scanners with brightfield and fluorescence imaging, supported by 3DHISTECH case management, viewing and analysis software."
+      ],
+      "highlights": [
+        "Pannoramic 1000 DX: up to 1,200 slides, up to 80 slides/hour",
+        "Pannoramic 250 Flash III DX: 300-slide capacity",
+        "Research models add multi-channel fluorescence imaging",
+        "HL7 LIS/HIS integration with MRXS or DICOM output",
+        "DX scanners described by 3DHISTECH as IVDR-compliant"
+      ],
+      "applications": [
+        "Digital pathology",
+        "Histology & cytology",
+        "Research imaging",
+        "Education"
+      ]
+    },
+    "ar": {
+      "name": "Pannoramic لعلم الأمراض الرقمي",
+      "summary": "ماسحات الشرائح الكاملة Pannoramic وبرمجياتها من 3DHISTECH — من ماسحات DX عالية السعة للتشخيص إلى الطرازات البحثية المزودة بالتصوير الفلوري.",
+      "body": [
+        "تزوّد 3DHISTECH أطباء علم الأمراض والباحثين والجامعات بحلول علم الأمراض الرقمي التي تدعم التشخيص السريع والدقيق والاكتشافات الطبية والتعليم.",
+        "وتشمل مجموعة Pannoramic ماسحات DX التشخيصية — مثل Pannoramic 1000 DX للمختبرات ذات أحجام العمل الكبيرة — وماسحات بحثية للتصوير بالمجال الساطع والتصوير الفلوري، مدعومة ببرمجيات 3DHISTECH لإدارة الحالات والعرض والتحليل."
+      ],
+      "highlights": [
+        "Pannoramic 1000 DX: سعة حتى 1200 شريحة وسرعة حتى 80 شريحة في الساعة",
+        "Pannoramic 250 Flash III DX: سعة 300 شريحة",
+        "الطرازات البحثية تضيف تصويرًا فلوريًا متعدد القنوات",
+        "تكامل مع أنظمة LIS/HIS عبر HL7 وإخراج بصيغة MRXS أو DICOM",
+        "ماسحات DX متوافقة مع لائحة IVDR وفق 3DHISTECH"
+      ],
+      "applications": [
+        "علم الأمراض الرقمي",
+        "علم الأنسجة والخلايا",
+        "التصوير البحثي",
+        "التعليم"
+      ]
+    }
+  },
+  {
+    "slug": "pyloplus-ubt",
+    "brand": "gulf-coast",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 4,
+    "featured": true,
+    "fit": "contain",
+    "website": "https://www.gulfcoastscientific.com/",
+    "en": {
+      "name": "PyloPLUS+ UBT2 Urea Breath Test",
+      "summary": "A non-invasive urea breath test kit for detecting active H. pylori infection and confirming eradication, with re-sampling breath bags and an all-in-one powder pouch.",
+      "body": [
+        "The PyloPLUS+ UBT2 from Gulf Coast Scientific is a urea breath test kit for detecting active Helicobacter pylori infection and confirming that treatment has worked.",
+        "Its breath bags use a two-way air valve that allows re-sampling, and the urea and flavouring come as pre-crushed powders in a pouch that doubles as the patient's drinking cup — easier on patients and simpler for staff. Kits are analysed on PyloPLUS+ UBT analysers."
+      ],
+      "highlights": [
+        "Non-invasive detection of active H. pylori infection",
+        "Breath bags with a two-way valve allow re-sampling",
+        "Urea and flavouring in one pouch that doubles as the cup",
+        "Runs on PyloPLUS+ two-port or sixteen-port analysers",
+        "For initial diagnosis and post-treatment confirmation"
+      ],
+      "applications": [
+        "H. pylori",
+        "Eradication monitoring",
+        "Gastroenterology",
+        "Breath testing"
+      ]
+    },
+    "ar": {
+      "name": "اختبار تنفس اليوريا PyloPLUS+ UBT2",
+      "summary": "طقم اختبار تنفس اليوريا غير الجراحي للكشف عن عدوى جرثومة المعدة النشطة وتأكيد القضاء عليها، مع أكياس تنفس قابلة لإعادة أخذ العينة وعبوة مسحوق متكاملة.",
+      "body": [
+        "يُعد PyloPLUS+ UBT2 من Gulf Coast Scientific طقمًا لاختبار تنفس اليوريا للكشف عن عدوى جرثومة المعدة (الملوية البوابية) النشطة وتأكيد نجاح العلاج.",
+        "وتستخدم أكياس التنفس صمامًا ثنائي الاتجاه يسمح بإعادة أخذ العينة، كما تأتي اليوريا والنكهة على شكل مسحوق مطحون مسبقًا في عبوة تُستخدم أيضًا كوبًا للشرب — مما يسهّل الإجراء على المرضى ويبسّطه على الفريق الطبي. وتُحلَّل العينات على أجهزة PyloPLUS+ UBT."
+      ],
+      "highlights": [
+        "كشف غير جراحي عن عدوى جرثومة المعدة النشطة",
+        "أكياس تنفس بصمام ثنائي الاتجاه تسمح بإعادة أخذ العينة",
+        "اليوريا والنكهة في عبوة واحدة تُستخدم أيضًا كوبًا للشرب",
+        "يعمل على أجهزة PyloPLUS+ ثنائية المنافذ أو ذات 16 منفذًا",
+        "للتشخيص الأولي وتأكيد نجاح العلاج"
+      ],
+      "applications": [
+        "جرثومة المعدة",
+        "متابعة القضاء على العدوى",
+        "أمراض الجهاز الهضمي",
+        "اختبارات التنفس"
+      ]
+    }
+  },
+  {
+    "slug": "c-luminary",
+    "brand": "c-luminary",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 5,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://www.c-luminary.com/",
+    "en": {
+      "name": "Sharay CLIA Analysers",
+      "summary": "Fully automated chemiluminescence immunoassay (CLIA) analysers and reagents from C-Luminary — from 120 to 1,000 tests per hour, with a strong autoimmune and allergy menu.",
+      "body": [
+        "C-Luminary Biotech, based in Chengdu, develops and manufactures in vitro diagnostic products with a focus on chemiluminescence immunoassay. Its Sharay analyser line uses an alkaline-phosphatase chemiluminescence method with matching reagents.",
+        "The range scales from the compact Sharay 1600 to the modular Sharay 8000, covering autoimmune, allergen, thrombosis, cytokine and routine immunoassay testing."
+      ],
+      "highlights": [
+        "Sharay 8000: up to 1,000 tests/hour per module, up to four modules",
+        "Sharay 6000: 200 tests/hour; Sharay 1600: 120 tests/hour",
+        "First result in about 15 minutes (Sharay 6000/8000)",
+        "Menu: autoimmune, allergen, thrombosis, cytokine and routine tests",
+        "Manufacturer certified to ISO 13485:2016"
+      ],
+      "applications": [
+        "Autoimmunity",
+        "Allergy",
+        "Thrombosis",
+        "Immunoassay"
+      ]
+    },
+    "ar": {
+      "name": "أجهزة Sharay للمقايسة المناعية بالتألق الكيميائي",
+      "summary": "أجهزة تحليل وكواشف مؤتمتة بالكامل للمقايسة المناعية بالتألق الكيميائي (CLIA) من C-Luminary — من 120 إلى 1000 فحص في الساعة، مع قائمة واسعة من فحوصات المناعة الذاتية والحساسية.",
+      "body": [
+        "تطوّر C-Luminary Biotech، ومقرها مدينة تشنغدو، منتجات التشخيص المخبري وتصنّعها، مع تركيز على المقايسات المناعية بالتألق الكيميائي. وتعتمد أجهزة Sharay على طريقة التألق الكيميائي بإنزيم الفوسفاتاز القلوي مع كواشف مخصصة.",
+        "وتتدرج المجموعة من الجهاز الصغير Sharay 1600 إلى النظام النمطي Sharay 8000، وتغطي فحوصات المناعة الذاتية ومسببات الحساسية والتخثر والسيتوكينات والفحوصات المناعية الروتينية."
+      ],
+      "highlights": [
+        "Sharay 8000: حتى 1000 فحص في الساعة لكل وحدة، وبما يصل إلى أربع وحدات",
+        "Sharay 6000: ‏200 فحص في الساعة؛ Sharay 1600: ‏120 فحصًا في الساعة",
+        "أول نتيجة خلال نحو 15 دقيقة (Sharay 6000/8000)",
+        "قائمة تشمل المناعة الذاتية والحساسية والتخثر والسيتوكينات والفحوصات الروتينية",
+        "الشركة المصنعة حاصلة على شهادة ISO 13485:2016"
+      ],
+      "applications": [
+        "المناعة الذاتية",
+        "الحساسية",
+        "التخثر",
+        "المقايسات المناعية"
+      ]
+    }
+  },
+  {
+    "slug": "vivatmo",
+    "brand": "bosch",
+    "division": "md",
+    "discipline": "respiratory",
+    "order": 6,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://www.vivatmo-hcp.com/en/",
+    "en": {
+      "name": "Vivatmo pro & Vivatmo me",
+      "summary": "Bosch FeNO measurement for asthma management — Vivatmo pro for practices and clinics, Vivatmo me for monitoring at home.",
+      "body": [
+        "The biomarker FeNO (fractional exhaled nitric oxide) can significantly improve the diagnosis and therapy of asthma by giving an objective measure of airway inflammation.",
+        "Bosch's Vivatmo system measures FeNO in exhaled breath simply and precisely: Vivatmo pro is designed for practices and clinics, while Vivatmo me lets patients monitor at home with a companion app. Disposable Oxycap mouthpieces include a germ filter."
+      ],
+      "highlights": [
+        "Vivatmo pro: about 10-second measurement for adults, 6 seconds for children",
+        "No sensor replacement or recalibration needed",
+        "Vivatmo me home device syncs with the Vivatmo app via Bluetooth",
+        "Disposable Oxycap mouthpiece with integrated germ filter",
+        "Vivatmo pro connects via Wi-Fi, USB, Ethernet, HL7 and GDT"
+      ],
+      "applications": [
+        "Asthma",
+        "Airway inflammation",
+        "FeNO monitoring",
+        "Home monitoring"
+      ]
+    },
+    "ar": {
+      "name": "Vivatmo pro وVivatmo me",
+      "summary": "قياس FeNO من Bosch لإدارة الربو — جهاز Vivatmo pro للعيادات والمراكز الطبية، وجهاز Vivatmo me للمتابعة المنزلية.",
+      "body": [
+        "يمكن للمؤشر الحيوي FeNO (أكسيد النيتريك الجزئي في هواء الزفير) أن يحسّن تشخيص الربو وعلاجه بشكل ملحوظ، إذ يوفر مقياسًا موضوعيًا لالتهاب المجاري التنفسية.",
+        "ويقيس نظام Vivatmo من Bosch هذا المؤشر في هواء الزفير ببساطة ودقة: فجهاز Vivatmo pro مصمم للعيادات والمراكز الطبية، بينما يتيح Vivatmo me للمرضى المتابعة في المنزل عبر تطبيق مرافق. وتتضمن قطع الفم Oxycap أحادية الاستخدام مرشحًا للجراثيم."
+      ],
+      "highlights": [
+        "Vivatmo pro: قياس خلال نحو 10 ثوانٍ للبالغين و6 ثوانٍ للأطفال",
+        "لا حاجة لاستبدال المستشعر أو إعادة المعايرة",
+        "جهاز Vivatmo me المنزلي يتزامن مع تطبيق Vivatmo عبر البلوتوث",
+        "قطعة فم Oxycap أحادية الاستخدام بمرشح جراثيم مدمج",
+        "اتصال Vivatmo pro عبر Wi-Fi وUSB وEthernet وHL7 وGDT"
+      ],
+      "applications": [
+        "الربو",
+        "التهاب المجاري التنفسية",
+        "متابعة FeNO",
+        "المتابعة المنزلية"
+      ]
+    }
+  },
+  {
+    "slug": "plasma-care",
+    "brand": "terraplasma",
+    "division": "md",
+    "discipline": "wound-care",
+    "order": 7,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://www.terraplasma-medical.com/en/",
+    "en": {
+      "name": "plasma care®",
+      "summary": "A handheld, portable device from terraplasma medical that generates cold atmospheric plasma from ambient air for wound treatment — a Class IIa medical device for clinics and outpatient wound care.",
+      "body": [
+        "Cold plasma generates reactive oxygen and nitrogen species such as ozone (O₃), hydroxyl radicals (OH) and nitric oxide (NO). These act against bacteria, viruses and fungi and support the healing process, while the surrounding tissue remains intact.",
+        "plasma care® from terraplasma medical GmbH generates cold atmospheric plasma from ambient air. It is a handy, battery-powered device for wound specialists in clinical and outpatient settings, with a fresh spacer for every treatment."
+      ],
+      "highlights": [
+        "Class IIa medical device, according to terraplasma",
+        "Cold plasma generated from ambient air",
+        "Treats about 70 cm² per spacer in 1–3 minutes",
+        "New spacer for each treatment",
+        "Wirelessly charged battery: about 120 applications per charge"
+      ],
+      "applications": [
+        "Chronic wounds",
+        "Acute & post-operative wounds",
+        "Wound care",
+        "Infection control"
+      ]
+    },
+    "ar": {
+      "name": "plasma care®",
+      "summary": "جهاز محمول باليد من terraplasma medical يولّد البلازما الجوية الباردة من الهواء المحيط لعلاج الجروح — جهاز طبي من الفئة IIa للعيادات ورعاية الجروح للمرضى الخارجيين.",
+      "body": [
+        "تولّد البلازما الباردة أنواعًا تفاعلية من الأكسجين والنيتروجين مثل الأوزون (O₃) وجذور الهيدروكسيل (OH) وأكسيد النيتريك (NO)، وهي تعمل ضد البكتيريا والفيروسات والفطريات وتدعم عملية الالتئام، مع بقاء الأنسجة المحيطة سليمة.",
+        "ويولّد جهاز plasma care® من terraplasma medical GmbH البلازما الجوية الباردة من الهواء المحيط، وهو جهاز عملي يعمل بالبطارية لأخصائيي الجروح في المنشآت السريرية والعيادات الخارجية، مع فاصل جديد لكل جلسة علاج."
+      ],
+      "highlights": [
+        "جهاز طبي من الفئة IIa وفق terraplasma",
+        "بلازما باردة تُولَّد من الهواء المحيط",
+        "يعالج نحو 70 سم² لكل فاصل خلال 1 إلى 3 دقائق",
+        "فاصل جديد لكل جلسة علاج",
+        "بطارية بشحن لاسلكي تكفي الشحنة الواحدة منها لنحو 120 استخدامًا"
+      ],
+      "applications": [
+        "الجروح المزمنة",
+        "الجروح الحادة وجروح ما بعد الجراحة",
+        "العناية بالجروح",
+        "مكافحة العدوى"
+      ]
+    }
+  },
+  {
+    "slug": "tianlong",
+    "brand": "tianlong",
+    "division": "ivd",
+    "discipline": "molecular",
+    "order": 8,
+    "featured": true,
+    "fit": "contain",
+    "website": "https://www.medtl.net/",
+    "en": {
+      "name": "Tianlong Molecular Systems",
+      "summary": "Magnetic-bead nucleic-acid extractors, real-time PCR systems and automated extraction-to-PCR workstations, with more than 600 compatible extraction and detection kits.",
+      "body": [
+        "Established in 1997 in Xi'an, Tianlong is a pioneer in nucleic-acid testing instruments and reagents, with products marketed in more than 100 countries.",
+        "Its portfolio covers the complete molecular workflow — GeneRotex extractors, Gentier real-time PCR systems and PANA/Panall automated workstations — together with 600+ compatible kits for extraction and detection."
+      ],
+      "highlights": [
+        "GeneRotex 96: 1–96 samples per run with rotary mixing",
+        "Gentier 96E: 96 wells, six channels, plate scanned in 7 seconds",
+        "Gentier X3: three independent 32-well blocks in parallel",
+        "PANA 3200S workstation: 32 samples, extraction to PCR",
+        "600+ compatible extraction and detection kits"
+      ],
+      "applications": [
+        "Nucleic-acid extraction",
+        "Real-time PCR",
+        "Molecular laboratory",
+        "Blood donor screening"
+      ]
+    },
+    "ar": {
+      "name": "أنظمة Tianlong الجزيئية",
+      "summary": "أجهزة استخلاص الأحماض النووية بالخرز المغناطيسي وأنظمة PCR في الوقت الحقيقي ومحطات عمل مؤتمتة من الاستخلاص حتى PCR، مع أكثر من 600 طقم متوافق للاستخلاص والكشف.",
+      "body": [
+        "تأسست Tianlong عام 1997 في مدينة شيآن، وهي من الرواد في أجهزة وكواشف فحص الأحماض النووية، وتُسوَّق منتجاتها في أكثر من 100 دولة.",
+        "وتغطي منتجاتها سير العمل الجزيئي بالكامل — أجهزة الاستخلاص GeneRotex وأنظمة Gentier لتفاعل PCR في الوقت الحقيقي ومحطات العمل المؤتمتة PANA وPanall — إلى جانب أكثر من 600 طقم متوافق للاستخلاص والكشف."
+      ],
+      "highlights": [
+        "GeneRotex 96: من 1 إلى 96 عينة في الدورة مع تقنية الخلط الدوراني",
+        "Gentier 96E: ‏96 بئرًا وست قنوات ومسح الصفيحة خلال 7 ثوانٍ",
+        "Gentier X3: ثلاث كتل مستقلة من 32 بئرًا تعمل بالتوازي",
+        "محطة PANA 3200S: ‏32 عينة من الاستخلاص حتى PCR",
+        "أكثر من 600 طقم متوافق للاستخلاص والكشف"
+      ],
+      "applications": [
+        "استخلاص الأحماض النووية",
+        "PCR في الوقت الحقيقي",
+        "المختبر الجزيئي",
+        "فحص الدم المتبرَّع به"
+      ]
+    }
+  },
+  {
+    "slug": "d-tek",
+    "brand": "d-tek",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 9,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://www.d-tek.be/en/",
+    "en": {
+      "name": "D-tek Autoimmune Diagnostics",
+      "summary": "CE-IVD kits for autoantibody profiling — BlueDot, BlueDiver Dot and BlueDiver Quantrix — run manually or on the automated BlueDiver Instrument.",
+      "body": [
+        "Founded in 1995, D-tek develops diagnostic kits for human autoimmune diseases in ELISA, immunodot and microarray formats. All of its diagnostic kits are CE-IVD marked, and the company is ISO 13485 certified.",
+        "Strip-based kits can be processed manually or on the BlueDiver Instrument, with Dr DOT software for semi-quantitative or fully quantitative reading."
+      ],
+      "highlights": [
+        "Autoantibody detection on strips from 10 µl of serum",
+        "BlueDot & BlueDiver Dot: up to 12 autoantibodies per strip",
+        "BlueDiver Quantrix: up to 25 autoantibodies, fully quantitative",
+        "BlueDiver Instrument: 24 samples per run in about 1 hour",
+        "All D-tek diagnostic kits are CE-IVD marked"
+      ],
+      "applications": [
+        "Autoimmunity",
+        "Autoantibody profiling",
+        "Immunodot",
+        "ELISA"
+      ]
+    },
+    "ar": {
+      "name": "D-tek لتشخيص أمراض المناعة الذاتية",
+      "summary": "أطقم تحمل علامة CE-IVD لتحديد أنماط الأجسام المضادة الذاتية — BlueDot وBlueDiver Dot وBlueDiver Quantrix — تُستخدم يدويًا أو على جهاز BlueDiver المؤتمت.",
+      "body": [
+        "تأسست D-tek عام 1995، وتطوّر أطقمًا تشخيصية لأمراض المناعة الذاتية لدى الإنسان بصيغ ELISA وimmunodot والمصفوفات الدقيقة. وجميع أطقمها التشخيصية تحمل علامة CE-IVD، والشركة حاصلة على شهادة ISO 13485.",
+        "ويمكن معالجة الأطقم القائمة على الشرائط يدويًا أو على جهاز BlueDiver، مع برنامج Dr DOT للقراءة شبه الكمية أو الكمية الكاملة."
+      ],
+      "highlights": [
+        "كشف الأجسام المضادة الذاتية على شرائط باستخدام 10 ميكرولتر من المصل",
+        "BlueDot وBlueDiver Dot: حتى 12 جسمًا مضادًا ذاتيًا لكل شريط",
+        "BlueDiver Quantrix: حتى 25 جسمًا مضادًا ذاتيًا بقياس كمي كامل",
+        "جهاز BlueDiver: ‏24 عينة في الدورة خلال نحو ساعة",
+        "جميع أطقم D-tek التشخيصية تحمل علامة CE-IVD"
+      ],
+      "applications": [
+        "المناعة الذاتية",
+        "تحديد أنماط الأجسام المضادة الذاتية",
+        "Immunodot",
+        "ELISA"
+      ]
+    }
+  },
+  {
+    "slug": "geneaid",
+    "brand": "geneaid",
+    "division": "ruo",
+    "discipline": "research",
+    "order": 10,
+    "featured": true,
+    "fit": "cover",
+    "website": "https://geneaid.com/",
+    "en": {
+      "name": "Geneaid Nucleic Acid Purification",
+      "summary": "DNA and RNA purification kits for life-science research — spin-column, magnetic-bead and 96-well formats — plus the SYNC automated extraction system.",
+      "body": [
+        "Geneaid Biotech, established in 2002 in New Taipei City, specialises in nucleic-acid purification products for life-science research and biotechnology, with distributors in more than 60 countries.",
+        "Its range covers plasmid, genomic DNA, RNA and viral DNA/RNA purification, gel and PCR clean-up, high-throughput 96-well and magnetic-bead formats, PCR reagents and the SYNC automated extraction system."
+      ],
+      "highlights": [
+        "Plasmid, genomic DNA, RNA and viral DNA/RNA kits",
+        "Gel and PCR clean-up kits",
+        "Magnetic-bead and 96-well high-throughput formats",
+        "SYNC system for automated purification",
+        "Presto™ Rapid Extract PCR kit and Hot Start Taq master mix"
+      ],
+      "applications": [
+        "Nucleic-acid purification",
+        "Molecular biology",
+        "PCR",
+        "Research use only"
+      ]
+    },
+    "ar": {
+      "name": "Geneaid لتنقية الأحماض النووية",
+      "summary": "أطقم تنقية DNA وRNA لأبحاث علوم الحياة — بصيغ الأعمدة الدوارة والخرز المغناطيسي وصفائح 96 بئرًا — إضافة إلى نظام SYNC للاستخلاص المؤتمت.",
+      "body": [
+        "تأسست Geneaid Biotech عام 2002 في مدينة تايبيه الجديدة، وتتخصص في منتجات تنقية الأحماض النووية لأبحاث علوم الحياة والتقنية الحيوية، ولديها موزعون في أكثر من 60 دولة.",
+        "وتشمل منتجاتها تنقية البلازميد وDNA الجينومي وRNA وDNA/RNA الفيروسي، وتنقية نواتج الهلام وPCR، والصيغ عالية الإنتاجية بصفائح 96 بئرًا والخرز المغناطيسي، وكواشف PCR، ونظام SYNC للاستخلاص المؤتمت."
+      ],
+      "highlights": [
+        "أطقم البلازميد وDNA الجينومي وRNA وDNA/RNA الفيروسي",
+        "أطقم تنقية نواتج الهلام وPCR",
+        "صيغ الخرز المغناطيسي وصفائح 96 بئرًا عالية الإنتاجية",
+        "نظام SYNC للتنقية المؤتمتة",
+        "طقم Presto™ للاستخلاص السريع وخليط Hot Start Taq"
+      ],
+      "applications": [
+        "تنقية الأحماض النووية",
+        "البيولوجيا الجزيئية",
+        "PCR",
+        "للاستخدام البحثي فقط"
+      ]
+    }
+  },
+  {
+    "slug": "geneproof",
+    "brand": "geneproof",
+    "division": "ivd",
+    "discipline": "molecular",
+    "order": 11,
+    "fit": "contain",
+    "website": "https://www.geneproof.com/",
+    "en": {
+      "name": "GeneProof PCR Kits",
+      "summary": "CE-IVD real-time PCR kits for serious infections and genetic conditions, with extraction systems and the myCROBE™ automated sample-to-result platform.",
+      "body": [
+        "GeneProof, based in Brno, develops real-time PCR kits for the molecular diagnosis of serious infections and genetic conditions. Since 2022 it has been part of NuvinkaDx, a diagnostics group that also includes ALPCO.",
+        "Its portfolio of more than 80 CE-IVD real-time PCR products spans bloodborne, transplant, sexually transmitted, respiratory and neurological infections and thrombotic mutations, complemented by extraction systems and the myCROBE™ automated platform."
+      ],
+      "highlights": [
+        "80+ CE-IVD real-time PCR products",
+        "40+ kits already IVDR-compliant",
+        "Bloodborne, transplant, STI, respiratory and neuro infection panels",
+        "myCROBE™: up to 108 samples and 270 tests per 8-hour shift",
+        "Sold in 75+ countries"
+      ],
+      "applications": [
+        "Infectious disease",
+        "Transplant monitoring",
+        "Sexually transmitted infections",
+        "Genetic testing"
+      ]
+    },
+    "ar": {
+      "name": "أطقم GeneProof لتفاعل PCR",
+      "summary": "أطقم PCR في الوقت الحقيقي تحمل علامة CE-IVD للعدوى الخطيرة والحالات الوراثية، مع أنظمة استخلاص ومنصة myCROBE™ المؤتمتة من العينة إلى النتيجة.",
+      "body": [
+        "تطوّر GeneProof، ومقرها مدينة برنو، أطقم PCR في الوقت الحقيقي للتشخيص الجزيئي للعدوى الخطيرة والحالات الوراثية، وهي منذ عام 2022 جزء من مجموعة NuvinkaDx التي تضمها إلى جانب ALPCO.",
+        "وتضم محفظتها أكثر من 80 منتجًا لتفاعل PCR في الوقت الحقيقي تحمل علامة CE-IVD، وتغطي العدوى المنقولة بالدم وعدوى زراعة الأعضاء والأمراض المنقولة جنسيًا وعدوى الجهاز التنفسي والجهاز العصبي وطفرات التخثر، إلى جانب أنظمة الاستخلاص ومنصة myCROBE™ المؤتمتة."
+      ],
+      "highlights": [
+        "أكثر من 80 منتجًا لتفاعل PCR في الوقت الحقيقي بعلامة CE-IVD",
+        "أكثر من 40 طقمًا متوافقًا بالفعل مع لائحة IVDR",
+        "لوحات للعدوى المنقولة بالدم وزراعة الأعضاء والأمراض المنقولة جنسيًا والجهاز التنفسي والعصبي",
+        "myCROBE™: حتى 108 عينات و270 فحصًا في وردية من 8 ساعات",
+        "تُباع في أكثر من 75 دولة"
+      ],
+      "applications": [
+        "الأمراض المعدية",
+        "متابعة زراعة الأعضاء",
+        "الأمراض المنقولة جنسيًا",
+        "الفحوصات الوراثية"
+      ]
+    }
+  },
+  {
+    "slug": "bdr",
+    "brand": "bdr",
+    "division": "ivd",
+    "discipline": "molecular",
+    "order": 12,
+    "fit": "contain",
+    "website": "https://www.bdrdiagnostics.com/",
+    "en": {
+      "name": "BDR Genetic Diagnostic Kits",
+      "summary": "In-house manufactured kits for genetic testing: Genvinset® real-time PCR for HLA typing and SNPs, Adellgene® fragment analysis for triplet-repeat disorders and NGS on!® panels.",
+      "body": [
+        "Blackhills Diagnostic Resources (BDR) was founded in Zaragoza, Spain, in 2012. The company researches, develops and manufactures in vitro diagnostic products for human genetics in-house, supported by its own bioinformatics team.",
+        "Its range includes Genvinset® TaqMan real-time PCR kits for HLA alleles and SNPs, Adellgene® kits that pair PCR with capillary-electrophoresis fragment analysis for triplet-repeat disorders such as Huntington disease and Fragile X, and NGS on!® panels for research use."
+      ],
+      "highlights": [
+        "Genvinset®: TaqMan real-time PCR for HLA alleles and SNPs",
+        "Adellgene®: triplet-repeat disorders (Huntington, Fragile X, SCAs)",
+        "NGS on!® panels — exome, hereditary cancer, myeloid (RUO)",
+        "In-house bioinformatics software for result analysis",
+        "Quality system certified to ISO 13485:2016"
+      ],
+      "applications": [
+        "HLA typing",
+        "Triplet-repeat disorders",
+        "Rare genetic diseases",
+        "Real-time PCR"
+      ]
+    },
+    "ar": {
+      "name": "أطقم BDR للتشخيص الوراثي",
+      "summary": "أطقم مصنّعة داخليًا للفحوصات الوراثية: أطقم Genvinset® لتفاعل PCR في الوقت الحقيقي لتنميط HLA وتعدد أشكال النوكليوتيد المفرد، وAdellgene® لتحليل الأجزاء في اضطرابات التكرار الثلاثي، ولوحات NGS on!®.",
+      "body": [
+        "تأسست Blackhills Diagnostic Resources (BDR) في سرقسطة بإسبانيا عام 2012، وتعمل على أبحاث وتطوير وتصنيع منتجات التشخيص المخبري لعلم الوراثة البشرية داخليًا، بدعم من فريقها الخاص في المعلوماتية الحيوية.",
+        "وتشمل منتجاتها أطقم Genvinset® لتفاعل PCR في الوقت الحقيقي بتقنية TaqMan لأليلات HLA وتعدد أشكال النوكليوتيد المفرد، وأطقم Adellgene® التي تجمع بين PCR وتحليل الأجزاء بالرحلان الكهربائي الشعري لاضطرابات التكرار الثلاثي مثل داء هنتنغتون ومتلازمة الكروموسوم X الهش، ولوحات NGS on!® للاستخدام البحثي."
+      ],
+      "highlights": [
+        "Genvinset®: ‏PCR في الوقت الحقيقي بتقنية TaqMan لأليلات HLA وSNPs",
+        "Adellgene®: اضطرابات التكرار الثلاثي (هنتنغتون وX الهش وSCAs)",
+        "لوحات NGS on!® — الإكسوم والسرطان الوراثي والأورام النقوية (للاستخدام البحثي فقط)",
+        "برمجيات معلوماتية حيوية داخلية لتحليل النتائج",
+        "نظام جودة حاصل على شهادة ISO 13485:2016"
+      ],
+      "applications": [
+        "تنميط HLA",
+        "اضطرابات التكرار الثلاثي",
+        "الأمراض الوراثية النادرة",
+        "PCR في الوقت الحقيقي"
+      ]
+    }
+  },
+  {
+    "slug": "vircell",
+    "brand": "vircell",
+    "division": "ivd",
+    "discipline": "molecular",
+    "order": 13,
+    "fit": "contain",
+    "website": "https://www.vircell.com/en",
+    "en": {
+      "name": "Vircell VIRPLEX & AMPLIRUN®",
+      "summary": "Lyophilised VIRPLEX real-time PCR kits and AMPLIRUN® molecular controls for infectious disease testing, from a Granada-based specialist founded in 1991.",
+      "body": [
+        "Founded in Granada in 1991, Vircell develops and manufactures diagnostic reagents for human infectious diseases and is present in more than 95 countries.",
+        "Its molecular range combines lyophilised VIRPLEX real-time PCR kits — supplied in strips or plates with positive and negative controls — with AMPLIRUN® purified, inactivated controls for validating nucleic-acid amplification assays. Vircell also offers serology, including IFA, ELISA and VirClia® monotests."
+      ],
+      "highlights": [
+        "VIRPLEX: lyophilised real-time PCR in strips or plates",
+        "Positive and negative controls included in each kit",
+        "Respiratory, STI, gastrointestinal and meningitis panels",
+        "AMPLIRUN®: purified, inactivated controls for NAAT validation",
+        "VIRCOM software automates result interpretation"
+      ],
+      "applications": [
+        "Infectious disease",
+        "Respiratory infections",
+        "Molecular controls",
+        "Real-time PCR"
+      ]
+    },
+    "ar": {
+      "name": "Vircell VIRPLEX وAMPLIRUN®",
+      "summary": "أطقم VIRPLEX المجففة بالتجميد لتفاعل PCR في الوقت الحقيقي ومواد الضبط الجزيئية AMPLIRUN® لفحوصات الأمراض المعدية، من شركة متخصصة في غرناطة تأسست عام 1991.",
+      "body": [
+        "تأسست Vircell في غرناطة عام 1991، وتطوّر وتصنّع كواشف تشخيصية للأمراض المعدية لدى الإنسان، ولها حضور في أكثر من 95 دولة.",
+        "وتجمع مجموعتها الجزيئية بين أطقم VIRPLEX المجففة بالتجميد لتفاعل PCR في الوقت الحقيقي — المتوفرة في شرائط أو صفائح مع مواد ضبط إيجابية وسلبية — ومواد الضبط AMPLIRUN® المنقاة والمعطّلة للتحقق من صحة اختبارات تضخيم الأحماض النووية. كما تقدم Vircell فحوصات مصلية تشمل IFA وELISA واختبارات VirClia® الأحادية."
+      ],
+      "highlights": [
+        "VIRPLEX: ‏PCR في الوقت الحقيقي مجفف بالتجميد في شرائط أو صفائح",
+        "مواد ضبط إيجابية وسلبية ضمن كل طقم",
+        "لوحات للجهاز التنفسي والأمراض المنقولة جنسيًا والجهاز الهضمي والتهاب السحايا",
+        "AMPLIRUN®: مواد ضبط منقاة ومعطّلة للتحقق من اختبارات NAAT",
+        "برنامج VIRCOM لأتمتة تفسير النتائج"
+      ],
+      "applications": [
+        "الأمراض المعدية",
+        "عدوى الجهاز التنفسي",
+        "مواد الضبط الجزيئية",
+        "PCR في الوقت الحقيقي"
+      ]
+    }
+  },
+  {
+    "slug": "wantai",
+    "brand": "wantai",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 14,
+    "fit": "cover",
+    "website": "https://www.ystwt.cn/",
+    "en": {
+      "name": "Wantai Laboratory Solutions",
+      "summary": "Immunoassay and biochemistry analysers, ELISA, rapid tests, molecular systems and quality controls from Wantai BioPharm, with a strong focus on infectious diseases.",
+      "body": [
+        "Founded in Beijing in 1991, Wantai BioPharm is a diagnostics and vaccines group with seven subsidiaries.",
+        "Its IVD portfolio covers chemiluminescence and biochemistry analysers (Wan600, Wan BC2800 and the WanTLA laboratory solution), ELISA and colloidal-gold rapid tests, molecular detection systems and quality controls — with particular strength in HIV, hepatitis, tuberculosis and influenza testing."
+      ],
+      "highlights": [
+        "Analyser menu of 220 chemiluminescence and biochemistry tests",
+        "Wan600, Wan BC2800 and WanTLA laboratory systems",
+        "ELISA, colloidal-gold rapid tests and quality controls",
+        "Molecular detection systems including the WanTag series",
+        "Infectious-disease focus: HIV, hepatitis, TB-IGRA, influenza"
+      ],
+      "applications": [
+        "Infectious diseases",
+        "Immunoassay",
+        "Clinical chemistry",
+        "Laboratory automation"
+      ]
+    },
+    "ar": {
+      "name": "حلول Wantai للمختبرات",
+      "summary": "أجهزة تحليل مناعية وكيميائية حيوية واختبارات ELISA واختبارات سريعة وأنظمة جزيئية ومواد ضبط جودة من Wantai BioPharm، مع تركيز خاص على الأمراض المعدية.",
+      "body": [
+        "تأسست Wantai BioPharm في بكين عام 1991، وهي مجموعة متخصصة في التشخيص واللقاحات تضم سبع شركات تابعة.",
+        "وتشمل منتجاتها للتشخيص المخبري أجهزة التألق الكيميائي والكيمياء الحيوية (Wan600 وWan BC2800 وحل WanTLA للمختبرات)، واختبارات ELISA والاختبارات السريعة بالذهب الغروي، وأنظمة الكشف الجزيئي ومواد ضبط الجودة — مع تميز خاص في فحوصات فيروس نقص المناعة البشرية والتهاب الكبد والسل والإنفلونزا."
+      ],
+      "highlights": [
+        "قائمة من 220 فحصًا بالتألق الكيميائي والكيمياء الحيوية",
+        "أنظمة Wan600 وWan BC2800 وWanTLA للمختبرات",
+        "اختبارات ELISA والاختبارات السريعة بالذهب الغروي ومواد ضبط الجودة",
+        "أنظمة الكشف الجزيئي ومنها سلسلة WanTag",
+        "تركيز على الأمراض المعدية: HIV والتهاب الكبد وTB-IGRA والإنفلونزا"
+      ],
+      "applications": [
+        "الأمراض المعدية",
+        "المقايسات المناعية",
+        "الكيمياء السريرية",
+        "أتمتة المختبر"
+      ]
+    }
+  },
+  {
+    "slug": "fanhp",
+    "brand": "fan",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 15,
+    "fit": "contain",
+    "website": "https://fan-gmbh.de/",
+    "en": {
+      "name": "FANhp 13C Breath Test Analyser",
+      "summary": "A stand-alone two-port 13C breath analyser for practices, check-up centres and hospitals — ideal for urea breath testing for H. pylori, with results in about 5 minutes.",
+      "body": [
+        "FANhp from FAN GmbH in Leipzig was developed for doctors' practices, check-up centres and hospitals that want to introduce 13C-urea breath testing for Helicobacter pylori at reasonable cost.",
+        "The two-port analyser measures the baseline and post-dose breath bags and shows the result with a diagnosis proposal on its touchscreen within about 5 minutes — with a built-in printer and no PC required."
+      ],
+      "highlights": [
+        "Two-port analyser for 13C breath tests such as the urea breath test",
+        "Result and diagnosis proposal in about 5 minutes",
+        "Glove-operable touchscreen and built-in printer, no PC required",
+        "Stores 300 results with USB export",
+        "CE marked, according to FAN"
+      ],
+      "applications": [
+        "H. pylori",
+        "13C-urea breath test",
+        "Gastroenterology",
+        "Check-up centres"
+      ]
+    },
+    "ar": {
+      "name": "جهاز FANhp لتحليل اختبار التنفس 13C",
+      "summary": "جهاز مستقل ثنائي المنافذ لتحليل اختبارات التنفس 13C للعيادات ومراكز الفحص والمستشفيات — مثالي لاختبار تنفس اليوريا للكشف عن جرثومة المعدة، مع نتائج خلال نحو 5 دقائق.",
+      "body": [
+        "طُوّر جهاز FANhp من شركة FAN GmbH في لايبزيغ للعيادات ومراكز الفحص والمستشفيات التي ترغب في تقديم اختبار تنفس اليوريا 13C للكشف عن جرثومة المعدة بتكلفة مناسبة.",
+        "ويحلل الجهاز ثنائي المنافذ كيس التنفس الأساسي وكيس ما بعد الجرعة، ويعرض النتيجة مع اقتراح تشخيصي على شاشة اللمس خلال نحو 5 دقائق — مع طابعة مدمجة ودون الحاجة إلى حاسوب."
+      ],
+      "highlights": [
+        "جهاز ثنائي المنافذ لاختبارات التنفس 13C مثل اختبار تنفس اليوريا",
+        "النتيجة واقتراح تشخيصي خلال نحو 5 دقائق",
+        "شاشة لمس تعمل بالقفازات وطابعة مدمجة، دون الحاجة إلى حاسوب",
+        "تخزين 300 نتيجة مع التصدير عبر USB",
+        "حاصل على علامة CE وفق FAN"
+      ],
+      "applications": [
+        "جرثومة المعدة",
+        "اختبار تنفس اليوريا 13C",
+        "أمراض الجهاز الهضمي",
+        "مراكز الفحص"
+      ]
+    }
+  },
+  {
+    "slug": "lactofan2",
+    "brand": "fan",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 16,
+    "fit": "contain",
+    "website": "https://fan-gmbh.de/en/home/products/lactofan2/",
+    "en": {
+      "name": "LactoFAN2 H₂ Breath Monitor",
+      "summary": "A handheld monitor from FAN that measures hydrogen (H₂) in exhaled breath and displays the result in ppm — for hydrogen breath testing in gastroenterology.",
+      "body": [
+        "LactoFAN2 from FAN GmbH is a handheld device that measures the hydrogen (H₂) concentration in exhaled breath and shows the value in parts per million.",
+        "Hydrogen breath testing is used in gastroenterology to investigate carbohydrate absorption — for example of lactose or fructose — and intestinal transit. LactoFAN2 provides the measurement; the choice of test protocol and the interpretation of results remain with the clinician."
+      ],
+      "highlights": [
+        "Measures exhaled hydrogen (H₂), displayed in ppm",
+        "Handheld, glove-capable touchscreen; runs on four AA batteries",
+        "Integrated quality-control routines and semi-automatic calibration",
+        "Stores patient results; free Windows software for USB export",
+        "Software can connect to GDT, HL7 or ASTM systems"
+      ],
+      "applications": [
+        "Hydrogen breath testing",
+        "Carbohydrate absorption",
+        "Gastroenterology"
+      ]
+    },
+    "ar": {
+      "name": "LactoFAN2 لقياس الهيدروجين في النَّفَس",
+      "summary": "جهاز محمول من FAN يقيس الهيدروجين (H₂) في هواء الزفير ويعرض النتيجة بوحدة جزء في المليون — لاختبارات الهيدروجين في النَّفَس في طب الجهاز الهضمي.",
+      "body": [
+        "LactoFAN2 من FAN GmbH جهاز محمول يقيس تركيز الهيدروجين (H₂) في هواء الزفير ويعرض القيمة بوحدة جزء في المليون.",
+        "وتُستخدم اختبارات الهيدروجين في النَّفَس في طب الجهاز الهضمي لتقييم امتصاص الكربوهيدرات — مثل اللاكتوز أو الفركتوز — وزمن العبور المعوي. ويوفر LactoFAN2 القياس، بينما يبقى اختيار بروتوكول الفحص وتفسير النتائج من مسؤولية الطبيب."
+      ],
+      "highlights": [
+        "قياس الهيدروجين (H₂) في هواء الزفير بوحدة ppm",
+        "جهاز محمول بشاشة لمس تعمل بالقفازات، ويعمل بأربع بطاريات AA",
+        "إجراءات مدمجة لضبط الجودة ومعايرة شبه تلقائية",
+        "تخزين نتائج المرضى وبرنامج Windows مجاني للتصدير عبر USB",
+        "إمكانية الربط مع أنظمة GDT أو HL7 أو ASTM"
+      ],
+      "applications": [
+        "اختبار الهيدروجين في النَّفَس",
+        "امتصاص الكربوهيدرات",
+        "أمراض الجهاز الهضمي"
+      ]
+    }
+  },
+  {
+    "slug": "pyloplus-rut",
+    "brand": "gulf-coast",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 17,
+    "fit": "contain",
+    "website": "https://www.gulfcoastscientific.com/rut",
+    "en": {
+      "name": "PyloPLUS+ Ultra Rapid Urease Test",
+      "summary": "A dry rapid urease test (RUT) for detecting H. pylori in gastric biopsies at endoscopy — positive results in as little as one minute, with no incubation or added reagents.",
+      "body": [
+        "The PyloPLUS+ Ultra Rapid Urease Test detects H. pylori in gastric biopsy samples by identifying the urease activity of the bacteria.",
+        "The biopsy goes straight into the test well — no incubation or added reagents are needed — so gastroenterologists can get an answer during the same endoscopy session."
+      ],
+      "highlights": [
+        "Positive result in as little as one minute",
+        "Negative result read at one hour",
+        "Dry test: no incubation or added reagents",
+        "Stores at room temperature for over two years",
+        "Uses gastric biopsy samples taken at endoscopy"
+      ],
+      "applications": [
+        "H. pylori",
+        "Endoscopy",
+        "Gastric biopsy testing"
+      ]
+    },
+    "ar": {
+      "name": "اختبار اليورياز فائق السرعة PyloPLUS+",
+      "summary": "اختبار يورياز سريع وجاف (RUT) للكشف عن جرثومة المعدة في خزعات المعدة أثناء التنظير — نتائج إيجابية خلال دقيقة واحدة فقط، دون حضانة أو كواشف إضافية.",
+      "body": [
+        "يكشف اختبار اليورياز فائق السرعة PyloPLUS+ عن جرثومة المعدة في عينات خزعة المعدة من خلال التعرف على نشاط إنزيم اليورياز الذي تفرزه البكتيريا.",
+        "وتوضع الخزعة مباشرة في بئر الاختبار دون الحاجة إلى حضانة أو كواشف إضافية، فيحصل طبيب الجهاز الهضمي على النتيجة خلال جلسة التنظير نفسها."
+      ],
+      "highlights": [
+        "نتيجة إيجابية خلال دقيقة واحدة فقط",
+        "قراءة النتيجة السلبية بعد ساعة",
+        "اختبار جاف دون حضانة أو كواشف إضافية",
+        "يُحفظ في درجة حرارة الغرفة لأكثر من عامين",
+        "يستخدم خزعات المعدة المأخوذة أثناء التنظير"
+      ],
+      "applications": [
+        "جرثومة المعدة",
+        "التنظير",
+        "فحص خزعات المعدة"
+      ]
+    }
+  },
+  {
+    "slug": "era-biology",
+    "brand": "era-biology",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 18,
+    "fit": "cover",
+    "website": "https://www.era-bio.com/",
+    "en": {
+      "name": "FungiXpert™ Fungal Diagnostics",
+      "summary": "Assays and instruments for invasive fungal disease — (1-3)-β-D-glucan, galactomannan, Candida mannan and cryptococcal antigen — on CLIA, chromogenic, lateral-flow and PCR platforms.",
+      "body": [
+        "Era Biology, based in Tianjin, is a specialist in the diagnosis of invasive fungal disease (IFD) — a serious risk for immunocompromised and critically ill patients, where timely laboratory detection is central to effective management.",
+        "Its menu includes FungiXpert™ chemiluminescence assays on the closed FACIS-I analyser, chromogenic assays read on kinetic tube readers, and lateral-flow, ELISA and real-time PCR tests for pathogens such as Candida auris, Mucorales and Pneumocystis."
+      ],
+      "highlights": [
+        "FungiXpert™ CLIA: BDG, galactomannan, Candida mannan, cryptococcal antigen",
+        "FACIS-I analyser: 12 channels, about 60 minutes per run",
+        "IGL-800 kinetic tube reader: 128 specimens at once",
+        "Also real-time PCR, lateral flow and ELISA formats",
+        "Serum and BAL samples supported for key assays"
+      ],
+      "applications": [
+        "Invasive fungal disease",
+        "Aspergillosis",
+        "Candida infections",
+        "Critical care"
+      ]
+    },
+    "ar": {
+      "name": "FungiXpert™ لتشخيص الفطريات",
+      "summary": "اختبارات وأجهزة لتشخيص الأمراض الفطرية الغازية — بيتا-د-جلوكان وغالاكتومانان ومانان المبيضات ومستضد المستخفيات — على منصات التألق الكيميائي والكشف اللوني والتدفق الجانبي وPCR.",
+      "body": [
+        "تتخصص Era Biology، ومقرها تيانجين، في تشخيص الأمراض الفطرية الغازية (IFD)، وهي تشكّل خطرًا كبيرًا على المرضى ضعيفي المناعة والحالات الحرجة، ويُعد الكشف المخبري في الوقت المناسب أساسيًا لإدارتها بفعالية.",
+        "وتشمل قائمتها اختبارات FungiXpert™ بالتألق الكيميائي على جهاز FACIS-I المغلق، واختبارات لونية تُقرأ على أجهزة قراءة حركية للأنابيب، إضافة إلى اختبارات التدفق الجانبي وELISA وPCR في الوقت الحقيقي لمسببات أمراض مثل Candida auris وMucorales وPneumocystis."
+      ],
+      "highlights": [
+        "FungiXpert™ CLIA: بيتا-د-جلوكان وغالاكتومانان ومانان المبيضات ومستضد المستخفيات",
+        "جهاز FACIS-I: ‏12 قناة ونحو 60 دقيقة لكل دورة",
+        "قارئ الأنابيب الحركي IGL-800: ‏128 عينة في آن واحد",
+        "تتوفر أيضًا بصيغ PCR في الوقت الحقيقي والتدفق الجانبي وELISA",
+        "دعم عينات المصل وسائل غسيل القصبات والأسناخ (BAL) للاختبارات الرئيسية"
+      ],
+      "applications": [
+        "الأمراض الفطرية الغازية",
+        "داء الرشاشيات",
+        "عدوى المبيضات",
+        "العناية المركزة"
+      ]
+    }
+  },
+  {
+    "slug": "biogram",
+    "brand": "biogram",
+    "division": "ivd",
+    "discipline": "core-lab",
+    "order": 19,
+    "fit": "contain",
+    "website": "https://www.bio-gram.net/",
+    "en": {
+      "name": "Bio-Gram ColorJet NANO Staining",
+      "summary": "The ColorJet NANO automated smear stainer and alcohol-free, ready-to-use JetDye-AF stains for haematology, microbiology and histology smears.",
+      "body": [
+        "Founded in 2019, Bio-Gram Diagnostics develops in vitro diagnostic solutions for smear staining and sample preparation in haematology and microbiology.",
+        "The compact ColorJet NANO uses Flow-Stream-Staining Technology (FS²T) to stain up to six slides at once, while the JetDye-AF range provides alcohol-free, ready-to-use Gram, Wright, Giemsa and May-Grünwald stains — helping laboratories standardise staining quality."
+      ],
+      "highlights": [
+        "ColorJet NANO: up to 60 slides per hour",
+        "Stains six slides at once with Flow-Stream-Staining Technology",
+        "7-inch touchscreen operation",
+        "JetDye-AF: alcohol-free Gram, Wright, Giemsa and May-Grünwald stains",
+        "FixOstar Hema: non-hazardous fixation solution"
+      ],
+      "applications": [
+        "Haematology",
+        "Microbiology (Gram stain)",
+        "Smear staining",
+        "Microscopy"
+      ]
+    },
+    "ar": {
+      "name": "Bio-Gram ColorJet NANO للصبغ",
+      "summary": "جهاز ColorJet NANO الآلي لصبغ المسحات وأصباغ JetDye-AF الجاهزة والخالية من الكحول لمسحات أمراض الدم والأحياء الدقيقة والأنسجة.",
+      "body": [
+        "تأسست Bio-Gram Diagnostics عام 2019، وتطوّر حلول التشخيص المخبري لصبغ المسحات وتحضير العينات في مجالي أمراض الدم والأحياء الدقيقة.",
+        "ويستخدم جهاز ColorJet NANO الصغير تقنية الصبغ بالتدفق (FS²T) لصبغ حتى ست شرائح في وقت واحد، بينما توفر مجموعة JetDye-AF أصباغ غرام ورايت وجيمسا وماي-غرونفالد الجاهزة والخالية من الكحول — مما يساعد المختبرات على توحيد جودة الصبغ."
+      ],
+      "highlights": [
+        "ColorJet NANO: حتى 60 شريحة في الساعة",
+        "صبغ ست شرائح في وقت واحد بتقنية الصبغ بالتدفق",
+        "تشغيل عبر شاشة لمس مقاس 7 بوصات",
+        "JetDye-AF: أصباغ غرام ورايت وجيمسا وماي-غرونفالد خالية من الكحول",
+        "FixOstar Hema: محلول تثبيت غير خطِر"
+      ],
+      "applications": [
+        "أمراض الدم",
+        "الأحياء الدقيقة (صبغة غرام)",
+        "صبغ المسحات",
+        "الفحص المجهري"
+      ]
+    }
+  },
+  {
+    "slug": "hyperoil",
+    "brand": "rimos",
+    "division": "md",
+    "discipline": "wound-care",
+    "order": 20,
+    "fit": "contain",
+    "website": "https://www.rimoscare.com/en",
+    "en": {
+      "name": "Hyperoil®",
+      "summary": "Plant-based interactive wound dressings with Neem oil and Hypericum extract — in oil, spray, gel and medicated-gauze forms — classified by RI.MOS. as Class IIb medical devices.",
+      "body": [
+        "RI.MOS. of Mirandola, Italy, creates plant-based medical devices for skin health. Hyperoil® combines Neem oil and Hypericum flower extract in interactive, multifunctional dressings for the treatment of skin injuries.",
+        "The range supports regeneration in acute and chronic — including infected — lesions and helps control bacterial load through a barrier effect. Oil formats suit deep or acute lesions, while the gel supports the granulation phase."
+      ],
+      "highlights": [
+        "Class IIb medical devices, according to RI.MOS.",
+        "Neem oil and Hypericum flower extract formulation",
+        "Oil for deep or acute lesions; gel for the granulation phase",
+        "Formats: oil spray, single-dose vial, medicated gauzes and gel",
+        "Hyperoil® has been RI.MOS.'s reference brand for all markets since 2024"
+      ],
+      "applications": [
+        "Acute wounds",
+        "Chronic wounds",
+        "Skin lesions",
+        "Wound care"
+      ]
+    },
+    "ar": {
+      "name": "Hyperoil®",
+      "summary": "ضمادات تفاعلية نباتية الأصل بزيت النيم ومستخلص زهرة العرن (الهيوفاريقون) — بصيغ الزيت والبخاخ والجل والشاش الطبي المشبّع — مصنفة من RI.MOS. كأجهزة طبية من الفئة IIb.",
+      "body": [
+        "تبتكر RI.MOS. ومقرها ميراندولا في إيطاليا أجهزة طبية نباتية الأصل لصحة الجلد. ويجمع Hyperoil® بين زيت النيم ومستخلص زهرة العرن في ضمادات تفاعلية متعددة الوظائف لعلاج إصابات الجلد.",
+        "وتدعم المجموعة تجدد الأنسجة في الجروح الحادة والمزمنة — بما فيها المصابة بالعدوى — وتساعد على التحكم في الحمل البكتيري من خلال تأثير حاجز. وتناسب صيغ الزيت الجروح العميقة أو الحادة، بينما يدعم الجل مرحلة تكوّن النسيج الحبيبي."
+      ],
+      "highlights": [
+        "أجهزة طبية من الفئة IIb وفق RI.MOS.",
+        "تركيبة من زيت النيم ومستخلص زهرة العرن",
+        "الزيت للجروح العميقة أو الحادة والجل لمرحلة النسيج الحبيبي",
+        "الصيغ: بخاخ زيت وقارورة أحادية الجرعة وشاش طبي مشبّع وجل",
+        "علامة Hyperoil® هي العلامة المرجعية لدى RI.MOS. في جميع الأسواق منذ عام 2024"
+      ],
+      "applications": [
+        "الجروح الحادة",
+        "الجروح المزمنة",
+        "إصابات الجلد",
+        "العناية بالجروح"
+      ]
+    }
+  },
+  {
+    "slug": "blue-ray",
+    "brand": "blue-ray",
+    "division": "ruo",
+    "discipline": "research",
+    "order": 21,
+    "fit": "contain",
+    "website": "https://www.blue-raybio.com/",
+    "en": {
+      "name": "Blue-Ray Biotech Lab Instruments",
+      "summary": "Taiwan-made instruments for the nucleic-acid workflow — thermal cyclers, real-time PCR, automated extraction, spectrophotometers, liquid handling and live-cell imaging.",
+      "body": [
+        "Blue-Ray Biotech, based in New Taipei City, develops and manufactures high-precision laboratory equipment for researchers in molecular biology, genomics and cell biology — 100% made in Taiwan, under an ISO 13485-certified quality system.",
+        "The range covers the full nucleic-acid workflow: TurboX extraction, TurboCycler thermal cyclers, the TurboQ real-time PCR system, EzDrop spectrophotometers and EzCube fluorometers, plus liquid handling, centrifuges and the EzScope live-cell imaging system."
+      ],
+      "highlights": [
+        "TurboCycler 3: three independent blocks, 3 × 48 samples, gradient PCR",
+        "TurboQ real-time PCR: 96 wells, up to 4 targets per well",
+        "TurboX 48: automated spin-column extraction of 48 samples",
+        "EzDrop spectrophotometers: results in 3 seconds",
+        "100% made in Taiwan; ISO 13485 certified"
+      ],
+      "applications": [
+        "PCR",
+        "Nucleic-acid extraction",
+        "Nucleic-acid quantification",
+        "Cell imaging"
+      ]
+    },
+    "ar": {
+      "name": "أجهزة Blue-Ray Biotech المخبرية",
+      "summary": "أجهزة مصنوعة في تايوان لسير عمل الأحماض النووية — أجهزة التدوير الحراري وPCR في الوقت الحقيقي والاستخلاص المؤتمت ومقاييس الطيف الضوئي وأنظمة مناولة السوائل وتصوير الخلايا الحية.",
+      "body": [
+        "تطوّر Blue-Ray Biotech، ومقرها مدينة تايبيه الجديدة، أجهزة مخبرية عالية الدقة وتصنّعها للباحثين في البيولوجيا الجزيئية وعلم الجينوم وبيولوجيا الخلية — مصنوعة بالكامل في تايوان وفق نظام جودة حاصل على شهادة ISO 13485.",
+        "وتغطي المجموعة سير عمل الأحماض النووية بالكامل: أجهزة الاستخلاص TurboX، وأجهزة التدوير الحراري TurboCycler، ونظام TurboQ لتفاعل PCR في الوقت الحقيقي، ومقاييس الطيف EzDrop ومقاييس التألق EzCube، إضافة إلى أنظمة مناولة السوائل وأجهزة الطرد المركزي ونظام EzScope لتصوير الخلايا الحية."
+      ],
+      "highlights": [
+        "TurboCycler 3: ثلاث كتل مستقلة (3 × 48 عينة) مع PCR متدرج",
+        "TurboQ لتفاعل PCR في الوقت الحقيقي: ‏96 بئرًا وحتى 4 أهداف لكل بئر",
+        "TurboX 48: استخلاص مؤتمت بالأعمدة الدوارة لـ 48 عينة",
+        "مقاييس الطيف EzDrop: النتيجة خلال 3 ثوانٍ",
+        "مصنوعة بالكامل في تايوان وحاصلة على شهادة ISO 13485"
+      ],
+      "applications": [
+        "PCR",
+        "استخلاص الأحماض النووية",
+        "قياس تركيز الأحماض النووية",
+        "تصوير الخلايا"
+      ]
+    }
+  },
+  {
+    "slug": "diana",
+    "brand": "diana",
+    "division": "ruo",
+    "discipline": "research",
+    "order": 22,
+    "fit": "cover",
+    "website": "https://www.dianabiotech.com/",
+    "en": {
+      "name": "DIANA Molecular Reagents & Discovery",
+      "summary": "PCR and RT-PCR reagents, enzymes and antibodies for research, kinase-profiling services for drug discovery, and diagnostics built on the proprietary DIANA technology.",
+      "body": [
+        "DIANA Biotechnologies is a Czech biotechnology company founded in 2018 as a spin-off from the Institute of Organic Chemistry and Biochemistry (IOCB) in Prague, built around its proprietary DIANA (DNA-linked Inhibitor Antibody Assay) technology.",
+        "It works across four areas — molecular reagents, antibodies, diagnostics and drug discovery — supplying PCR and RT-PCR mixes, reverse transcriptases and RNase inhibitors, developing monoclonal antibodies, and offering kinase-inhibitor profiling. An ultrasensitive qPCR sepsis assay is in development."
+      ],
+      "highlights": [
+        "PCR and RT-PCR mixes, reverse transcriptases and RNase inhibitors",
+        "Monoclonal antibody development",
+        "Kinase-inhibitor profiling across 230+ kinases",
+        "Sepsis qPCR assay in development",
+        "R&D and manufacturing certified to ISO 13485"
+      ],
+      "applications": [
+        "Molecular reagents",
+        "Drug discovery",
+        "Antibodies",
+        "Research use only"
+      ]
+    },
+    "ar": {
+      "name": "DIANA للكواشف الجزيئية واكتشاف الأدوية",
+      "summary": "كواشف PCR وRT-PCR وإنزيمات وأجسام مضادة للبحث العلمي، وخدمات تحليل الكينازات لاكتشاف الأدوية، وحلول تشخيصية قائمة على تقنية DIANA الخاصة.",
+      "body": [
+        "DIANA Biotechnologies شركة تشيكية للتقنية الحيوية تأسست عام 2018 كشركة منبثقة عن معهد الكيمياء العضوية والكيمياء الحيوية (IOCB) في براغ، وتقوم على تقنيتها الخاصة DIANA لمقايسة الأجسام المضادة المثبطة المرتبطة بالحمض النووي.",
+        "وتعمل في أربعة مجالات — الكواشف الجزيئية والأجسام المضادة والتشخيص واكتشاف الأدوية — إذ توفر خلطات PCR وRT-PCR وإنزيمات النسخ العكسي ومثبطات RNase، وتطوّر أجسامًا مضادة وحيدة النسيلة، وتقدم خدمات تحليل مثبطات الكينازات. كما تعمل على تطوير اختبار qPCR فائق الحساسية لتعفن الدم."
+      ],
+      "highlights": [
+        "خلطات PCR وRT-PCR وإنزيمات النسخ العكسي ومثبطات RNase",
+        "تطوير الأجسام المضادة وحيدة النسيلة",
+        "تحليل مثبطات الكينازات لأكثر من 230 كينازًا",
+        "اختبار qPCR لتعفن الدم قيد التطوير",
+        "البحث والتطوير والتصنيع معتمدة وفق ISO 13485"
+      ],
+      "applications": [
+        "الكواشف الجزيئية",
+        "اكتشاف الأدوية",
+        "الأجسام المضادة",
+        "للاستخدام البحثي فقط"
+      ]
+    }
+  },
+  {
+    "slug": "jena-bioscience",
+    "brand": "jena-bioscience",
+    "division": "ruo",
+    "discipline": "research",
+    "order": 23,
+    "fit": "cover",
+    "website": "https://www.jenabioscience.com/",
+    "en": {
+      "name": "Jena Bioscience Reagents",
+      "summary": "Nucleotides, PCR and isothermal amplification reagents, click chemistry, RNA tools and the LEXSY protein expression system — plus OEM raw materials for diagnostic kit makers.",
+      "body": [
+        "Jena Bioscience is an owner-operated life-science company based in Jena, Germany, founded in 1998 by scientists from the Max Planck Institute of Molecular Physiology. It supplies customers in more than 100 countries.",
+        "Its catalogue includes nucleotides and analogues, PCR and isothermal amplification reagents, RNA tools, click-chemistry reagents, crystallography and cryo-EM products and the LEXSY protein expression system, along with custom OEM raw materials for (RT-)PCR diagnostic kit manufacturers."
+      ],
+      "highlights": [
+        "Nucleotides and nucleotide analogues",
+        "PCR and isothermal amplification reagents",
+        "Click chemistry and RNA tools",
+        "LEXSY recombinant protein expression system",
+        "Custom OEM raw materials for (RT-)PCR kits"
+      ],
+      "applications": [
+        "Molecular biology",
+        "Nucleotide chemistry",
+        "Protein expression",
+        "Research use only"
+      ]
+    },
+    "ar": {
+      "name": "كواشف Jena Bioscience",
+      "summary": "نيوكليوتيدات وكواشف PCR والتضخيم متساوي الحرارة وكيمياء النقر وأدوات RNA ونظام LEXSY للتعبير البروتيني — إضافة إلى مواد خام OEM لمصنّعي أطقم التشخيص.",
+      "body": [
+        "Jena Bioscience شركة في مجال علوم الحياة يديرها مالكوها ومقرها مدينة ينا بألمانيا، أسسها عام 1998 علماء من معهد ماكس بلانك لعلم وظائف الأعضاء الجزيئي، وتخدم عملاء في أكثر من 100 دولة.",
+        "ويشمل دليل منتجاتها النيوكليوتيدات ومشابهاتها، وكواشف PCR والتضخيم متساوي الحرارة، وأدوات RNA، وكواشف كيمياء النقر، ومنتجات علم البلورات والمجهر الإلكتروني بالتبريد، ونظام LEXSY للتعبير البروتيني، إلى جانب مواد خام OEM مخصصة لمصنّعي أطقم التشخيص بتقنيتي PCR وRT-PCR."
+      ],
+      "highlights": [
+        "النيوكليوتيدات ومشابهاتها",
+        "كواشف PCR والتضخيم متساوي الحرارة",
+        "كيمياء النقر وأدوات RNA",
+        "نظام LEXSY للتعبير البروتيني المؤتلف",
+        "مواد خام OEM مخصصة لأطقم PCR وRT-PCR"
+      ],
+      "applications": [
+        "البيولوجيا الجزيئية",
+        "كيمياء النيوكليوتيدات",
+        "التعبير البروتيني",
+        "للاستخدام البحثي فقط"
+      ]
+    }
+  }
+]

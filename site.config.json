@@ -1,0 +1,45 @@
+{
+  "company": {
+    "name": "Binary System Medical Co.",
+    "name_ar": "شركة باينري سيستم الطبية",
+    "short_name": "BSM",
+    "parent": "Saudi Mais Co.",
+    "parent_ar": "شركة ميس السعودية",
+    "founded": 2015,
+    "phone": "+966 11 474 9490",
+    "phone_tel": "+966114749490",
+    "email": "info@binarysys.net",
+    "careers_email": "careers@binarysys.net",
+    "street": "6713 Eastern Ring Road, Ar Rawabi",
+    "street_ar": "6713 الطريق الدائري الشرقي، حي الروابي",
+    "city": "Riyadh",
+    "city_ar": "الرياض",
+    "postal_code": "14215-2374",
+    "country": "SA",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=6713+Eastern+Ring+Road+Ar+Rawabi+Riyadh+14215",
+    "domain": "binarysys.net"
+  },
+  "stats": {
+    "years": "10+",
+    "offices": "3",
+    "brands": "30+"
+  },
+  "social": {
+    "linkedin": "",
+    "x": "",
+    "instagram": "",
+    "facebook": ""
+  },
+  "integrations": {
+    "ga4_id": ""
+  },
+  "theme": {
+    "primary_color": "#683F99",
+    "ink": "#150E24",
+    "signal": "#46E0B6",
+    "font_display": "Archivo",
+    "font_body": "Archivo",
+    "font_mono": "IBM Plex Mono",
+    "font_arabic": "IBM Plex Sans Arabic"
+  }
+}

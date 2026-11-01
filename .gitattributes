@@ -1,0 +1,2 @@
+# The build writes LF; keep it that way in every checkout so deployed bytes match the CSP hashes.
+* text=auto eol=lf

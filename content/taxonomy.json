@@ -1,0 +1,165 @@
+{
+  "divisions": [
+    {
+      "id": "ivd",
+      "code": "IVD",
+      "slug": "in-vitro-diagnostics",
+      "image": "c-luminary",
+      "disciplines": [
+        "core-lab",
+        "molecular",
+        "histology-cytology",
+        "poct"
+      ],
+      "en": {
+        "name": "In Vitro Diagnostics",
+        "short": "IVD",
+        "tagline": "Core lab, molecular, pathology and point-of-care testing.",
+        "intro": "From automated immunoassay and real-time PCR platforms to breath tests, staining systems and digital pathology — diagnostic technology that helps laboratories deliver accurate results with confidence.",
+        "meta": "In vitro diagnostics (IVD) in Saudi Arabia: core lab, molecular PCR, histology and point-of-care testing platforms from leading global manufacturers, supplied and supported by BSM."
+      },
+      "ar": {
+        "name": "التشخيص المخبري",
+        "short": "IVD",
+        "tagline": "المختبر المركزي والتشخيص الجزيئي وعلم الأمراض وفحوصات نقطة الرعاية.",
+        "intro": "من منصات المقايسات المناعية المؤتمتة وPCR في الوقت الحقيقي إلى اختبارات التنفس وأنظمة الصبغ وعلم الأمراض الرقمي — تقنيات تشخيصية تساعد المختبرات على تقديم نتائج دقيقة وموثوقة.",
+        "meta": "حلول التشخيص المخبري (IVD) في المملكة العربية السعودية: منصات المختبر المركزي وPCR الجزيئي وعلم الأنسجة وفحوصات نقطة الرعاية من كبرى الشركات العالمية، بتوريد ودعم BSM."
+      }
+    },
+    {
+      "id": "md",
+      "code": "MD",
+      "slug": "medical-devices",
+      "image": "plasma-care",
+      "disciplines": [
+        "respiratory",
+        "wound-care"
+      ],
+      "en": {
+        "name": "Medical Devices",
+        "short": "MD",
+        "tagline": "Respiratory diagnostics and advanced wound care.",
+        "intro": "Clinically focused devices that support everyday care — from precise FeNO measurement for asthma management to cold-plasma therapy and natural dressings for wound healing.",
+        "meta": "Medical devices in Saudi Arabia: FeNO respiratory measurement, cold atmospheric plasma wound therapy and advanced wound dressings, supplied and supported by BSM."
+      },
+      "ar": {
+        "name": "الأجهزة الطبية",
+        "short": "MD",
+        "tagline": "تشخيص أمراض الجهاز التنفسي والعناية المتقدمة بالجروح.",
+        "intro": "أجهزة سريرية تدعم الرعاية اليومية — من القياس الدقيق لأكسيد النيتريك في هواء الزفير لإدارة الربو، إلى العلاج بالبلازما الباردة والضمادات الطبيعية لالتئام الجروح.",
+        "meta": "الأجهزة الطبية في المملكة العربية السعودية: قياس أكسيد النيتريك في هواء الزفير (FeNO)، والعلاج بالبلازما الجوية الباردة للجروح، وضمادات الجروح المتقدمة، بتوريد ودعم BSM."
+      }
+    },
+    {
+      "id": "ruo",
+      "code": "RUO",
+      "slug": "research-use-only",
+      "image": "diana",
+      "disciplines": [
+        "research"
+      ],
+      "en": {
+        "name": "Research Use Only",
+        "short": "RUO",
+        "tagline": "Instruments, purification kits and reagents for discovery.",
+        "intro": "Tools for universities and research centres working in molecular biology, genomics, cell biology and drug discovery — from laboratory instruments to nucleic-acid purification and specialised reagents.",
+        "meta": "Research use only (RUO) solutions in Saudi Arabia: laboratory instruments, nucleic acid purification kits and life-science reagents for universities and research centres."
+      },
+      "ar": {
+        "name": "الاستخدام البحثي",
+        "short": "RUO",
+        "tagline": "أجهزة وأطقم تنقية وكواشف لأغراض البحث العلمي.",
+        "intro": "أدوات للجامعات ومراكز الأبحاث العاملة في البيولوجيا الجزيئية وعلم الجينوم وبيولوجيا الخلية واكتشاف الأدوية — من الأجهزة المخبرية إلى أطقم تنقية الأحماض النووية والكواشف المتخصصة.",
+        "meta": "حلول للاستخدام البحثي فقط (RUO) في المملكة العربية السعودية: أجهزة مخبرية وأطقم تنقية الأحماض النووية وكواشف علوم الحياة للجامعات ومراكز الأبحاث."
+      }
+    }
+  ],
+  "disciplines": [
+    {
+      "id": "core-lab",
+      "division": "ivd",
+      "en": {
+        "name": "Core Lab",
+        "intro": "Immunoassay, autoimmunity, breath testing, fungal diagnostics and staining solutions for busy clinical laboratories."
+      },
+      "ar": {
+        "name": "المختبر المركزي",
+        "intro": "حلول المقايسات المناعية والمناعة الذاتية واختبارات التنفس وتشخيص الفطريات والصبغ للمختبرات السريرية ذات ضغط العمل الكبير."
+      }
+    },
+    {
+      "id": "molecular",
+      "division": "ivd",
+      "en": {
+        "name": "Molecular",
+        "intro": "Real-time PCR systems, nucleic-acid extraction and assay kits for infectious and genetic disease testing."
+      },
+      "ar": {
+        "name": "التشخيص الجزيئي",
+        "intro": "أنظمة PCR في الوقت الحقيقي واستخلاص الأحماض النووية وأطقم الاختبارات لتشخيص الأمراض المعدية والوراثية."
+      }
+    },
+    {
+      "id": "histology-cytology",
+      "division": "ivd",
+      "en": {
+        "name": "Histology & Cytology",
+        "intro": "Digital pathology that brings speed, precision and collaboration to tissue diagnostics, research and education."
+      },
+      "ar": {
+        "name": "علم الأنسجة والخلايا",
+        "intro": "علم الأمراض الرقمي الذي يضيف السرعة والدقة والتعاون إلى تشخيص الأنسجة والبحث العلمي والتعليم."
+      }
+    },
+    {
+      "id": "poct",
+      "division": "ivd",
+      "en": {
+        "name": "Point-of-Care Testing",
+        "short": "POCT",
+        "intro": "Fast, automated molecular testing that brings laboratory-quality results closer to the patient."
+      },
+      "ar": {
+        "name": "فحوصات نقطة الرعاية",
+        "short": "POCT",
+        "intro": "فحوصات جزيئية سريعة ومؤتمتة تقدّم نتائج بجودة المختبر بالقرب من المريض."
+      }
+    },
+    {
+      "id": "respiratory",
+      "division": "md",
+      "en": {
+        "name": "Respiratory",
+        "intro": "Simple, precise FeNO measurement to support the diagnosis and therapy of asthma."
+      },
+      "ar": {
+        "name": "الجهاز التنفسي",
+        "intro": "قياس بسيط ودقيق لأكسيد النيتريك في هواء الزفير (FeNO) لدعم تشخيص الربو وعلاجه."
+      }
+    },
+    {
+      "id": "wound-care",
+      "division": "md",
+      "en": {
+        "name": "Wound Care",
+        "intro": "Cold atmospheric plasma therapy and natural, multifunctional dressings for the treatment of wounds and skin injuries."
+      },
+      "ar": {
+        "name": "العناية بالجروح",
+        "intro": "العلاج بالبلازما الجوية الباردة وضمادات طبيعية متعددة الوظائف لعلاج الجروح وإصابات الجلد."
+      }
+    },
+    {
+      "id": "research",
+      "division": "ruo",
+      "en": {
+        "name": "Life Science Research",
+        "intro": "High-precision instruments, purification kits and reagents for molecular biology, genomics and drug discovery."
+      },
+      "ar": {
+        "name": "أبحاث علوم الحياة",
+        "intro": "أجهزة عالية الدقة وأطقم تنقية وكواشف للبيولوجيا الجزيئية وعلم الجينوم واكتشاف الأدوية."
+      }
+    }
+  ]
+}

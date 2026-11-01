@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.wrangler/
+*.log
+.dev.vars
+.claude/qa.html
+.claude/logo-candidates/
+.claude/logos.html
+.claude/language-transition.jpg

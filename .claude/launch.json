@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "binary-system",
+      "runtimeExecutable": "wrangler",
+      "runtimeArgs": ["pages", "dev", ".", "--port", "8788", "--compatibility-date", "2025-01-01"],
+      "port": 8788
+    },
+    {
+      "name": "binary-system-qa",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8790", "--bind", "127.0.0.1"],
+      "port": 8790
+    }
+  ]
+}
