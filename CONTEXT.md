@@ -3,7 +3,7 @@
 **Domain:** binarysys.net
 **Phone:** +966 11 474 9490 · **Email:** info@binarysys.net · careers@binarysys.net
 **Address:** 6713 Eastern Ring Road, Ar Rawabi, Riyadh 14215-2374, Saudi Arabia
-**Status:** Redesign built (Nov 2026) — pending client review and Cloudflare Pages deploy
+**Status:** Redesign built and committed (Nov 2026) — pending client review and Cloudflare Pages deploy
 **Agency:** Glint Sites
 
 Static, bilingual (EN + AR/RTL) rebuild of the old WordPress/Elementor site. All page HTML is
@@ -24,6 +24,17 @@ See `README.md` for structure and how to edit.
 
 Set **one** destination. Without one, forms show a "please call or email us" error instead of
 dropping the lead. Env-var changes apply to new deployments only — redeploy after setting them.
+
+**Client preview (before the Git-connected production project exists):**
+- Run `npm run deploy:preview`. It deploys a fresh clone of HEAD to project `binary-system`, branch `preview`, so `.dev.vars` and other local files never upload.
+- That is a non-production URL; Cloudflare adds `X-Robots-Tag: noindex` to preview deployments.
+- The first time, create the project: `npx wrangler pages project create binary-system --production-branch main`.
+- If the login has several accounts, set `CLOUDFLARE_ACCOUNT_ID`.
+- **Not deployed yet.** The current wrangler login reaches only the Two Dot Media account, so choose the account first (BSM's own, or a Glint Sites one).
+- Without `ALTCHA_HMAC_KEY` and a lead destination on the preview, the forms show the "please call or email us" fallback.
+
+Repo internals (`CONTEXT.md`, `content/`, `scripts/`, `tests/`, `functions/`, `.claude/`…) are 301'd
+to `/` in `_redirects`; a test fails if a new root file or folder isn't public or hidden.
 
 Forms: `/contact` (topic select, `?topic=partnership` pre-selects) and `/quote` (includes the
 visitor's quote list). Both POST to `/api/contact` with an ALTCHA proof-of-work token, honeypot,
