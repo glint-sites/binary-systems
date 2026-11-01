@@ -1,3 +1,6 @@
+# Exact-path rules first, wildcard rules last: Cloudflare matches exact paths fastest, and a
+# rule below any wildcard line counts against the much smaller dynamic-rule limit.
+
 # Old WordPress URLs (binarysys.net before the 2026 redesign) -> new clean URLs.
 /about-us/                                   /about                                 301
 /about-us                                    /about                                 301
@@ -18,12 +21,9 @@
 /product-category/point-of-care-testing-poct/ /solutions/in-vitro-diagnostics#poct  301
 /product-category/respiratory/               /solutions/medical-devices#respiratory 301
 /product-category/wound-care/                /solutions/medical-devices#wound-care  301
-/product-category/*                          /products/                             301
 /gene-detection-revolutionizing-modern-healthcare/ /insights/gene-detection-revolutionizing-modern-healthcare 301
 /urea-breath-test-ubt-the-gold-standard-for-h-pylori-detection/ /insights/urea-breath-test-ubt-the-gold-standard-for-h-pylori-detection 301
 /why-regular-sti-testing-is-essential-for-your-health/ /insights/why-regular-sti-testing-is-essential-for-your-health 301
-/wp-content/*                                /                                      301
-/wp-admin/*                                  /                                      301
 /wp-login.php                                /                                      301
 /xmlrpc.php                                  /                                      301
 /solutions                                   /products/                             301
@@ -39,7 +39,6 @@
 /quotation-request                           /quote                                 301
 /careers                                     /about#careers                         301
 /en                                          /                                      301
-/en/*                                        /:splat                                301
 
 # Repo internals are not site content: keep them off the public site.
 /CONTEXT.md                                  /                                      301
@@ -48,6 +47,15 @@
 /site.config.json                            /                                      301
 /.gitignore                                  /                                      301
 /.gitattributes                              /                                      301
+/.assetsignore                               /                                      301
+/worker.js                                   /                                      301
+/wrangler.jsonc                              /                                      301
+
+# Wildcard rules
+/product-category/*                          /products/                             301
+/wp-content/*                                /                                      301
+/wp-admin/*                                  /                                      301
+/en/*                                        /:splat                                301
 /content/*                                   /                                      301
 /scripts/*                                   /                                      301
 /tests/*                                     /                                      301

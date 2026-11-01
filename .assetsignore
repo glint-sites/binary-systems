@@ -1,0 +1,13 @@
+# Not site content: never uploaded as a Worker's static assets (Pages hides the same paths in _redirects).
+.*
+worker.js
+wrangler.jsonc
+CONTEXT.md
+README.md
+package.json
+site.config.json
+content/
+scripts/
+tests/
+functions/
+node_modules/

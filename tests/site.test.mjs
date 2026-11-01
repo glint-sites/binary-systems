@@ -120,13 +120,17 @@ test("CSP allows exactly the inline scripts the pages ship (no 'unsafe-inline' f
   }
 });
 
-test("repo internals at the root are redirected off the public site", () => {
+test("repo internals at the root are kept off the public site (Pages and Workers)", () => {
   const rules = read("_redirects").split("\n").map((l) => l.split(/\s+/)[0]);
+  const ignored = read(".assetsignore").split("\n").filter((l) => l && !l.startsWith("#"));
   const PUBLIC = /^(ar|css|fonts|images|insights|js|products|solutions|_headers|_redirects|.+\.html|favicon\.(ico|svg)|robots\.txt|sitemap\.xml|site\.webmanifest)$/;
   const LOCAL = /^(\.git|\.wrangler|\.dev\.vars|node_modules)$/; // gitignored, so never deployed
   for (const name of fs.readdirSync(ROOT)) {
+    const dir = fs.statSync(path.join(ROOT, name)).isDirectory();
+    assert.ok(ignored.includes(dir ? `${name}/` : name) || (name.startsWith(".") && ignored.includes(".*")) || PUBLIC.test(name),
+      `${name} is neither public nor in .assetsignore`);
     if (PUBLIC.test(name) || LOCAL.test(name)) continue;
-    const rule = fs.statSync(path.join(ROOT, name)).isDirectory() ? `/${name}/*` : `/${name}`;
+    const rule = dir ? `/${name}/*` : `/${name}`;
     assert.ok(rules.includes(rule), `no _redirects rule hiding ${rule}`);
   }
 });

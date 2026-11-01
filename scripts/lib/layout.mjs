@@ -5,11 +5,13 @@ import { fileURLToPath } from "node:url";
 import { esc, localPath, ORIGIN, jsonLd } from "./util.mjs";
 import { icon } from "./icons.mjs";
 
-// /css and /js are served as immutable, so the cache-busting version is a hash of their content.
+// /css and /js are served as immutable, so the cache-busting version is a hash of their content
+// (LF-normalised, so a Windows checkout and the Linux build server produce identical pages).
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const lf = (f) => fs.readFileSync(path.join(ROOT, f), "utf8").replace(/\r\n/g, "\n");
 export const ASSET_V = crypto.createHash("sha1")
-  .update(fs.readFileSync(path.join(ROOT, "css/site.css")))
-  .update(fs.readFileSync(path.join(ROOT, "js/site.js")))
+  .update(lf("css/site.css"))
+  .update(lf("js/site.js"))
   .digest("hex").slice(0, 10);
 
 function head(c, page) {

@@ -1,0 +1,15 @@
+// Deploys the repo as a Cloudflare Worker with static assets (Workers Builds runs `npx wrangler deploy`).
+// Cloudflare Pages ignores this file (it has no pages_build_output_dir) and uses functions/ instead.
+// The Worker name must match the one in the Cloudflare dashboard.
+{
+  "name": "binary-system",
+  "main": "worker.js",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  }
+}
