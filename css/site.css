@@ -345,13 +345,28 @@ html:active-view-transition-type(lang)::view-transition-new(root) { animation-na
 body.no-scroll { overflow: hidden; }
 
 /* ---------- Hero (home) ---------- */
-.hero { position: relative; background: var(--ink); color: var(--on-dark); padding-top: calc(var(--header-h) + clamp(40px, 6vw, 88px)); overflow: hidden; isolation: isolate; }
-.hero__grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr); gap: clamp(40px, 5vw, 80px); align-items: center; }
+.hero { position: relative; background: var(--ink); color: var(--on-dark); padding-top: calc(var(--header-h) + clamp(32px, 3vw, 48px)); overflow: hidden; isolation: isolate; }
+.hero__grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr); gap: clamp(40px, 5vw, 80px); align-items: center; }
 .hero h1 { margin-bottom: 26px; max-width: 14ch; }
 :lang(ar) .hero h1 { max-width: 16ch; }
 .hero .lede { color: var(--on-dark-2); margin-bottom: 36px; }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 @media (max-width: 1000px) { .hero__grid { grid-template-columns: 1fr; } }
+
+/* The standard curve behind the hero (standardCurve() in components.mjs): full bleed, from the top of
+   the grid down to the facts rule, which carries its log ticks. Mirrored in Arabic so it still rises
+   towards the plate; left out when the hero stacks, where it would run through the copy. */
+.hero__curve { position: absolute; z-index: -1; top: 0; left: calc(50% - 50vw); width: 100vw; max-width: none; height: calc(100% + clamp(48px, 6vw, 80px)); pointer-events: none; }
+[dir="rtl"] .hero__curve, [dir="rtl"] .hero .facts::before { transform: scaleX(-1); }
+.hero__curve path { fill: none; vector-effect: non-scaling-stroke; }
+.hero__curve-fit { stroke: var(--violet-400); stroke-opacity: 0.45; stroke-width: 1.25; }
+.hero__curve-err { stroke: var(--violet-300); stroke-opacity: 0.35; }
+.hero__curve-pt { stroke: var(--violet-300); stroke-opacity: 0.55; stroke-width: 10; stroke-linecap: round; }
+.hero__curve-hole { stroke: var(--ink); stroke-width: 7.5; stroke-linecap: round; }
+.hero .facts { position: relative; }
+.hero .facts::before { content: ""; position: absolute; inset-inline: 0; bottom: 100%; height: 12px; pointer-events: none; background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27360%27 height=%2712%27%3E%3Cpath d=%27M0.5 12V2M108.9 12V8M172.3 12V8M217.2 12V8M252.1 12V6M280.6 12V8M304.7 12V8M325.6 12V8M344.0 12V8%27 stroke=%27%23fff%27 stroke-opacity=%27.24%27/%3E%3C/svg%3E") repeat-x 0 0 / 360px 12px; }
+@media (max-width: 1000px) { .hero__curve { display: none; } }
+@media (forced-colors: active) { .hero__curve, .hero .facts::before { display: none; } }
 
 /* Key facts along the bottom edge of a dark hero (home and About). */
 .facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: clamp(48px, 6vw, 80px) 0 0; border-top: 1px solid var(--ink-line); }
@@ -856,7 +871,7 @@ a.contact-card:hover { border-color: var(--violet-200); box-shadow: var(--shadow
 .legal ul { padding-inline-start: 1.2em; list-style: disc; display: grid; gap: 6px; }
 
 @media print {
-  .site-header, .topbar, .site-footer, .drawer, .toast, .cta-band, .add-quote { display: none !important; }
+  .site-header, .topbar, .site-footer, .drawer, .toast, .cta-band, .add-quote, .hero__curve, .hero .facts::before { display: none !important; }
   .page-hero, .hero { background: none; color: #000; padding: 20px 0; }
 }
 

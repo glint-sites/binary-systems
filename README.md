@@ -84,6 +84,11 @@ index both. Moving between pages and languages is designed to feel instant and c
   section headings are plain statements without eyebrows; small radii (6–14px).
 - **The microplate** (home hero): a 96-well ELISA plate whose 12 columns are 8-bit ASCII
   bytes (rows A–H) spelling `BINARYSYSTEM`. Monospace type belongs to the plate and nowhere else.
+- **The standard curve** (behind the home hero): what a lab does with a plate read, an ELISA
+  calibration curve with calibrators and error bars, faint enough to read as texture, with log
+  ticks on the facts rule as its axis. It stretches over the hero grid so it clears the copy at
+  every desktop width (`standardCurve()` in `components.mjs`), mirrors in Arabic and is left out
+  when the hero stacks on smaller screens.
 - **The B-mark composition**: photos clipped to the two lobes of the logo's "B"
   (`bmark()` in `components.mjs`).
 - Fonts are self-hosted (OFL): Archivo, IBM Plex Mono, IBM Plex Sans Arabic.

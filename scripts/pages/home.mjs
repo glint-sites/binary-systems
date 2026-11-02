@@ -1,5 +1,5 @@
 import { icon } from "../lib/icons.mjs";
-import { plate, facts, sectionHead, bmark, productCard, processSteps, logoWall, postCard, ctaBand, divisionCards } from "../lib/components.mjs";
+import { plate, standardCurve, facts, sectionHead, bmark, productCard, processSteps, logoWall, postCard, ctaBand, divisionCards } from "../lib/components.mjs";
 
 export function home(c) {
   const { products, insights, site } = c.data;
@@ -19,6 +19,7 @@ export function home(c) {
         </div>
       </div>
       ${plate(c)}
+      ${standardCurve()}
     </div>
     ${facts(c)}
   </div>

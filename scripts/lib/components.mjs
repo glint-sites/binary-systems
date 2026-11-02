@@ -171,6 +171,28 @@ export function plate(c) {
 </div>`;
 }
 
+/* ---------- Standard curve (home hero background) ----------
+   What a lab does with a plate read: OD against log concentration, a four-parameter logistic fit
+   through calibrators with error bars. Drawn faintly behind the hero, stretched over the grid
+   (preserveAspectRatio="none"; strokes stay 1px and the points are round line caps), so it keeps
+   its place against the copy at every desktop width: flat under the buttons, rising in the gap,
+   levelling off past the plate. The facts rule below carries the matching log ticks (CSS). */
+export function standardCurve() {
+  const low = 930, high = 40, mid = 570, decade = 270, hill = 2;
+  const od = (x) => low + (high - low) / (1 + 10 ** (-hill * (x - mid) / decade));
+  const fit = [];
+  for (let x = 0; x <= 1000; x += 5) fit.push(`${x ? "L" : "M"}${x} ${od(x).toFixed(1)}`);
+  // Calibrators half a decade apart where the copy leaves room, plus one past the plate,
+  // each scattered a little off the fit: [x, offset, error].
+  const cal = [[30, 4, 10], [165, -6, 14], [300, 5, 11], [435, -4, 16], [975, 6, 12]];
+  const at = cal.map(([x, d, e]) => [x, +(od(x) + d).toFixed(1), e]);
+  const bars = at.map(([x, y, e]) => `M${x} ${y - e}V${y + e}M${x - 4} ${y - e}H${x + 4}M${x - 4} ${y + e}H${x + 4}`).join("");
+  const dots = at.map(([x, y]) => `M${x} ${y}h0`).join("");
+  return `<svg class="hero__curve" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path class="hero__curve-fit" d="${fit.join("")}"/><path class="hero__curve-err" d="${bars}"/><path class="hero__curve-pt" d="${dots}"/><path class="hero__curve-hole" d="${dots}"/>
+  </svg>`;
+}
+
 /* ---------- B-mark photo composition ----------
    The two lobes of the BSM "B" (logo paths), normalised to objectBoundingBox clip paths. */
 const LOBE_BOTTOM = "M33.6883 41.2939L0.0594788 41.0793L14.8933 19.1872L34.1223 19.2048C40.2461 19.2119 44.9633 24.3543 44.9213 30.2881C44.8793 36.4048 39.9907 41.3431 33.6883 41.2939Z";
