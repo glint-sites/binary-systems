@@ -2,7 +2,8 @@
 // Usage: npm run qa            (BASE=http://localhost:8788, CHROME_PATH=… to override)
 // Checks: horizontal overflow on every sitemap page at 320 and 768 px (both directions, so RTL too),
 // an accessibility scan of key pages (contrast, names, labels, ids, headings, landmarks),
-// and the language switch (position, form draft and filters carried over; no CSP violations).
+// the language switch (position, form draft and filters carried over; no CSP violations),
+// and the desktop Solutions mega menu layout.
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -66,6 +67,14 @@ const [about, contact] = lang.map((r) => r.result);
 const langOk = about[2].path === "/ar/about" && Math.abs(about[2].top - about[0]) < 40 && !about[2].csp.length && contact[2].msg === "draft" && !contact[2].csp.length;
 console.log(`language switch: ${langOk ? "ok" : "FAILED " + JSON.stringify({ about, contact })}`);
 if (!langOk) failures++;
+
+// 4. Solutions mega menu (desktop): a click opens it as one row of columns, all inside the panel
+const megaCheck = `(()=>{const m=document.querySelector("[data-mega]"),p=m.getBoundingClientRect(),items=[...m.firstElementChild.children].map(c=>c.getBoundingClientRect());return {open:m.classList.contains("is-open")&&getComputedStyle(m).visibility==="visible",rows:new Set(items.map(c=>Math.round(c.top))).size,spill:items.filter(c=>c.bottom>p.bottom+1).length,covered:items.filter(c=>!m.contains(document.elementFromPoint(c.left+c.width/2,c.top+Math.min(c.height/2,40)))).length}})()`;
+const menus = run(["/", "/ar/", "/about", "/ar/about"].map((u) => ({ url: BASE + u, width: 1440, height: 900, wait: 800, steps: [{ click: "[data-mega-toggle]", wait: 500 }, { eval: megaCheck }] })));
+const menuBad = menus.filter((r) => { const x = r.result?.[1] || {}; return !x.open || x.rows !== 1 || x.spill || x.covered; });
+menuBad.forEach((r) => console.log("MEGA", r.url, JSON.stringify(r.result?.[1])));
+console.log(`solutions menu: ${menus.length} pages, ${menuBad.length} problems`);
+failures += menuBad.length;
 
 console.log(failures ? `\n${failures} problem(s)` : "\nAll browser checks passed.");
 process.exit(failures ? 1 : 0);

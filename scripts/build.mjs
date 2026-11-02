@@ -78,9 +78,11 @@ ${urls.join("\n")}
 
 // ---- css/site.min.css: comments and layout whitespace stripped (quoted strings untouched) ----
 const cssSrc = fs.readFileSync(path.join(ROOT, "css/site.css"), "utf8");
+const CSS_STR = String.raw`"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'`;
 const cssMin = cssSrc
-  .split(/("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')/)
-  .map((part, i) => (i % 2 ? part : part.replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").replace(/\s*([{};,])\s*/g, "$1").replace(/;}/g, "}")))
+  .replace(new RegExp(String.raw`(${CSS_STR})|\/\*[\s\S]*?\*\/`, "g"), (m, str) => str || "") // comments first, so an apostrophe in one isn't read as a string
+  .split(new RegExp(`(${CSS_STR})`))
+  .map((part, i) => (i % 2 ? part : part.replace(/\s+/g, " ").replace(/\s*([{};,])\s*/g, "$1").replace(/;}/g, "}")))
   .join("")
   .trim();
 fs.writeFileSync(path.join(ROOT, "css/site.min.css"), cssMin + "\n");

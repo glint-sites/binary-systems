@@ -193,7 +193,7 @@ a.chip:hover { background: var(--violet-100); border-color: var(--violet-200); }
 @media (max-width: 640px) { .topbar { display: none; } }
 
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.92); backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid var(--line); transition: background .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease); }
-.site-header .container { display: flex; align-items: center; gap: 28px; height: var(--header-h); }
+.site-header > .container { display: flex; align-items: center; gap: 28px; height: var(--header-h); } /* the bar only, not the mega menu's container */
 .brand { display: inline-flex; align-items: center; flex: none; text-decoration: none; }
 .brand img { height: 44px; width: auto; }
 .brand .logo-light { display: none; }
