@@ -120,6 +120,14 @@ test("CSP allows exactly the inline scripts the pages ship (no 'unsafe-inline' f
   }
 });
 
+test("preview hosts (workers.dev, pages.dev) are noindex; binarysys.net is not", () => {
+  const blocks = read("_headers").split(/\n(?=\S)/).filter((b) => !b.startsWith("#"));
+  const noindex = blocks.filter((b) => /X-Robots-Tag:\s*noindex/i.test(b)).map((b) => b.split("\n")[0].trim());
+  assert.ok(noindex.includes("https://:worker.:subdomain.workers.dev/*"));
+  assert.ok(noindex.includes("https://:project.pages.dev/*"));
+  assert.ok(noindex.every((rule) => /^https:\/\/.+\.(workers|pages)\.dev\/\*$/.test(rule)), `noindex reaches production: ${noindex}`);
+});
+
 test("repo internals at the root are kept off the public site (Pages and Workers)", () => {
   const rules = read("_redirects").split("\n").map((l) => l.split(/\s+/)[0]);
   const ignored = read(".assetsignore").split("\n").filter((l) => l && !l.startsWith("#"));

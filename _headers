@@ -18,3 +18,13 @@
   Access-Control-Allow-Origin: *
 /images/*
   Cache-Control: public, max-age=2592000
+
+# Preview addresses stay out of search results; only binarysys.net is indexed. Static pages get
+# these from the assets layer in both Worker and Pages mode. Add a block like these for any custom
+# preview domain (e.g. https://bsm.glintsites.com/*).
+https://:worker.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:branch.:project.pages.dev/*
+  X-Robots-Tag: noindex
