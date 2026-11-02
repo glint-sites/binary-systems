@@ -1,7 +1,7 @@
 /* Binary System Medical — site behaviour.
  * Progressive enhancement only: every page works without this file.
  * Header state, mega menu + drawer, scroll reveals, the microplate "read",
- * stat counters, product rail, quote list (localStorage), catalogue filters, forms. */
+ * product rail, quote list (localStorage), catalogue filters, forms. */
 (function () {
   "use strict";
   var doc = document.documentElement;
@@ -145,37 +145,28 @@
   else setTimeout(languageHint, 1500);
 
   /* ---------- Reveal on scroll ---------- */
-  var revealEls = $$(".reveal, .reveal-stagger");
-  // Animate only for a visible tab; background tabs, crawlers and preview renderers get content as-is.
-  // Arriving from the language switch, the reader has just seen the page in the other language:
-  // show it settled (no re-run of the plate read, counters or reveals).
+  // Animate only for a visible tab; background tabs, crawlers, preview renderers and prerendered
+  // pages get content as-is. Arriving from the language switch, the reader has just seen the page in
+  // the other language: show it settled (no reveals, no plate read).
   var animate = !reduce && document.visibilityState === "visible" && !doc.classList.contains("lang-arrival");
   if ("IntersectionObserver" in window && animate) {
     var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    revealEls.forEach(function (el) { io.observe(el); });
-  } else revealEls.forEach(function (el) { el.classList.add("is-in"); });
-
-  /* ---------- Stat counters (final values are already in the HTML) ---------- */
-  var counters = $$("[data-count]");
-  if (counters.length && "IntersectionObserver" in window && animate) {
-    var cio = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
-        var el = en.target, end = parseInt(el.getAttribute("data-count"), 10), t0 = null;
-        cio.unobserve(el);
-        function step(ts) {
-          if (!t0) t0 = ts;
-          var p = Math.min(1, (ts - t0) / 1400), eased = 1 - Math.pow(1 - p, 3);
-          el.textContent = String(Math.round(end * eased));
-          if (p < 1) requestAnimationFrame(step);
-        }
-        el.textContent = "0";
-        requestAnimationFrame(step);
+        var el = en.target;
+        io.unobserve(el);
+        el.classList.add("is-revealing");
+        el.classList.remove("is-pending");
+        setTimeout(function () { el.classList.remove("is-revealing"); }, 1100);
       });
-    }, { threshold: 0.6 });
-    counters.forEach(function (el) { cio.observe(el); });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    // Hide only what starts below the fold; anything already on screen stays put.
+    var fold = window.innerHeight;
+    $$(".reveal, .reveal-stagger").forEach(function (el) {
+      if (el.getBoundingClientRect().top < fold) return;
+      el.classList.add("is-pending");
+      io.observe(el);
+    });
   }
 
   /* ---------- Microplate: read the plate column by column ---------- */
@@ -215,8 +206,18 @@
         setTimeout(next, 170);
       })();
     };
-    if ("IntersectionObserver" in window) {
-      var pio = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { pio.disconnect(); setTimeout(read, 500); } }, { threshold: 0.4 });
+    // The read plays once per visit; coming back to the home page shows the plate already read.
+    var READ_KEY = "bsm-plate-read", seen = null;
+    try { seen = sessionStorage.getItem(READ_KEY); } catch (_) {}
+    if ("IntersectionObserver" in window && !seen) {
+      var pio = new IntersectionObserver(function (en) {
+        if (!en[0].isIntersecting) return;
+        pio.disconnect();
+        setTimeout(function () {
+          read();
+          if (plate.classList.contains("is-reading")) try { sessionStorage.setItem(READ_KEY, "1"); } catch (_) {}
+        }, 500);
+      }, { threshold: 0.4 });
       pio.observe(plate);
     }
     // Hover a well: show its OD, its column's byte and the letter it decodes to.

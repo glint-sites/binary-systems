@@ -4,7 +4,7 @@
   const st = document.createElement("style");
   st.textContent = "*,*::before,*::after{transition:none!important;animation:none!important}";
   document.head.appendChild(st);
-  document.querySelectorAll(".reveal,.reveal-stagger").forEach((e) => e.classList.add("is-in"));
+  document.querySelectorAll(".is-pending").forEach((e) => e.classList.remove("is-pending"));
   const overHero = (el) => document.documentElement.classList.contains("header-on-dark") && el.closest(".site-header") && !el.closest(".site-header.is-scrolled") && !el.closest(".mega");
   const parse = (c) => { const m = c.match(/rgba?\(([^)]+)\)/); if (!m) return null; const p = m[1].split(/[ ,/]+/).filter(Boolean).map(Number); return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 }; };
   const lum = ({ r, g, b }) => { const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }; return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };

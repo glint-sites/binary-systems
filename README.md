@@ -52,14 +52,15 @@ Restart `npm run dev` after a rebuild that changes `_headers` (wrangler reads it
 ## Two languages, one site
 
 Every page exists in English and Arabic (RTL) on its own URL (`/about` ↔ `/ar/about`), each with a
-self-canonical, reciprocal `hreflang` (en, ar, x-default) and sitemap alternates — so search engines
-index both. Switching language is designed to feel instant and continuous:
+self-canonical, reciprocal `hreflang` (en, ar, x-default) and sitemap alternates, so search engines
+index both. Moving between pages and languages is designed to feel instant and continuous:
 
-- **Prerendered:** speculation rules prerender the other-language page on hover, so the switch is instant in Chromium browsers.
-- **Animated:** a cross-document View Transition dissolves one language into the other while the logo and the hero plate glide to their mirrored positions.
+- **Prerendered:** speculation rules prerender the other-language page as soon as a page loads, and any other internal page when the pointer rests on its link, so navigation is instant in Chromium browsers.
+- **Animated:** cross-document View Transitions. The top bar and header hold still while the page cross-fades; old and new fade with the same curve and `plus-lighter` blending, so a dark hero never flashes lighter mid-fade. A language switch dissolves one script into the other while the logo and the hero plate glide to their mirrored positions.
+- **No pop-in:** only blocks that start below the fold reveal on scroll, and the hero's load-in animation plays on a fresh load only, never on top of a transition. The plate "read" plays once per visit.
 - **Same place:** the reader lands on the same section and scroll position, and a parser-inserted `rel=expect` holds the first frame until that position is set.
 - **Nothing lost:** half-typed forms (kept 12 h in local storage, cleared on send), the quote list and catalogue filters carry over.
-- **Arrives settled:** the hero plate, counters and reveals don't replay after a switch.
+- **Arrives settled:** the hero plate and scroll reveals don't replay after a switch.
 - **Language hint:** visitors whose browser prefers the other language get a one-time, dismissible suggestion. There is no redirect, which would hurt SEO.
 - **Arabic typography:** IBM Plex Sans Arabic is scaled about 6% larger. Latin names that end in ™, ® or + get a left-to-right mark so they render correctly inside Arabic text.
 
@@ -74,11 +75,15 @@ index both. Switching language is designed to feel instant and continuous:
 
 ## Design notes
 
-- **Brand colour** `#683F99` from the logo; deep ink-violet `#150E24` for dark sections; a mint
-  "signal" accent used sparingly.
+- **Colour:** brand violet `#683F99` from the logo as the accent, near-black ink `#16121F` for dark
+  sections and a mint "signal" accent used sparingly. Sections alternate white, lab grey
+  (`--paper-2`), ink and solid violet (the call-to-action band), so every band reads as its own.
+  Pages that open on a dark band get a transparent header over it (`layout.mjs` detects a leading
+  page hero), so the top bar, header and hero read as one masthead.
+- **Flat and plain on purpose:** no glows, dot grids, gradient text, icon tiles or count-up numbers;
+  section headings are plain statements without eyebrows; small radii (6–14px).
 - **The microplate** (home hero): a 96-well ELISA plate whose 12 columns are 8-bit ASCII
-  bytes (rows A–H) spelling `BINARYSYSTEM`. Section labels A–H on the home page follow the
-  plate rows.
+  bytes (rows A–H) spelling `BINARYSYSTEM`. Monospace type belongs to the plate and nowhere else.
 - **The B-mark composition**: photos clipped to the two lobes of the logo's "B"
   (`bmark()` in `components.mjs`).
 - Fonts are self-hosted (OFL): Archivo, IBM Plex Mono, IBM Plex Sans Arabic.

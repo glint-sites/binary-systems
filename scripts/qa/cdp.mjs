@@ -8,7 +8,7 @@ import path from "node:path";
 import os from "node:os";
 
 const CHROME = process.env.CHROME_PATH || "C:/Program Files/Google/Chrome/Application/chrome.exe";
-const PORT = 9333;
+const PORT = Number(process.env.CDP_PORT) || 9333; // CDP_PORT lets two runs share a machine
 const jobs = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
 const prof = fs.mkdtempSync(path.join(os.tmpdir(), "bsm-cdp-"));
 const chrome = spawn(CHROME, ["--headless=new", `--remote-debugging-port=${PORT}`, `--user-data-dir=${prof}`, "--no-first-run", "--no-default-browser-check", "--hide-scrollbars", "--force-color-profile=srgb", "about:blank"], { stdio: "ignore" });
@@ -113,7 +113,7 @@ try {
       let clip;
       if (j.full !== false) {
         // Reveal everything so below-the-fold sections are captured in their final state.
-        await s.send("Runtime.evaluate", { expression: "document.querySelectorAll('.reveal,.reveal-stagger').forEach(e=>e.classList.add('is-in'))" });
+        await s.send("Runtime.evaluate", { expression: "document.querySelectorAll('.is-pending').forEach(e=>e.classList.remove('is-pending'))" });
         const { result: h } = await s.send("Runtime.evaluate", { expression: "Math.min(document.documentElement.scrollHeight, " + (j.maxHeight || 9000) + ")", returnByValue: true });
         await s.send("Emulation.setDeviceMetricsOverride", { width, height: h.value, deviceScaleFactor: 1, mobile: !!j.mobile });
         await sleep(600);

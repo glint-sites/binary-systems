@@ -25,8 +25,11 @@ function head(c, page) {
     ? `<link rel="preload" href="/fonts/IBMPlexSansArabic-normal-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/IBMPlexSansArabic-normal-700-arabic.woff2" as="font" type="font/woff2" crossorigin>`
     : `<link rel="preload" href="/fonts/Archivo-normal-100-900-latin.woff2" as="font" type="font/woff2" crossorigin>`;
+  // Pages that open on a dark band (the home hero or a page hero) let the header sit transparently
+  // on it, so the top bar, header and hero read as one masthead.
+  const onDark = page.headerOnDark ?? /^\s*<section class="page-hero/.test(page.main);
   return `<!doctype html>
-<html lang="${c.lang}" dir="${c.dir}" class="no-js${page.headerOnDark ? " header-on-dark" : ""}">
+<html lang="${c.lang}" dir="${c.dir}" class="no-js${onDark ? " header-on-dark" : ""}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +39,7 @@ function head(c, page) {
 <link rel="alternate" hreflang="en" href="${alt("en")}">
 <link rel="alternate" hreflang="ar" href="${alt("ar")}">
 <link rel="alternate" hreflang="x-default" href="${alt("en")}">
-${page.noindex ? '<meta name="robots" content="noindex">\n' : ""}<meta name="theme-color" content="#150e24">
+${page.noindex ? '<meta name="robots" content="noindex">\n' : ""}<meta name="theme-color" content="#16121f">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="${page.ogType || "website"}">
 <meta property="og:site_name" content="${esc(c.t("Binary System Medical", "باينري سيستم الطبية"))}">
@@ -62,15 +65,20 @@ ${(page.jsonld || []).map(jsonLd).join("\n")}
 // Runs in <head> so it is registered before the first frame: when this page is the target of a
 // language switch, tag the view transition "lang" and scroll to the section the reader was on
 // (saved by js/site.js). Only then is a parser-inserted rel=expect written, so the first frame
-// waits for the full DOM; ordinary page loads keep progressive rendering.
-const LANG_ARRIVAL = `(function(){var K="bsm-lang-pos";function pos(){try{var p=JSON.parse(localStorage.getItem(K));if(p&&p.to===location.pathname&&Date.now()-p.t<20000)return p}catch(e){}return null}if(pos()){document.documentElement.classList.add("lang-arrival");if(!document.prerendering)document.write('<link rel="expect" href="#page-end" blocking="render">')}function restore(){var p=pos();if(!p)return;try{localStorage.removeItem(K)}catch(e){}var m=document.getElementById("main");if(!m||!(p.i>0||p.r>0))return;var b=[].filter.call(m.children,function(x){return x.offsetHeight>0})[p.i];if(!b)return;var h=document.querySelector("[data-header]");window.scrollTo({top:Math.max(0,b.getBoundingClientRect().top+window.scrollY+p.r*b.offsetHeight-(h?h.offsetHeight:0)),behavior:"instant"})}if("onpagereveal" in window)addEventListener("pagereveal",function(e){if(pos()&&e.viewTransition&&e.viewTransition.types)e.viewTransition.types.add("lang");restore()});else addEventListener("DOMContentLoaded",restore)})();`;
+// waits for the full DOM; ordinary page loads keep progressive rendering. Any page arriving through
+// a view transition is marked .vt-arrival, so the hero's load-in animation doesn't play on top of it.
+const LANG_ARRIVAL = `(function(){var K="bsm-lang-pos",d=document.documentElement;function pos(){try{var p=JSON.parse(localStorage.getItem(K));if(p&&p.to===location.pathname&&Date.now()-p.t<20000)return p}catch(e){}return null}if(pos()){d.classList.add("lang-arrival");if(!document.prerendering)document.write('<link rel="expect" href="#page-end" blocking="render">')}function restore(){var p=pos();if(!p)return;try{localStorage.removeItem(K)}catch(e){}var m=document.getElementById("main");if(!m||!(p.i>0||p.r>0))return;var b=[].filter.call(m.children,function(x){return x.offsetHeight>0})[p.i];if(!b)return;var h=document.querySelector("[data-header]");window.scrollTo({top:Math.max(0,b.getBoundingClientRect().top+window.scrollY+p.r*b.offsetHeight-(h?h.offsetHeight:0)),behavior:"instant"})}if("onpagereveal" in window)addEventListener("pagereveal",function(e){if(e.viewTransition){d.classList.add("vt-arrival");if(pos()&&e.viewTransition.types)e.viewTransition.types.add("lang")}restore()});else addEventListener("DOMContentLoaded",restore)})();`;
 
-// Prerender the other-language version of the page so the language switch is instant, and
-// prefetch any internal link on hover. Browsers without the Speculation Rules API ignore this.
+// Prerender the other-language version of the page eagerly, so the language switch is instant, and
+// any other internal page as soon as the pointer rests on its link (or presses it), so ordinary
+// navigation is instant too and the view transition starts from a fully rendered page.
+// Browsers without the Speculation Rules API ignore this.
 function speculationRules() {
   const rules = {
-    prerender: [{ where: { selector_matches: "[data-lang-switch]" }, eagerness: "eager" }],
-    prefetch: [{ where: { and: [{ href_matches: "/*" }, { not: { href_matches: "/api/*" } }, { not: { selector_matches: "[data-lang-switch]" } }] }, eagerness: "moderate" }],
+    prerender: [
+      { where: { selector_matches: "[data-lang-switch]" }, eagerness: "eager" },
+      { where: { and: [{ href_matches: "/*" }, { not: { href_matches: "/api/*" } }, { not: { selector_matches: "[data-lang-switch]" } }] }, eagerness: "moderate" },
+    ],
   };
   return `<script type="speculationrules">${JSON.stringify(rules)}</script>`;
 }
@@ -196,20 +204,12 @@ function footer(c, page) {
   const socials = Object.entries(social).filter(([, v]) => v);
   const socialIcon = { linkedin: "linkedin", x: "xSocial", instagram: "instagram", facebook: "facebook" };
   return `<footer class="site-footer">
-  <div class="footer__bin" aria-hidden="true">01000010 01010011 01001101
-01001001 01010110 01000100
-01001101 01000100 00100000
-01010010 01010101 01001111</div>
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
         <img src="/images/brand/bsm-logo-white.svg" alt="Binary System Medical" width="137" height="56" loading="lazy">
-        <p>${c.t("Your trusted partner for IVD and medical device solutions in Saudi Arabia — a subsidiary of Saudi Mais Co.", "شريكك الموثوق لحلول التشخيص المخبري والأجهزة الطبية في المملكة العربية السعودية — إحدى الشركات التابعة لشركة ميس السعودية.")}</p>
-        <div class="footer__badges">
-          <span class="footer__badge">${icon("shield")}${c.t("SFDA-certified", "معتمدة من هيئة الغذاء والدواء")}</span>
-          <span class="footer__badge">${icon("calendar")}${c.t("Since 2015", "منذ 2015")}</span>
-        </div>
-        ${socials.length ? `<div class="footer__badges">${socials.map(([k, v]) => `<a class="footer__badge" href="${esc(v)}" rel="noopener" target="_blank" aria-label="${k}">${icon(socialIcon[k])}</a>`).join("")}</div>` : ""}
+        <p>${c.t("SFDA-certified supplier of in vitro diagnostics and medical devices in Saudi Arabia since 2015. A subsidiary of Saudi Mais Co.", "شركة معتمدة من الهيئة العامة للغذاء والدواء لتوريد حلول التشخيص المخبري والأجهزة الطبية في المملكة العربية السعودية منذ عام 2015، وإحدى الشركات التابعة لشركة ميس السعودية.")}</p>
+        ${socials.length ? `<div class="footer__social">${socials.map(([k, v]) => `<a href="${esc(v)}" rel="noopener" target="_blank" aria-label="${k}">${icon(socialIcon[k])}</a>`).join("")}</div>` : ""}
       </div>
       <div class="footer__col">
         <h2>${c.t("Solutions", "الحلول")}</h2>
@@ -233,7 +233,7 @@ function footer(c, page) {
         <ul>
           <li>${icon("phone")}<a href="tel:${company.phone_tel}" class="ltr">${esc(company.phone)}</a></li>
           <li>${icon("mail")}<a href="mailto:${company.email}">${esc(company.email)}</a></li>
-          <li>${icon("pin")}<a href="${esc(company.maps_url)}" rel="noopener" target="_blank">${esc(c.t(`${company.street}, ${company.city} ${company.postal_code}, Saudi Arabia`, `${company.street_ar}، ${company.city_ar} ${company.postal_code}، المملكة العربية السعودية`))}</a></li>
+          <li>${icon("pin")}<a href="${esc(company.maps_url)}" rel="noopener" target="_blank"><span>${esc(c.t(`${company.street}, ${company.city}`, `${company.street_ar}، ${company.city_ar}`))} <span class="ltr">${esc(company.postal_code)}</span>${esc(c.t(", Saudi Arabia", "، المملكة العربية السعودية"))}</span></a></li>
         </ul>
       </div>
     </div>

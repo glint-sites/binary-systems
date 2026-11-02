@@ -75,9 +75,11 @@ Content is taken from the old site and the manufacturers' official websites. The
    - 3DHISTECH now writes "Pannoramic" in title case.
    - GeneProof is part of NuvinkaDx.
    - BDR's "QF-PCR" is its Adellgene triplet-repeat fragment-analysis line.
-6. **Hero claim.** The old site said "Leader in IVD and MD Solutions in Saudi Arabia". The new hero says "Leading IVD & medical device solutions for Saudi healthcare". Keep, soften or strengthen it as the client prefers.
+6. **Hero claim.** The old site said "Leader in IVD and MD Solutions in Saudi Arabia". The new hero says "Diagnostics and medical devices for Saudi healthcare", a plain statement without the "leading" claim. Restore or strengthen the claim if the client wants it.
 7. **Photos.** The lab-interior and team photos are reused from the old site. Professional photos of BSM's own team, office and installations would strengthen the About page; drop them into `images/photos/`.
 8. **Social media.** The old footer had Facebook, X and Instagram icons with empty links. None are shown until URLs are provided.
+9. **Product images.** Several come from the old site and don't match the rest: Vivatmo is a marketing banner with cropped text, the PyloPLUS images are text-heavy flyers, FungiXpert sits on black and Sharay on a sky background. Ask BSM or the manufacturers for clean cut-out product shots on white.
+10. **Partner logos.** The FAN logo is small and boxed, Gulf Coast Scientific's has a frame, and visual weight varies across the wall. Ask for current vector logos (SVG) where available.
 
 ## Quality checks done (Nov 2026)
 

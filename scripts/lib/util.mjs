@@ -93,11 +93,15 @@ export function rng(seed) {
 
 // Arabic pages: a Latin name that ends in ™, ® or + (VitaPCR™, Hyperoil®, PyloPLUS+) sits next to
 // Arabic text, and the bidi algorithm moves that trailing symbol to the wrong side. A left-to-right
-// mark after it keeps it with its name. Applied to text between tags only (not scripts/attributes).
+// mark after it keeps it with its name. Isotope notation such as "¹³C" gets a mark in front instead:
+// superscript digits after Arabic text would otherwise be drawn after the letter ("C¹³").
+// Applied to text between tags only (not scripts/attributes).
 export function fixArabicBidi(html) {
   return html.replace(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<[^>]+>)|([^<]+)/g, (m, tag, text) =>
     // Also dotted abbreviations such as "RI.MOS." (not a sentence-final period after a Latin word).
-    tag ? tag : text.replace(/([A-Za-z0-9][A-Za-z0-9.\-!]*[™®+]|\b[A-Z]{2,}\.[A-Z]{2,}\.)(?!‎)/g, "$1‎"));
+    tag ? tag : text
+      .replace(/([A-Za-z0-9][A-Za-z0-9.\-!]*[™®+]|\b[A-Z]{2,}\.[A-Z]{2,}\.)(?!‎)/g, "$1‎")
+      .replace(/(?<!‎)([⁰¹²³⁴-⁹]+[A-Za-z])/g, "‎$1"));
 }
 
 export const jsonLd = (obj) => `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;

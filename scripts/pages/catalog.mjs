@@ -17,7 +17,6 @@ export function catalog(c) {
   const ordered = [...products].sort((a, b) => a.order - b.order);
   const main = `${pageHero(c, {
     crumbsItems,
-    eyebrowText: c.t("Product catalogue", "دليل المنتجات"),
     title: c.t("Products & technologies", "المنتجات والتقنيات"),
     lede: c.t("Explore the diagnostic platforms, assays, medical devices and research tools we supply and support across Saudi Arabia. Add items to your quote list and request one consolidated quotation.", "استكشف المنصات التشخيصية والاختبارات والأجهزة الطبية والأدوات البحثية التي نوفرها وندعمها في أنحاء المملكة. أضف المنتجات إلى قائمة عرض السعر واطلب عرض سعر موحدًا."),
     extra: `<div class="disc-nav">${taxonomy.divisions.map((d) => `<a href="${c.u(`/solutions/${d.slug}`)}">${esc(c.tx(d).name)} <span class="count">${n((p) => p.division === d.id)}</span></a>`).join("")}</div>`,
@@ -45,15 +44,15 @@ export function catalog(c) {
         <button class="btn btn--ghost btn--sm filter-toggle" type="button" data-filter-toggle aria-expanded="false">${icon("sliders")} ${c.t("Filters", "التصفية")}</button>
       </div>
       <div class="product-grid" data-catalog-grid>${ordered.map((p) => productCard(c, p, { headingLevel: 2 })).join("")}</div>
-      <div class="catalog__empty" data-catalog-empty><p><strong>${c.t("No products match these filters.", "لا توجد منتجات مطابقة لعوامل التصفية.")}</strong></p><p class="muted" style="margin-top:6px">${c.t("Try another search term or clear the filters. Not every product we supply is listed — our team can help.", "جرّب كلمة بحث أخرى أو امسح عوامل التصفية. لا تظهر هنا جميع المنتجات التي نوردها، ويسعد فريقنا بمساعدتك.")}</p><p class="mt-l" style="margin-top:12px"><button class="btn btn--ghost btn--sm" type="button" data-filter-reset>${c.t("Clear filters", "مسح عوامل التصفية")}</button></p></div>
+      <div class="catalog__empty" data-catalog-empty><p><strong>${c.t("No products match these filters.", "لا توجد منتجات مطابقة لعوامل التصفية.")}</strong></p><p class="muted" style="margin-top:6px">${c.t("Try another search term or clear the filters. Not every product we supply is listed here, and our team can help.", "جرّب كلمة بحث أخرى أو امسح عوامل التصفية. لا تظهر هنا جميع المنتجات التي نوردها، ويسعد فريقنا بمساعدتك.")}</p><p class="mt-l" style="margin-top:12px"><button class="btn btn--ghost btn--sm" type="button" data-filter-reset>${c.t("Clear filters", "مسح عوامل التصفية")}</button></p></div>
     </div>
   </div>
 </section>
-<section class="section section--tight">
+<section class="section section--violet">
   <div class="container">
     ${ctaBand(c, {
       title: c.t("Can't find what you need?", "لم تجد ما تبحث عنه؟"),
-      text: c.t(`We work with ${c.data.site.stats.brands} global diagnostic brands — not every product is listed here. Tell us what you're looking for and we'll find the right solution.`, `نتعاون مع أكثر من ${c.data.site.stats.brands.replace("+", "")} علامة تشخيصية عالمية، ولا تظهر جميع المنتجات هنا. أخبرنا بما تبحث عنه وسنجد لك الحل المناسب.`),
+      text: c.t(`We work with ${c.data.site.stats.brands} global diagnostic brands, and not every product is listed here. Tell us what you're looking for and we'll find the right solution.`, `نتعاون مع أكثر من ${c.data.site.stats.brands.replace("+", "")} علامة تشخيصية عالمية، ولا تظهر جميع المنتجات هنا. أخبرنا بما تبحث عنه وسنجد لك الحل المناسب.`),
       primary: { href: c.u("/contact"), label: c.t("Ask our team", "اسأل فريقنا") },
       secondary: { href: c.u("/quote"), label: c.t("Request a quotation", "اطلب عرض سعر") },
     })}
@@ -76,37 +75,43 @@ export function division(c, d) {
   const sections = d.disciplines.map((id, i) => {
     const disc = discOf(c, id);
     const ps = products.filter((p) => p.discipline === id).sort((a, b) => a.order - b.order);
-    return `<section class="disc" id="${id}">
+    return `<section class="disc${i % 2 ? " disc--tint" : ""}" id="${id}">
       <div class="container">
         <div class="disc__head">
-          <div>${eyebrow(String.fromCharCode(65 + i), `${d.code} · ${techCount(c, ps.length)}`)}<h2 class="h2">${esc(c.tx(disc).name)}</h2></div>
+          <div>${eyebrow(`${d.code} · ${techCount(c, ps.length)}`)}<h2 class="h2">${esc(c.tx(disc).name)}</h2></div>
           <p>${esc(c.tx(disc).intro)}</p>
         </div>
-        <div class="product-grid reveal-stagger">${ps.map((p) => productCard(c, p)).join("")}</div>
+        <div class="product-grid${ps.length <= 2 ? " product-grid--wide" : ""} reveal-stagger">${ps.map((p) => productCard(c, p, { wide: ps.length <= 2 })).join("")}</div>
       </div>
     </section>`;
   }).join("");
   const related = insights.filter((p) => products.some((x) => x.division === d.id && p.related.includes(x.slug)));
+  // Keep alternating after the discipline bands: the next section takes the other background.
+  const band = (k) => ((d.disciplines.length + k) % 2 ? "section section--tint" : "section");
   const main = `${pageHero(c, {
     crumbsItems,
-    eyebrowText: `${d.code} · ${c.t("Solutions", "الحلول")}`,
-    title: `${esc(t.name)} <span class="accent">(${d.code})</span>`,
+    title: `${esc(t.name)} (${d.code})`,
     lede: esc(t.intro),
     extra: d.disciplines.length > 1 ? `<nav class="disc-nav" aria-label="${c.t("Disciplines", "التخصصات")}">${d.disciplines.map((id) => `<a href="#${id}">${esc(c.tx(discOf(c, id)).name)} <span class="count">${products.filter((p) => p.discipline === id).length}</span></a>`).join("")}</nav>` : "",
   })}
 ${sections}
-<section class="section section--tint section--line">
+<section class="${band(0)}">
   <div class="container">
-    ${sectionHead({ coord: "", eyebrowText: c.t("Beyond supply", "أكثر من مجرد توريد"), title: c.t("Every system comes with a team behind it.", "خلف كل نظام فريق يدعمه.") })}
+    ${sectionHead({ title: c.t("Every system comes with a team behind it", "خلف كل نظام فريق يدعمه") })}
     ${assurance(c)}
-    ${related.length ? `<div class="mt-l">${sectionHead({ eyebrowText: c.t("Related insights", "مقالات ذات صلة"), title: c.t("Further reading", "قراءات إضافية") })}<div class="post-grid post-grid--all">${related.slice(0, 3).map((p) => postCard(c, p)).join("")}</div></div>` : ""}
   </div>
 </section>
-<section class="section section--tight">
+${related.length ? `<section class="${band(1)}">
+  <div class="container">
+    ${sectionHead({ title: c.t("Further reading", "قراءات إضافية") })}
+    <div class="post-grid post-grid--all">${related.slice(0, 3).map((p) => postCard(c, p)).join("")}</div>
+  </div>
+</section>` : ""}
+<section class="section section--violet">
   <div class="container">
     ${ctaBand(c, {
-      title: c.t(`Planning a ${t.short} project?`, `هل تخطط لمشروع في ${t.name}؟`),
-      text: c.t("Share your requirements and we'll recommend the right configuration — and prepare a quotation.", "شاركنا متطلباتك وسنقترح الإعداد المناسب ونجهز لك عرض سعر."),
+      title: c.t("Need help choosing the right system?", "هل تحتاج إلى مساعدة في اختيار النظام المناسب؟"),
+      text: c.t("Share your requirements and we'll recommend the right configuration and prepare a quotation.", "شاركنا متطلباتك وسنقترح الإعداد المناسب ونجهز لك عرض سعر."),
       primary: { href: c.u("/quote"), label: c.t("Request a quotation", "اطلب عرض سعر") },
       secondary: { href: c.u("/contact"), label: c.t("Talk to a specialist", "تحدث إلى أحد المختصين") },
     })}
@@ -134,7 +139,7 @@ export function product(c, p) {
   const shown = [...related, ...more];
   const sameDiscipline = shown.every((x) => x.discipline === p.discipline);
   const articles = insights.filter((i) => i.related.includes(p.slug));
-  const highlights = (t.highlights || []).map((h, i) => `<li><span class="mono">${String(i + 1).padStart(2, "0")}</span><span>${esc(h)}</span></li>`).join("");
+  const highlights = (t.highlights || []).map((h) => `<li>${esc(h)}</li>`).join("");
   const main = `<section class="pd-hero">
   <div class="container">
     ${crumbs(c, crumbsItems)}
@@ -162,14 +167,13 @@ export function product(c, p) {
 <section class="section">
   <div class="container spec">
     <div>
-      ${eyebrow("A", c.t("Overview", "نظرة عامة"))}
       <h2 class="h3" style="margin-bottom:18px">${c.t(`About ${esc(t.name)}`, `عن ${esc(t.name)}`)}</h2>
       <div class="prose">${(t.body || [t.summary]).map((para) => `<p>${esc(para)}</p>`).join("")}</div>
       ${t.tests ? `<h3 style="margin:28px 0 12px;font-size:1.05rem">${c.t("Test menu & applications", "قائمة الفحوصات والتطبيقات")}</h3><div class="tag-cloud">${t.tests.map((x) => `<span class="chip chip--plain">${esc(x)}</span>`).join("")}</div>` : ""}
     </div>
     <div>
-      ${highlights ? `${eyebrow("B", c.t("Key highlights", "أبرز المزايا"))}<ul class="spec__list">${highlights}</ul>
-      <p class="spec__note">${icon("info")}<span>${c.t("Summarised from manufacturer information. Configurations, test menus and regulatory status vary by market — contact BSM to confirm SFDA registration and availability for your requirements.", "ملخّص من معلومات الشركة المصنّعة. تختلف الإعدادات وقوائم الفحوصات والحالة التنظيمية من سوق لآخر — تواصل مع BSM لتأكيد التسجيل لدى الهيئة العامة للغذاء والدواء ومدى التوفر وفق متطلباتك.")}</span></p>` : ""}
+      ${highlights ? `<h2 class="h3" style="margin-bottom:18px">${c.t("Key highlights", "أبرز المزايا")}</h2><ul class="spec__list">${highlights}</ul>
+      <p class="spec__note">${icon("info")}<span>${c.t("Summarised from manufacturer information. Configurations, test menus and regulatory status vary by market. Contact BSM to confirm SFDA registration and availability for your requirements.", "ملخّص من معلومات الشركة المصنّعة. تختلف الإعدادات وقوائم الفحوصات والحالة التنظيمية من سوق لآخر، لذا تواصل مع BSM لتأكيد التسجيل لدى الهيئة العامة للغذاء والدواء ومدى التوفر وفق متطلباتك.")}</span></p>` : ""}
       <div class="maker" style="margin-top:28px">
         <div class="maker__logo">${brandMark(c, b)}</div>
         <div>
@@ -184,17 +188,21 @@ export function product(c, p) {
     </div>
   </div>
 </section>
-<section class="section section--tint section--line">
+<section class="section section--tint">
   <div class="container">
-    ${sectionHead({ coord: "C", eyebrowText: c.t("Why source through BSM", "لماذا التوريد عبر BSM"), title: c.t("The technology, plus the team that makes it work.", "التقنية، ومعها الفريق الذي يضمن نجاحها.") })}
-    ${assurance(c)}
+    ${sectionHead({ title: c.t("How ordering works", "كيف يتم الطلب") })}
+    <ol class="process process--3 process--light">
+      <li class="process__step"><span class="process__num" aria-hidden="true">1</span><h3>${c.t("Add it to your quote list", "أضفه إلى قائمة عرض السعر")}</h3><p>${c.t("Combine products from any of our manufacturers in one request, or describe what you need.", "اجمع منتجات من أي شركة تصنيع نمثلها في طلب واحد، أو صف ما تحتاجه.")}</p></li>
+      <li class="process__step"><span class="process__num" aria-hidden="true">2</span><h3>${c.t("We confirm the details", "نؤكد التفاصيل")}</h3><p>${c.t("A specialist checks configuration, SFDA registration and availability for your requirements.", "يراجع أحد المختصين الإعداد المطلوب والتسجيل لدى الهيئة العامة للغذاء والدواء ومدى التوفر وفق متطلباتك.")}</p></li>
+      <li class="process__step"><span class="process__num" aria-hidden="true">3</span><h3>${c.t("You receive a quotation", "تستلم عرض السعر")}</h3><p>${c.t("Our team sends you a formal quotation for your configuration.", "يرسل لك فريقنا عرض سعر رسميًا للإعداد المطلوب.")}</p></li>
+    </ol>
   </div>
 </section>
 <section class="section">
   <div class="container">
-    ${sectionHead({ coord: "D", eyebrowText: c.t("Related technologies", "تقنيات ذات صلة"), title: sameDiscipline ? c.t(`More in ${c.tx(disc).name}`, `المزيد في ${c.tx(disc).name}`) : c.t(`Related ${d.code} technologies`, `تقنيات ${d.code} ذات صلة`), side: `<a class="link-arrow" href="${c.u(`/solutions/${d.slug}`)}">${c.t(`All ${d.code} solutions`, `جميع حلول ${d.code}`)} ${icon("arrow")}</a>` })}
+    ${sectionHead({ title: sameDiscipline ? c.t(`More in ${c.tx(disc).name}`, `المزيد في ${c.tx(disc).name}`) : c.t(`Related ${d.code} technologies`, `تقنيات ${d.code} ذات صلة`), side: `<a class="link-arrow" href="${c.u(`/solutions/${d.slug}`)}">${c.t(`All ${d.code} solutions`, `جميع حلول ${d.code}`)} ${icon("arrow")}</a>` })}
     <div class="product-grid product-grid--related">${shown.map((x) => productCard(c, x)).join("")}</div>
-    ${articles.length ? `<div class="mt-l">${sectionHead({ eyebrowText: c.t("Related insights", "مقالات ذات صلة"), title: c.t("Learn more", "اعرف المزيد") })}<div class="post-grid post-grid--all">${articles.map((a) => postCard(c, a)).join("")}</div></div>` : ""}
+    ${articles.length ? `<div class="mt-l">${sectionHead({ title: c.t("Learn more", "اعرف المزيد") })}<div class="post-grid post-grid--all">${articles.map((a) => postCard(c, a)).join("")}</div></div>` : ""}
   </div>
 </section>`;
   return {

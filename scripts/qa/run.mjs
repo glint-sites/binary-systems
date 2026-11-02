@@ -3,7 +3,7 @@
 // Checks: horizontal overflow on every sitemap page at 320 and 768 px (both directions, so RTL too),
 // an accessibility scan of key pages (contrast, names, labels, ids, headings, landmarks),
 // the language switch (position, form draft and filters carried over; no CSP violations),
-// and the desktop Solutions mega menu layout.
+// the desktop Solutions mega menu layout, and card teasers that fit without being clipped.
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -75,6 +75,15 @@ const menuBad = menus.filter((r) => { const x = r.result?.[1] || {}; return !x.o
 menuBad.forEach((r) => console.log("MEGA", r.url, JSON.stringify(r.result?.[1])));
 console.log(`solutions menu: ${menus.length} pages, ${menuBad.length} problems`);
 failures += menuBad.length;
+
+// 5. Card text fits: product and article teasers are short enough not to be cut by the line clamp
+const clipped = `[...document.querySelectorAll(".p-card__text, .post-card p")].filter((e) => e.scrollHeight > e.clientHeight + 1).map((e) => e.textContent.trim().slice(0, 50))`;
+const cardPages = ["/", "/ar/", "/products/", "/ar/products/", "/insights/", "/ar/insights/"];
+const cards = run(cardPages.flatMap((u) => [1440, 390].map((w) => ({ url: BASE + u, width: w, mobile: w < 600, wait: 400, eval: clipped }))));
+const cardBad = cards.filter((r) => !Array.isArray(r.result) || r.result.length);
+cardBad.forEach((r) => console.log("CLIPPED", r.url, r.width, JSON.stringify(r.result)));
+console.log(`card text: ${cards.length} page/width checks, ${cardBad.length} problems`);
+failures += cardBad.length;
 
 console.log(failures ? `\n${failures} problem(s)` : "\nAll browser checks passed.");
 process.exit(failures ? 1 : 0);

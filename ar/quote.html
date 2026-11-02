@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" class="no-js">
+<html lang="ar" dir="rtl" class="no-js header-on-dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 <link rel="alternate" hreflang="en" href="https://binarysys.net/quote">
 <link rel="alternate" hreflang="ar" href="https://binarysys.net/ar/quote">
 <link rel="alternate" hreflang="x-default" href="https://binarysys.net/quote">
-<meta name="theme-color" content="#150e24">
+<meta name="theme-color" content="#16121f">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="باينري سيستم الطبية">
@@ -28,9 +28,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/IBMPlexSansArabic-normal-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/IBMPlexSansArabic-normal-700-arabic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/site.min.css?v=a11732a03f">
-<script>document.documentElement.classList.replace("no-js","js");(function(){var K="bsm-lang-pos";function pos(){try{var p=JSON.parse(localStorage.getItem(K));if(p&&p.to===location.pathname&&Date.now()-p.t<20000)return p}catch(e){}return null}if(pos()){document.documentElement.classList.add("lang-arrival");if(!document.prerendering)document.write('<link rel="expect" href="#page-end" blocking="render">')}function restore(){var p=pos();if(!p)return;try{localStorage.removeItem(K)}catch(e){}var m=document.getElementById("main");if(!m||!(p.i>0||p.r>0))return;var b=[].filter.call(m.children,function(x){return x.offsetHeight>0})[p.i];if(!b)return;var h=document.querySelector("[data-header]");window.scrollTo({top:Math.max(0,b.getBoundingClientRect().top+window.scrollY+p.r*b.offsetHeight-(h?h.offsetHeight:0)),behavior:"instant"})}if("onpagereveal" in window)addEventListener("pagereveal",function(e){if(pos()&&e.viewTransition&&e.viewTransition.types)e.viewTransition.types.add("lang");restore()});else addEventListener("DOMContentLoaded",restore)})();</script>
-<script type="speculationrules">{"prerender":[{"where":{"selector_matches":"[data-lang-switch]"},"eagerness":"eager"}],"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/api/*"}},{"not":{"selector_matches":"[data-lang-switch]"}}]},"eagerness":"moderate"}]}</script>
+<link rel="stylesheet" href="/css/site.min.css?v=9da9d79f89">
+<script>document.documentElement.classList.replace("no-js","js");(function(){var K="bsm-lang-pos",d=document.documentElement;function pos(){try{var p=JSON.parse(localStorage.getItem(K));if(p&&p.to===location.pathname&&Date.now()-p.t<20000)return p}catch(e){}return null}if(pos()){d.classList.add("lang-arrival");if(!document.prerendering)document.write('<link rel="expect" href="#page-end" blocking="render">')}function restore(){var p=pos();if(!p)return;try{localStorage.removeItem(K)}catch(e){}var m=document.getElementById("main");if(!m||!(p.i>0||p.r>0))return;var b=[].filter.call(m.children,function(x){return x.offsetHeight>0})[p.i];if(!b)return;var h=document.querySelector("[data-header]");window.scrollTo({top:Math.max(0,b.getBoundingClientRect().top+window.scrollY+p.r*b.offsetHeight-(h?h.offsetHeight:0)),behavior:"instant"})}if("onpagereveal" in window)addEventListener("pagereveal",function(e){if(e.viewTransition){d.classList.add("vt-arrival");if(pos()&&e.viewTransition.types)e.viewTransition.types.add("lang")}restore()});else addEventListener("DOMContentLoaded",restore)})();</script>
+<script type="speculationrules">{"prerender":[{"where":{"selector_matches":"[data-lang-switch]"},"eagerness":"eager"},{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/api/*"}},{"not":{"selector_matches":"[data-lang-switch]"}}]},"eagerness":"moderate"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://binarysys.net/ar/"},{"@type":"ListItem","position":2,"name":"طلب عرض سعر","item":"https://binarysys.net/ar/quote"}]}</script>
 </head>
 <body class="">
@@ -108,12 +108,10 @@
 </div>
 <main id="main">
 <section class="page-hero dark">
-  <img class="page-hero__mark" src="/images/brand/bsm-mark-white.svg" alt="" width="45" height="41" aria-hidden="true">
   <div class="container">
     <nav aria-label="مسار التنقل"><ol class="crumbs"><li><a href="/ar/">الرئيسية</a></li><li aria-current="page">طلب عرض سعر</li></ol></nav>
-    <p class="eyebrow">عرض السعر</p>
     <h1>اطلب عرض سعر</h1>
-    <p class="lede">أخبرنا بما تحتاجه — منتج واحد أو حل مخبري متكامل. تظهر المنتجات التي تضيفها أثناء التصفح في قائمة عرض السعر أدناه.</p>
+    <p class="lede">أخبرنا بما تحتاجه، من منتج واحد إلى حل مخبري متكامل. تظهر المنتجات التي تضيفها أثناء التصفح في قائمة عرض السعر أدناه.</p>
     
   </div>
 </section>
@@ -171,22 +169,14 @@
     </div>
   </div>
 </section>
-<script type="application/json" id="catalog-data">{"vivalytic":{"n":"Vivalytic","b":"Bosch Healthcare Solutions","u":"/ar/products/vivalytic","i":"/images/products/vivalytic-xs.webp"},"vitapcr":{"n":"VitaPCR™ وVitaSIRO solo™","b":"Credo Diagnostics","u":"/ar/products/vitapcr","i":"/images/products/vitapcr-xs.webp"},"pannoramic":{"n":"Pannoramic لعلم الأمراض الرقمي","b":"3DHISTECH","u":"/ar/products/pannoramic","i":"/images/products/pannoramic-xs.webp"},"pyloplus-ubt":{"n":"اختبار تنفس اليوريا PyloPLUS+ UBT2","b":"Gulf Coast Scientific","u":"/ar/products/pyloplus-ubt","i":"/images/products/pyloplus-ubt-xs.webp"},"c-luminary":{"n":"أجهزة Sharay للمقايسة المناعية بالتألق الكيميائي","b":"C-Luminary","u":"/ar/products/c-luminary","i":"/images/products/c-luminary-xs.webp"},"vivatmo":{"n":"Vivatmo pro وVivatmo me","b":"Bosch Healthcare Solutions","u":"/ar/products/vivatmo","i":"/images/products/vivatmo-xs.webp"},"plasma-care":{"n":"plasma care®","b":"terraplasma medical","u":"/ar/products/plasma-care","i":"/images/products/plasma-care-xs.webp"},"tianlong":{"n":"أنظمة Tianlong الجزيئية","b":"Tianlong","u":"/ar/products/tianlong","i":"/images/products/tianlong-xs.webp"},"d-tek":{"n":"D-tek لتشخيص أمراض المناعة الذاتية","b":"D-tek","u":"/ar/products/d-tek","i":"/images/products/d-tek-xs.webp"},"geneaid":{"n":"Geneaid لتنقية الأحماض النووية","b":"Geneaid","u":"/ar/products/geneaid","i":"/images/products/geneaid-xs.webp"},"geneproof":{"n":"أطقم GeneProof لتفاعل PCR","b":"GeneProof","u":"/ar/products/geneproof","i":"/images/products/geneproof-xs.webp"},"bdr":{"n":"أطقم BDR للتشخيص الوراثي","b":"BDR Diagnostics","u":"/ar/products/bdr","i":"/images/products/bdr-xs.webp"},"vircell":{"n":"Vircell VIRPLEX وAMPLIRUN®","b":"Vircell","u":"/ar/products/vircell","i":"/images/products/vircell-xs.webp"},"wantai":{"n":"حلول Wantai للمختبرات","b":"Wantai BioPharm","u":"/ar/products/wantai","i":"/images/products/wantai-xs.webp"},"fanhp":{"n":"جهاز FANhp لتحليل اختبار التنفس 13C","b":"FAN GmbH","u":"/ar/products/fanhp","i":"/images/products/fanhp-xs.webp"},"lactofan2":{"n":"LactoFAN2 لقياس الهيدروجين في النَّفَس","b":"FAN GmbH","u":"/ar/products/lactofan2","i":"/images/products/lactofan2-xs.webp"},"pyloplus-rut":{"n":"اختبار اليورياز فائق السرعة PyloPLUS+","b":"Gulf Coast Scientific","u":"/ar/products/pyloplus-rut","i":"/images/products/pyloplus-rut-xs.webp"},"era-biology":{"n":"FungiXpert™ لتشخيص الفطريات","b":"Era Biology","u":"/ar/products/era-biology","i":"/images/products/era-biology-xs.webp"},"biogram":{"n":"Bio-Gram ColorJet NANO للصبغ","b":"Bio-Gram","u":"/ar/products/biogram","i":"/images/products/biogram-xs.webp"},"hyperoil":{"n":"Hyperoil®","b":"RI.MOS.","u":"/ar/products/hyperoil","i":"/images/products/hyperoil-xs.webp"},"blue-ray":{"n":"أجهزة Blue-Ray Biotech المخبرية","b":"Blue-Ray Biotech","u":"/ar/products/blue-ray","i":"/images/products/blue-ray-xs.webp"},"diana":{"n":"DIANA للكواشف الجزيئية واكتشاف الأدوية","b":"DIANA Biotechnologies","u":"/ar/products/diana","i":"/images/products/diana-xs.webp"},"jena-bioscience":{"n":"كواشف Jena Bioscience","b":"Jena Bioscience","u":"/ar/products/jena-bioscience","i":"/images/products/jena-bioscience-xs.webp"}}</script>
+<script type="application/json" id="catalog-data">{"vivalytic":{"n":"Vivalytic","b":"Bosch Healthcare Solutions","u":"/ar/products/vivalytic","i":"/images/products/vivalytic-xs.webp"},"vitapcr":{"n":"VitaPCR™ وVitaSIRO solo™","b":"Credo Diagnostics","u":"/ar/products/vitapcr","i":"/images/products/vitapcr-xs.webp"},"pannoramic":{"n":"Pannoramic لعلم الأمراض الرقمي","b":"3DHISTECH","u":"/ar/products/pannoramic","i":"/images/products/pannoramic-xs.webp"},"pyloplus-ubt":{"n":"اختبار تنفس اليوريا PyloPLUS+ UBT2","b":"Gulf Coast Scientific","u":"/ar/products/pyloplus-ubt","i":"/images/products/pyloplus-ubt-xs.webp"},"c-luminary":{"n":"أجهزة Sharay للمقايسة المناعية بالتألق الكيميائي","b":"C-Luminary","u":"/ar/products/c-luminary","i":"/images/products/c-luminary-xs.webp"},"vivatmo":{"n":"Vivatmo pro وVivatmo me","b":"Bosch Healthcare Solutions","u":"/ar/products/vivatmo","i":"/images/products/vivatmo-xs.webp"},"plasma-care":{"n":"plasma care®","b":"terraplasma medical","u":"/ar/products/plasma-care","i":"/images/products/plasma-care-xs.webp"},"tianlong":{"n":"أنظمة Tianlong الجزيئية","b":"Tianlong","u":"/ar/products/tianlong","i":"/images/products/tianlong-xs.webp"},"d-tek":{"n":"D-tek لتشخيص أمراض المناعة الذاتية","b":"D-tek","u":"/ar/products/d-tek","i":"/images/products/d-tek-xs.webp"},"geneaid":{"n":"Geneaid لتنقية الأحماض النووية","b":"Geneaid","u":"/ar/products/geneaid","i":"/images/products/geneaid-xs.webp"},"geneproof":{"n":"أطقم GeneProof لتفاعل PCR","b":"GeneProof","u":"/ar/products/geneproof","i":"/images/products/geneproof-xs.webp"},"bdr":{"n":"أطقم BDR للتشخيص الوراثي","b":"BDR Diagnostics","u":"/ar/products/bdr","i":"/images/products/bdr-xs.webp"},"vircell":{"n":"Vircell VIRPLEX وAMPLIRUN®","b":"Vircell","u":"/ar/products/vircell","i":"/images/products/vircell-xs.webp"},"wantai":{"n":"حلول Wantai للمختبرات","b":"Wantai BioPharm","u":"/ar/products/wantai","i":"/images/products/wantai-xs.webp"},"fanhp":{"n":"جهاز FANhp لتحليل اختبار التنفس ¹³C","b":"FAN GmbH","u":"/ar/products/fanhp","i":"/images/products/fanhp-xs.webp"},"lactofan2":{"n":"LactoFAN2 لقياس الهيدروجين في النَّفَس","b":"FAN GmbH","u":"/ar/products/lactofan2","i":"/images/products/lactofan2-xs.webp"},"pyloplus-rut":{"n":"اختبار اليورياز فائق السرعة PyloPLUS+","b":"Gulf Coast Scientific","u":"/ar/products/pyloplus-rut","i":"/images/products/pyloplus-rut-xs.webp"},"era-biology":{"n":"FungiXpert™ لتشخيص الفطريات","b":"Era Biology","u":"/ar/products/era-biology","i":"/images/products/era-biology-xs.webp"},"biogram":{"n":"Bio-Gram ColorJet NANO للصبغ","b":"Bio-Gram","u":"/ar/products/biogram","i":"/images/products/biogram-xs.webp"},"hyperoil":{"n":"Hyperoil®","b":"RI.MOS.","u":"/ar/products/hyperoil","i":"/images/products/hyperoil-xs.webp"},"blue-ray":{"n":"أجهزة Blue-Ray Biotech المخبرية","b":"Blue-Ray Biotech","u":"/ar/products/blue-ray","i":"/images/products/blue-ray-xs.webp"},"diana":{"n":"DIANA للكواشف الجزيئية واكتشاف الأدوية","b":"DIANA Biotechnologies","u":"/ar/products/diana","i":"/images/products/diana-xs.webp"},"jena-bioscience":{"n":"كواشف Jena Bioscience","b":"Jena Bioscience","u":"/ar/products/jena-bioscience","i":"/images/products/jena-bioscience-xs.webp"}}</script>
 </main>
 <footer class="site-footer">
-  <div class="footer__bin" aria-hidden="true">01000010 01010011 01001101
-01001001 01010110 01000100
-01001101 01000100 00100000
-01010010 01010101 01001111</div>
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
         <img src="/images/brand/bsm-logo-white.svg" alt="Binary System Medical" width="137" height="56" loading="lazy">
-        <p>شريكك الموثوق لحلول التشخيص المخبري والأجهزة الطبية في المملكة العربية السعودية — إحدى الشركات التابعة لشركة ميس السعودية.</p>
-        <div class="footer__badges">
-          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>معتمدة من هيئة الغذاء والدواء</span>
-          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>منذ 2015</span>
-        </div>
+        <p>شركة معتمدة من الهيئة العامة للغذاء والدواء لتوريد حلول التشخيص المخبري والأجهزة الطبية في المملكة العربية السعودية منذ عام 2015، وإحدى الشركات التابعة لشركة ميس السعودية.</p>
         
       </div>
       <div class="footer__col">
@@ -211,7 +201,7 @@
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+966114749490" class="ltr">+966 11 474 9490</a></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@binarysys.net">info@binarysys.net</a></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=6713+Eastern+Ring+Road+Ar+Rawabi+Riyadh+14215" rel="noopener" target="_blank">6713 الطريق الدائري الشرقي، حي الروابي، الرياض 14215-2374، المملكة العربية السعودية</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=6713+Eastern+Ring+Road+Ar+Rawabi+Riyadh+14215" rel="noopener" target="_blank"><span>6713 الطريق الدائري الشرقي، حي الروابي، الرياض <span class="ltr">14215-2374</span>، المملكة العربية السعودية</span></a></li>
         </ul>
       </div>
     </div>
@@ -228,7 +218,7 @@
 <div class="toast" role="status" aria-live="polite" data-toast><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg><span data-toast-text></span><a href="/ar/quote">عرض القائمة</a></div>
 <script type="application/json" id="i18n">{"added":"— تمت الإضافة إلى قائمة عرض السعر","removed":"— تمت الإزالة من قائمة عرض السعر","hint":{"lang":"en","dir":"ltr","text":"This website is also available in English.","cta":"View in English","close":"Dismiss"}}</script>
 <span id="page-end" hidden></span>
-<script src="/js/site.js?v=a11732a03f" defer></script>
+<script src="/js/site.js?v=9da9d79f89" defer></script>
 <script type="module" src="/js/altcha.min.js"></script>
 </body>
 </html>

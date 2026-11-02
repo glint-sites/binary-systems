@@ -10,9 +10,8 @@ export function insightsIndex(c) {
   const crumbsItems = [homeCrumb(c), insightsCrumb(c)];
   const main = `${pageHero(c, {
     crumbsItems,
-    eyebrowText: c.t("Insights", "المقالات"),
-    title: c.t("Insights on diagnostics and laboratory technology.", "رؤى حول التشخيص وتقنيات المختبرات."),
-    lede: c.t("Explore the latest insights, technologies and trends in medical diagnostics and laboratory solutions.", "تعرّف على أحدث الرؤى والتقنيات والتوجهات في التشخيص الطبي وحلول المختبرات."),
+    title: c.t("Articles on diagnostics and laboratory technology", "مقالات حول التشخيص وتقنيات المختبرات"),
+    lede: c.t("Notes from our team on molecular diagnostics, breath testing, STI screening and the technology behind them.", "ملاحظات من فريقنا حول التشخيص الجزيئي واختبارات التنفس وفحوصات الأمراض المنقولة جنسيًا والتقنيات المستخدمة فيها."),
   })}
 <section class="section">
   <div class="container">
@@ -67,9 +66,9 @@ export function article(c, post) {
   </div>
 </section>
 </article>
-<section class="section section--tint section--line">
+<section class="section section--tint">
   <div class="container">
-    ${sectionHead({ eyebrowText: c.t("Keep reading", "تابع القراءة"), title: c.t("More insights", "مقالات أخرى"), side: `<a class="link-arrow" href="${c.u("/insights/")}">${c.t("All insights", "جميع المقالات")} ${icon("arrow")}</a>` })}
+    ${sectionHead({ title: c.t("More articles", "مقالات أخرى"), side: `<a class="link-arrow" href="${c.u("/insights/")}">${c.t("All articles", "جميع المقالات")} ${icon("arrow")}</a>` })}
     <div class="post-grid post-grid--all">${others.map((p) => postCard(c, p)).join("")}</div>
   </div>
 </section>`;
@@ -102,9 +101,8 @@ export function quote(c) {
   const catalogJson = Object.fromEntries(c.data.products.map((p) => [p.slug, { n: c.tx(p).name, b: brandOf(c, p.brand).name, u: c.u(`/products/${p.slug}`), i: `/images/products/${p.slug}-xs.webp` }]));
   const main = `${pageHero(c, {
     crumbsItems,
-    eyebrowText: c.t("Quotation", "عرض السعر"),
     title: c.t("Request a quotation", "اطلب عرض سعر"),
-    lede: c.t("Tell us what you need — one product or a complete laboratory solution. Products you add while browsing appear in your quote list below.", "أخبرنا بما تحتاجه — منتج واحد أو حل مخبري متكامل. تظهر المنتجات التي تضيفها أثناء التصفح في قائمة عرض السعر أدناه."),
+    lede: c.t("Tell us what you need, from one product to a complete laboratory. Products you add while browsing appear in your quote list below.", "أخبرنا بما تحتاجه، من منتج واحد إلى حل مخبري متكامل. تظهر المنتجات التي تضيفها أثناء التصفح في قائمة عرض السعر أدناه."),
   })}
 <section class="section">
   <div class="container quote-layout">
@@ -182,8 +180,8 @@ export function privacy(c) {
 <h2>حقوقك</h2>
 <p>وفقًا لنظام حماية البيانات الشخصية في المملكة العربية السعودية، يحق لك طلب الاطلاع على بياناتك الشخصية التي أرسلتها إلينا أو تصحيحها أو حذفها. تواصل معنا عبر <a href="mailto:${company.email}">${company.email}</a>.</p>
 <h2>التواصل</h2>
-<p>${esc(company.name_ar)}، ${esc(company.street_ar)}، ${esc(company.city_ar)} ${esc(company.postal_code)}، المملكة العربية السعودية · <span class="ltr">${esc(company.phone)}</span> · <a href="mailto:${company.email}">${company.email}</a></p>`;
-  const main = `${pageHero(c, { crumbsItems, eyebrowText: c.t("Legal", "معلومات قانونية"), title: c.t("Privacy policy", "سياسة الخصوصية") })}
+<p>${esc(company.name_ar)}، ${esc(company.street_ar)}، ${esc(company.city_ar)} <span class="ltr">${esc(company.postal_code)}</span>، المملكة العربية السعودية · <span class="ltr">${esc(company.phone)}</span> · <a href="mailto:${company.email}">${company.email}</a></p>`;
+  const main = `${pageHero(c, { crumbsItems, title: c.t("Privacy policy", "سياسة الخصوصية") })}
 <section class="section section--tight"><div class="container--narrow legal prose">${c.t(en, ar)}</div></section>`;
   return {
     path: "/privacy-policy",
@@ -198,8 +196,8 @@ export function privacy(c) {
 export function thanks(c) {
   const main = `<section class="notfound"><div class="container--narrow">
   <div class="plate-mini" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
-  ${eyebrow("", c.t("Message sent", "تم الإرسال"))}
-  <h1 class="h2">${c.t("Thank you — we've received your request.", "شكرًا لك — استلمنا طلبك.")}</h1>
+  ${eyebrow(c.t("Message sent", "تم الإرسال"))}
+  <h1 class="h2">${c.t("Thank you, we've received your request", "شكرًا لك، استلمنا طلبك")}</h1>
   <p class="lede" style="margin:18px auto 30px">${c.t("A member of our team will get back to you shortly.", "سيتواصل معك أحد أعضاء فريقنا قريبًا.")}</p>
   <a class="btn" href="${c.u("/products/")}">${c.t("Continue browsing", "متابعة التصفح")} ${icon("arrow")}</a>
 </div></section>`;
@@ -209,8 +207,8 @@ export function thanks(c) {
 export function notFound(c) {
   const main = `<section class="notfound"><div class="container--narrow">
   <div class="plate-mini" aria-hidden="true"><i class="on"></i><i></i><i></i><i class="on"></i></div>
-  <p class="eyebrow" style="justify-content:center"><span class="coord">404</span>${c.t("Sample not found", "العينة غير موجودة")}</p>
-  <h1 class="h2">${c.t("This page didn't show up in our results.", "لم تظهر هذه الصفحة في نتائجنا.")}</h1>
+  <p class="eyebrow">404 · ${c.t("Sample not found", "العينة غير موجودة")}</p>
+  <h1 class="h2">${c.t("This page didn't show up in our results", "لم تظهر هذه الصفحة في نتائجنا")}</h1>
   <p class="lede" style="margin:18px auto 30px">${c.t("The page may have moved after our website update. Try the catalogue or head back home.", "ربما نُقلت الصفحة بعد تحديث موقعنا. جرّب دليل المنتجات أو عُد إلى الصفحة الرئيسية.")}</p>
   <div class="hero__ctas" style="justify-content:center"><a class="btn" href="${c.u("/")}">${c.t("Back to home", "العودة للرئيسية")}</a><a class="btn btn--ghost" href="${c.u("/products/")}">${c.t("Browse products", "تصفّح المنتجات")}</a></div>
 </div></section>`;

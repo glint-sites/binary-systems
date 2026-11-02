@@ -11,21 +11,22 @@
       "bdr"
     ],
     "en": {
-      "title": "Gene Detection: Revolutionising Modern Healthcare",
+      "title": "Gene detection in modern diagnostics",
       "topic": "Molecular diagnostics",
-      "excerpt": "Advances in molecular diagnostics have transformed healthcare by enabling laboratories to detect diseases at the genetic level — earlier, more precisely and with treatment in mind.",
+      "excerpt": "Advances in molecular diagnostics have transformed healthcare by enabling laboratories to detect diseases at the genetic level: earlier, more precisely and with treatment in mind.",
+      "teaser": "How analysing DNA or RNA with methods such as real-time PCR helps detect infections, mutations and inherited disorders.",
       "body": [
         {
           "h2": "The future of precision medicine"
         },
         {
-          "p": "Advances in molecular diagnostics have transformed healthcare by enabling laboratories to detect diseases at the genetic level. Gene detection helps physicians diagnose conditions earlier, personalise treatments and improve patient outcomes."
+          "p": "Molecular diagnostics now let laboratories detect disease at the genetic level. For physicians, gene detection means diagnosing conditions earlier, personalising treatments and improving patient outcomes."
         },
         {
           "h2": "What is gene detection?"
         },
         {
-          "p": "Gene detection involves analysing DNA or RNA to identify genetic mutations, infectious organisms or inherited disorders. Using advanced technologies such as real-time PCR and molecular assays, laboratories can provide highly accurate diagnostic information."
+          "p": "Gene detection involves analysing DNA or RNA to identify genetic mutations, infectious organisms or inherited disorders. Using techniques such as real-time PCR and other molecular assays, laboratories can provide highly accurate diagnostic information."
         },
         {
           "h2": "Clinical applications"
@@ -51,37 +52,38 @@
         },
         {
           "ul": [
-            "Rapid results",
-            "Exceptional accuracy",
+            "Detection at the genetic level, in DNA or RNA",
+            "Highly accurate results from methods such as real-time PCR",
             "Early disease detection",
             "Targeted treatment planning",
-            "Improved clinical decision-making"
+            "Precise information to guide clinical decisions"
           ]
         },
         {
           "h2": "Supporting better patient care"
         },
         {
-          "p": "Gene detection is shaping the future of healthcare by giving clinicians precise diagnostic information that leads to faster diagnoses and more effective treatments. As technology continues to advance, molecular diagnostics will remain at the forefront of modern medicine."
+          "p": "Gene detection gives clinicians precise diagnostic information that leads to faster diagnoses and more effective treatments, from infectious disease and cancer to inherited disorders and pharmacogenomics."
         }
       ]
     },
     "ar": {
-      "title": "الكشف الجيني: ثورة في الرعاية الصحية الحديثة",
+      "title": "الكشف الجيني في التشخيص الحديث",
       "topic": "التشخيص الجزيئي",
       "excerpt": "أحدث التقدم في التشخيص الجزيئي تحولًا في الرعاية الصحية، إذ مكّن المختبرات من الكشف عن الأمراض على المستوى الجيني بشكل أبكر وأدق وبما يخدم قرارات العلاج.",
+      "teaser": "كيف يساعد تحليل DNA أو RNA بتقنيات مثل PCR في الوقت الحقيقي على كشف العدوى والطفرات الجينية والاضطرابات الوراثية.",
       "body": [
         {
           "h2": "مستقبل الطب الدقيق"
         },
         {
-          "p": "أحدث التقدم في التشخيص الجزيئي تحولًا كبيرًا في الرعاية الصحية، إذ أصبح بإمكان المختبرات الكشف عن الأمراض على المستوى الجيني. ويساعد الكشف الجيني الأطباء على تشخيص الحالات في وقت أبكر، وتخصيص العلاج لكل مريض، وتحسين النتائج الصحية."
+          "p": "أصبح بإمكان المختبرات اليوم، بفضل التشخيص الجزيئي، الكشف عن الأمراض على المستوى الجيني. ويعني الكشف الجيني للأطباء تشخيص الحالات في وقت أبكر، وتخصيص العلاج لكل مريض، وتحسين النتائج الصحية."
         },
         {
           "h2": "ما هو الكشف الجيني؟"
         },
         {
-          "p": "يقوم الكشف الجيني على تحليل الحمض النووي (DNA أو RNA) لتحديد الطفرات الجينية أو الكائنات المسببة للعدوى أو الاضطرابات الوراثية. وباستخدام تقنيات متقدمة مثل تفاعل البوليميراز المتسلسل في الوقت الحقيقي (Real-Time PCR) والاختبارات الجزيئية، تستطيع المختبرات تقديم معلومات تشخيصية عالية الدقة."
+          "p": "يقوم الكشف الجيني على تحليل الحمض النووي (DNA أو RNA) لتحديد الطفرات الجينية أو الكائنات المسببة للعدوى أو الاضطرابات الوراثية. وباستخدام تقنيات مثل تفاعل البوليميراز المتسلسل في الوقت الحقيقي (Real-Time PCR) وغيره من الاختبارات الجزيئية، تستطيع المختبرات تقديم معلومات تشخيصية عالية الدقة."
         },
         {
           "h2": "التطبيقات السريرية"
@@ -107,18 +109,18 @@
         },
         {
           "ul": [
-            "نتائج سريعة",
-            "دقة استثنائية",
+            "كشفًا على المستوى الجيني في DNA أو RNA",
+            "نتائج عالية الدقة بتقنيات مثل PCR في الوقت الحقيقي",
             "كشفًا مبكرًا للأمراض",
             "تخطيطًا علاجيًا موجّهًا",
-            "قرارات سريرية أفضل"
+            "معلومات دقيقة توجّه القرارات السريرية"
           ]
         },
         {
           "h2": "دعم رعاية أفضل للمرضى"
         },
         {
-          "p": "يرسم الكشف الجيني ملامح مستقبل الرعاية الصحية من خلال تزويد الأطباء بمعلومات تشخيصية دقيقة تؤدي إلى تشخيص أسرع وعلاج أكثر فاعلية. ومع استمرار تطور التقنية، سيبقى التشخيص الجزيئي في طليعة الطب الحديث."
+          "p": "يزوّد الكشف الجيني الأطباء بمعلومات تشخيصية دقيقة تؤدي إلى تشخيص أسرع وعلاج أكثر فاعلية، في مجالات تمتد من الأمراض المعدية والسرطان إلى الاضطرابات الوراثية وعلم الجينوم الدوائي."
         }
       ]
     }
@@ -134,9 +136,10 @@
       "pyloplus-rut"
     ],
     "en": {
-      "title": "Urea Breath Test (UBT): The Gold-Standard Non-Invasive Test for H. pylori",
+      "title": "Urea breath test (UBT): the gold-standard non-invasive test for H. pylori",
       "topic": "Gastroenterology",
       "excerpt": "Helicobacter pylori is one of the leading causes of gastritis and peptic ulcers. The urea breath test offers a safe, non-invasive way to detect active infection.",
+      "teaser": "How the urea breath test detects active H. pylori infection from a breath sample, and when it may be recommended.",
       "body": [
         {
           "h2": "Understanding H. pylori infection"
@@ -155,12 +158,12 @@
         },
         {
           "ul": [
-            "Completely non-invasive",
+            "Non-invasive: the patient drinks a solution and gives a breath sample",
             "Quick and painless",
-            "Highly accurate",
+            "Accurate detection of active infection",
             "No blood sample required",
             "Suitable for adults and children",
-            "Ideal for confirming treatment success"
+            "Confirms whether treatment has worked"
           ]
         },
         {
@@ -183,7 +186,7 @@
           "h2": "Accurate diagnosis for better treatment"
         },
         {
-          "p": "Early detection of H. pylori allows physicians to prescribe effective treatment before complications develop. UBT remains one of the most trusted diagnostic methods for identifying active infection."
+          "p": "Early detection of H. pylori allows physicians to prescribe effective treatment before complications develop. UBT is one of the most trusted diagnostic methods for identifying active infection, and the same test can later confirm that treatment has worked."
         }
       ]
     },
@@ -191,6 +194,7 @@
       "title": "اختبار تنفس اليوريا (UBT): المعيار الذهبي غير الجراحي للكشف عن جرثومة المعدة",
       "topic": "أمراض الجهاز الهضمي",
       "excerpt": "تُعد جرثومة المعدة (H. pylori) من أبرز أسباب التهاب المعدة وقرحتها، ويوفر اختبار تنفس اليوريا طريقة آمنة وغير جراحية للكشف عن العدوى النشطة.",
+      "teaser": "كيف يكشف اختبار تنفس اليوريا عن عدوى جرثومة المعدة النشطة من عينة نَفَس، ومتى يُنصح بإجرائه.",
       "body": [
         {
           "h2": "فهم عدوى جرثومة المعدة"
@@ -209,12 +213,12 @@
         },
         {
           "ul": [
-            "غير جراحي تمامًا",
+            "غير جراحي: يشرب المريض محلولًا ثم يقدم عينة من النَّفَس",
             "سريع وغير مؤلم",
-            "عالي الدقة",
+            "كشف دقيق للعدوى النشطة",
             "لا يحتاج إلى عينة دم",
             "مناسب للبالغين والأطفال",
-            "مثالي لتأكيد نجاح العلاج"
+            "يؤكد ما إذا كان العلاج قد نجح"
           ]
         },
         {
@@ -237,7 +241,7 @@
           "h2": "تشخيص دقيق لعلاج أفضل"
         },
         {
-          "p": "يتيح الكشف المبكر عن جرثومة المعدة للأطباء وصف العلاج المناسب قبل حدوث المضاعفات، ويبقى اختبار تنفس اليوريا من أكثر الطرق التشخيصية موثوقية لتحديد العدوى النشطة."
+          "p": "يتيح الكشف المبكر عن جرثومة المعدة للأطباء وصف العلاج المناسب قبل حدوث المضاعفات. ويُعد اختبار تنفس اليوريا من أكثر الطرق التشخيصية موثوقية لتحديد العدوى النشطة، ويمكن استخدام الاختبار نفسه لاحقًا لتأكيد نجاح العلاج."
         }
       ]
     }
@@ -253,9 +257,10 @@
       "vivalytic"
     ],
     "en": {
-      "title": "Why Regular STI Testing Is Essential for Your Health",
+      "title": "Why regular STI testing is essential for your health",
       "topic": "Infectious disease",
-      "excerpt": "Many sexually transmitted infections show no symptoms in their early stages. Regular screening — increasingly with PCR-based molecular tests — is an essential part of preventive care.",
+      "excerpt": "Many sexually transmitted infections show no symptoms in their early stages. Regular screening, increasingly with PCR-based molecular tests, is an essential part of preventive care.",
+      "teaser": "Many STIs cause no early symptoms: which infections PCR-based tests can detect, and who should be screened regularly.",
       "body": [
         {
           "h2": "Early detection saves lives"
@@ -283,12 +288,12 @@
           "h2": "Why choose molecular STI testing?"
         },
         {
-          "p": "Modern PCR-based molecular testing offers exceptional accuracy by detecting the DNA or RNA of infectious organisms. This technology provides:"
+          "p": "PCR-based molecular testing achieves high accuracy by detecting the DNA or RNA of infectious organisms. It provides:"
         },
         {
           "ul": [
             "High sensitivity and specificity",
-            "Fast, reliable results",
+            "Results that allow timely treatment",
             "Early detection before symptoms appear",
             "Fewer false-negative results"
           ]
@@ -303,14 +308,15 @@
           "h2": "Protect your health today"
         },
         {
-          "p": "Regular STI testing is a simple step that protects both your health and your partner's. Early diagnosis means earlier treatment and better long-term outcomes."
+          "p": "Regular STI testing protects both your health and your partner's. Early diagnosis means earlier treatment, fewer complications and better long-term outcomes."
         }
       ]
     },
     "ar": {
       "title": "لماذا يُعد الفحص الدوري للأمراض المنقولة جنسيًا ضروريًا لصحتك؟",
       "topic": "الأمراض المعدية",
-      "excerpt": "لا تظهر أعراض كثير من الأمراض المنقولة جنسيًا في مراحلها الأولى، لذا يُعد الفحص الدوري — وبشكل متزايد بالاختبارات الجزيئية القائمة على PCR — جزءًا أساسيًا من الرعاية الوقائية.",
+      "excerpt": "لا تظهر أعراض كثير من الأمراض المنقولة جنسيًا في مراحلها الأولى، لذا يُعد الفحص الدوري جزءًا أساسيًا من الرعاية الوقائية، ويُجرى بشكل متزايد بالاختبارات الجزيئية القائمة على PCR.",
+      "teaser": "لا تظهر أعراض كثير من الأمراض المنقولة جنسيًا مبكرًا: العدوى التي تكشفها اختبارات PCR، ومن يُنصح بالفحص الدوري.",
       "body": [
         {
           "h2": "الكشف المبكر ينقذ الأرواح"
@@ -338,12 +344,12 @@
           "h2": "لماذا الاختبارات الجزيئية؟"
         },
         {
-          "p": "توفر الاختبارات الجزيئية الحديثة القائمة على تفاعل البوليميراز المتسلسل (PCR) دقة استثنائية من خلال الكشف عن الحمض النووي (DNA أو RNA) للكائنات المسببة للعدوى، وتتميز بما يلي:"
+          "p": "تحقق الاختبارات الجزيئية القائمة على تفاعل البوليميراز المتسلسل (PCR) دقة عالية من خلال الكشف عن الحمض النووي (DNA أو RNA) للكائنات المسببة للعدوى، وتتميز بما يلي:"
         },
         {
           "ul": [
             "حساسية ونوعية عاليتان",
-            "نتائج سريعة وموثوقة",
+            "نتائج تتيح العلاج في الوقت المناسب",
             "كشف مبكر قبل ظهور الأعراض",
             "نتائج سلبية كاذبة أقل"
           ]
@@ -358,7 +364,7 @@
           "h2": "احمِ صحتك اليوم"
         },
         {
-          "p": "الفحص الدوري خطوة بسيطة تحمي صحتك وصحة شريكك، فالتشخيص المبكر يعني علاجًا أبكر ونتائج أفضل على المدى الطويل."
+          "p": "الفحص الدوري يحمي صحتك وصحة شريكك، فالتشخيص المبكر يعني علاجًا أبكر ومضاعفات أقل ونتائج أفضل على المدى الطويل."
         }
       ]
     }

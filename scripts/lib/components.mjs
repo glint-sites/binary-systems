@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { esc, normalizePath, rng, formatDate, dateParts, readMinutes, readTime, techCount } from "./util.mjs";
+import { esc, normalizePath, rng, formatDate, readMinutes, readTime, techCount } from "./util.mjs";
 import { icon } from "./icons.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "../..");
@@ -41,13 +41,13 @@ const insightSet = (name) => [[`/images/insights/${name}-xs.webp`, 440], [`/imag
 const photoSet = (src) => [[src.replace(".webp", "-md.webp"), imageSize(src.replace(".webp", "-md.webp")).w], [src, imageSize(src).w]];
 export const CARD_SIZES = "(max-width: 640px) 80vw, (max-width: 1000px) 45vw, 300px";
 
-export function eyebrow(coord, label) {
-  return `<p class="eyebrow">${coord ? `<span class="coord" aria-hidden="true">${coord}</span>` : ""}${label}</p>`;
+export function eyebrow(label) {
+  return label ? `<p class="eyebrow">${label}</p>` : "";
 }
 
-export function sectionHead({ coord, eyebrowText, title, lede, side = "", center = false, h = "h2" }) {
+export function sectionHead({ eyebrowText = "", title, lede, side = "", center = false, h = "h2" }) {
   return `<div class="section-head${center ? " section-head--center" : ""}">
-  <div>${eyebrow(coord, eyebrowText)}<${h} class="h2">${title}</${h}>${lede ? `<p class="lede">${lede}</p>` : ""}</div>
+  <div>${eyebrow(eyebrowText)}<${h} class="h2">${title}</${h}>${lede ? `<p class="lede">${lede}</p>` : ""}</div>
   ${side}
 </div>`;
 }
@@ -56,7 +56,7 @@ export const discOf = (c, id) => c.data.taxonomy.disciplines.find((d) => d.id ==
 export const divOf = (c, id) => c.data.taxonomy.divisions.find((d) => d.id === id);
 export const brandOf = (c, slug) => c.data.brands.find((b) => b.slug === slug);
 
-export function productCard(c, p, { headingLevel = 3 } = {}) {
+export function productCard(c, p, { headingLevel = 3, wide = false } = {}) {
   const b = brandOf(c, p.brand);
   const t = c.tx(p);
   const disc = discOf(c, p.discipline);
@@ -67,13 +67,33 @@ export function productCard(c, p, { headingLevel = 3 } = {}) {
   <div class="p-card__body">
     <span class="p-card__brand">${esc(b.name)}</span>
     <${h} class="p-card__title"><a href="${c.u(`/products/${p.slug}`)}">${esc(t.name)}</a></${h}>
-    <p class="p-card__text">${esc(t.summary)}</p>
+    <p class="p-card__text">${esc(t.teaser || t.summary)}</p>
+    ${wide && t.highlights ? `<ul class="p-card__points">${t.highlights.slice(0, 3).map((h) => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}
     <div class="p-card__foot">
       <span class="p-card__more">${c.t("Details", "التفاصيل")} ${icon("arrow")}</span>
       ${addQuoteButton(c, p)}
     </div>
   </div>
 </article>`;
+}
+
+// The three divisions as image cards (home "What we supply", About "Our divisions").
+export function divisionCards(c) {
+  const { taxonomy, products } = c.data;
+  return taxonomy.divisions.map((d) => {
+    const t = c.tx(d);
+    const n = products.filter((p) => p.division === d.id).length;
+    const list = d.disciplines.map((id) => esc(c.tx(discOf(c, id)).name)).join(c.t(" · ", "، "));
+    return `<a class="division" href="${c.u(`/solutions/${d.slug}`)}">
+      <div class="division__media"><span class="division__code">${d.code}</span>${img(`/images/products/${d.image}-sm.webp`, "", { srcset: productSet(d.image), sizes: "(max-width: 980px) 92vw, 400px" })}</div>
+      <div class="division__body">
+        <h3>${esc(t.name)}</h3>
+        <p>${esc(t.tagline)}</p>
+        <p class="division__list">${list}</p>
+        <div class="division__foot"><span>${techCount(c, n)}</span>${icon("arrow")}</div>
+      </div>
+    </a>`;
+  }).join("");
 }
 
 export function addQuoteButton(c, p, large = false) {
@@ -84,12 +104,11 @@ export function addQuoteButton(c, p, large = false) {
 
 export function postCard(c, post, h = 3) {
   const t = c.tx(post);
-  const d = dateParts(post.date, c.lang);
   return `<article class="post-card">
-  <div class="post-card__media">${img(`/images/insights/${post.image}-sm.webp`, "", { srcset: insightSet(post.image), sizes: "(max-width: 640px) 92vw, (max-width: 980px) 46vw, 400px" })}<span class="post-card__date"><b>${d.day}</b><span>${d.mon}</span></span></div>
-  <div class="post-card__meta"><span class="chip chip--plain">${esc(t.topic)}</span><span>${readTime(c, readMinutes(c.tx(post).body))}</span></div>
+  <div class="post-card__media">${img(`/images/insights/${post.image}-sm.webp`, "", { srcset: insightSet(post.image), sizes: "(max-width: 640px) 92vw, (max-width: 980px) 46vw, 400px" })}</div>
+  <div class="post-card__meta"><span class="post-card__topic">${esc(t.topic)}</span><time datetime="${post.date}">${formatDate(post.date, c.lang)}</time><span>${readTime(c, readMinutes(c.tx(post).body))}</span></div>
   <h${h}><a href="${c.u(`/insights/${post.slug}`)}">${esc(t.title)}</a></h${h}>
-  <p>${esc(t.excerpt)}</p>
+  <p>${esc(t.teaser || t.excerpt)}</p>
 </article>`;
 }
 
@@ -104,12 +123,10 @@ export function crumbsLd(c, items) {
   };
 }
 
-export function pageHero(c, { crumbsItems, coord, eyebrowText, title, lede, extra = "", cls = "" }) {
+export function pageHero(c, { crumbsItems, title, lede, extra = "", cls = "" }) {
   return `<section class="page-hero dark${cls ? ` ${cls}` : ""}">
-  <img class="page-hero__mark" src="/images/brand/bsm-mark-white.svg" alt="" width="45" height="41" aria-hidden="true">
   <div class="container">
     ${crumbsItems ? crumbs(c, crumbsItems) : ""}
-    ${eyebrowText ? eyebrow(coord, eyebrowText) : ""}
     <h1>${title}</h1>
     ${lede ? `<p class="lede">${lede}</p>` : ""}
     ${extra}
@@ -150,7 +167,7 @@ export function plate(c) {
     <div class="plate__foot"><span class="plate__scale">OD 0.0 <i></i> 3.0</span><span>12 × 8 BIT</span></div>
     <span class="plate__tip" data-plate-tip></span>
   </figure>
-  <p class="plate-note">${icon("info")}<span>${c.t("<strong>Binary, by design.</strong> Each column of this ELISA plate is one byte — read rows A to H as bits and the wells spell our name.", "<strong>ثنائيّ عن قصد.</strong> كل عمود في صفيحة ELISA هذه يمثل بايتًا واحدًا — اقرأ الصفوف من A إلى H كبتات، وستجد أن الآبار تكتب اسمنا.")}</span></p>
+  <p class="plate-note">${c.t("<strong>Binary, by design.</strong> This is a 96-well ELISA plate, the tray laboratories run immunoassays in. Each column is one byte: read rows A to H as bits and the lit wells spell our name.", "<strong>ثنائيّ عن قصد.</strong> هذه صفيحة ELISA من 96 بئرًا، وهي الصفيحة التي تُجرى فيها المقايسات المناعية في المختبرات. كل عمود فيها بايت واحد: اقرأ الصفوف من A إلى H كبتات، وستجد أن الآبار المضيئة تكتب اسمنا.")}</p>
 </div>`;
 }
 
@@ -163,32 +180,24 @@ export const LOBE_DEFS = `<svg width="0" height="0" style="position:absolute" ar
 <clipPath id="lobe-top" clipPathUnits="objectBoundingBox"><path d="${normalizePath(LOBE_TOP, [15.5792, -0.0071, 29.3666, 17.1719])}"/></clipPath>
 </defs></svg>`;
 
-export function bmark(c, { top, bottom, tagCode, tagValue }) {
+export function bmark(c, { top, bottom }) {
   return `<div class="bmark">
   ${LOBE_DEFS}
   <figure class="bmark__lobe bmark__lobe--top">${img(top.src, top.alt, { srcset: photoSet(top.src), sizes: "(max-width: 900px) 60vw, 400px" })}</figure>
   <figure class="bmark__lobe bmark__lobe--bottom">${img(bottom.src, bottom.alt, { srcset: photoSet(bottom.src), sizes: "(max-width: 900px) 92vw, 600px" })}</figure>
-  ${tagValue ? `<div class="bmark__tag"><span>${tagCode}</span><strong>${tagValue}</strong></div>` : ""}
 </div>`;
 }
 
-export function statsBand(c) {
+// Key facts along the bottom edge of a dark hero (home, About).
+export function facts(c) {
   const { stats } = c.data.site;
-  const stat = (code, value, label) => {
-    const m = String(value).match(/^(\d+)(\+?)$/);
-    const v = m ? `<span data-count="${m[1]}">${m[1]}</span>${m[2] ? "<small>+</small>" : ""}` : value;
-    return `<div class="stat"><span class="stat__code">${code}</span><div class="stat__value">${v}</div><p class="stat__label">${label}</p></div>`;
-  };
-  return `<section class="stats" aria-label="${c.t("BSM at a glance", "BSM في أرقام")}">
-  <div class="container">
-    <div class="stats__grid reveal-stagger">
-      ${stat("A1", stats.years, c.t("Years of experience in Saudi healthcare", "سنوات من الخبرة في القطاع الصحي السعودي"))}
-      ${stat("A2", stats.offices, c.t("Regional market offices", "مكاتب إقليمية"))}
-      ${stat("A3", stats.brands, c.t("Global diagnostic brands", "علامة تشخيصية عالمية"))}
-      ${stat("A4", "SFDA", c.t("Certified by the Saudi Food & Drug Authority", "معتمدة من الهيئة العامة للغذاء والدواء"))}
-    </div>
-  </div>
-</section>`;
+  const fact = (value, label) => `<div><dt>${value}</dt><dd>${label}</dd></div>`;
+  return `<dl class="facts" aria-label="${c.t("BSM at a glance", "BSM في أرقام")}">
+    ${fact(stats.years, c.t("Years in Saudi healthcare", "سنوات في القطاع الصحي السعودي"))}
+    ${fact(stats.offices, c.t("Regional market offices", "مكاتب إقليمية"))}
+    ${fact(stats.brands, c.t("Global diagnostic brands", "علامة تشخيصية عالمية"))}
+    ${fact("SFDA", c.t("Certified for IVD and medical devices", "معتمدة للتشخيص المخبري والأجهزة الطبية"))}
+  </dl>`;
 }
 
 export function brandMark(c, b, cls = "") {
@@ -198,11 +207,7 @@ export function brandMark(c, b, cls = "") {
 }
 
 export function logoWall(c) {
-  const rows = "ABCDEFGH";
-  return `<div class="logo-wall reveal">${c.data.brands.map((b, i) => {
-    const coord = `${rows[Math.floor(i / 5)]}${(i % 5) + 1}`;
-    return `<a class="logo-cell" href="${c.u("/partners")}#${b.slug}" aria-label="${esc(b.name)}"><span class="logo-cell__coord" aria-hidden="true">${coord}</span>${brandMark(c, b)}</a>`;
-  }).join("")}</div>`;
+  return `<div class="logo-wall reveal">${c.data.brands.map((b) => `<a class="logo-cell" href="${c.u("/partners")}#${b.slug}" aria-label="${esc(b.name)}">${brandMark(c, b)}</a>`).join("")}</div>`;
 }
 
 export function ctaBand(c, { title, text, primary, secondary }) {
@@ -231,24 +236,24 @@ export function processSteps(c) {
     ["wrench", c.t("Install & train", "التركيب والتدريب"), c.t("Our technical team and application specialists support installation and hands-on training for your staff.", "يدعم فريقنا الفني وأخصائيو التطبيقات عملية التركيب والتدريب العملي لفريقك.")],
     ["headset", c.t("Support", "الدعم"), c.t("Responsive technical service and after-sales support keep your systems running and your results reliable.", "خدمة فنية سريعة ودعم ما بعد البيع يحافظان على تشغيل أنظمتك وموثوقية نتائجك.")],
   ];
-  return `<div class="process reveal-stagger">${steps.map(([ic, h, p], i) => `<div class="process__step"><span class="process__icon">${icon(ic)}</span><span class="process__num">0${i + 1} / 04</span><h3>${h}</h3><p>${p}</p></div>`).join("")}</div>`;
+  return `<ol class="process reveal-stagger">${steps.map(([, h, p], i) => `<li class="process__step"><span class="process__num" aria-hidden="true">${i + 1}</span><h3>${h}</h3><p>${p}</p></li>`).join("")}</ol>`;
 }
 
 export function sectors(c) {
   const list = [
-    ["hospital", c.t("Hospitals", "المستشفيات"), c.t("Diagnostic platforms and medical devices that support fast, confident clinical decisions.", "منصات تشخيصية وأجهزة طبية تدعم اتخاذ قرارات سريرية سريعة وموثوقة.")],
-    ["flask", c.t("Laboratories", "المختبرات"), c.t("Automation, molecular and immunoassay systems built for accuracy and throughput.", "أنظمة أتمتة وتشخيص جزيئي ومقايسات مناعية مصممة للدقة والإنتاجية العالية.")],
+    ["hospital", c.t("Hospitals", "المستشفيات"), c.t("Analysers, point-of-care tests and medical devices for hospital laboratories and wards.", "أجهزة تحليل وفحوصات نقطة الرعاية وأجهزة طبية لمختبرات المستشفيات وأقسامها.")],
+    ["flask", c.t("Laboratories", "المختبرات"), c.t("Automation, molecular and immunoassay systems for clinical and reference laboratories.", "أنظمة أتمتة وتشخيص جزيئي ومقايسات مناعية للمختبرات السريرية والمرجعية.")],
     ["graduation", c.t("Universities", "الجامعات"), c.t("Teaching and research tools for medical, pathology and life-science programmes.", "أدوات تعليمية وبحثية لبرامج الطب وعلم الأمراض وعلوم الحياة.")],
     ["microscope", c.t("Research centres", "مراكز الأبحاث"), c.t("Instruments, purification kits and reagents for discovery and translational work.", "أجهزة وأطقم تنقية وكواشف لأبحاث الاكتشاف والأبحاث الانتقالية.")],
   ];
-  return `<div class="sectors reveal-stagger">${list.map(([ic, h, p]) => `<div class="sector"><span class="sector__icon">${icon(ic)}</span><h3>${h}</h3><p>${p}</p></div>`).join("")}</div>`;
+  return `<ul class="sectors reveal-stagger">${list.map(([, h, p]) => `<li class="sector"><h3>${h}</h3><p>${p}</p></li>`).join("")}</ul>`;
 }
 
 export function assurance(c) {
   return `<div class="assurance">
-  <div>${icon("message")}<h3>${c.t("Expert consultation", "استشارة متخصصة")}</h3><p>${c.t("Guidance on system selection based on your workflow, volumes and goals.", "توجيه في اختيار النظام بناءً على سير عملك وحجم الفحوصات وأهدافك.")}</p></div>
-  <div>${icon("wrench")}<h3>${c.t("Installation & training", "التركيب والتدريب")}</h3><p>${c.t("Application specialists who help your team get the most from every system.", "أخصائيو تطبيقات يساعدون فريقك على الاستفادة القصوى من كل نظام.")}</p></div>
-  <div>${icon("headset")}<h3>${c.t("Long-term support", "دعم طويل الأمد")}</h3><p>${c.t("Responsive technical service and comprehensive after-sales support.", "خدمة فنية سريعة ودعم شامل لما بعد البيع.")}</p></div>
+  <div><h3>${c.t("Expert consultation", "استشارة متخصصة")}</h3><p>${c.t("Guidance on system selection based on your workflow, volumes and goals.", "توجيه في اختيار النظام بناءً على سير عملك وحجم الفحوصات وأهدافك.")}</p></div>
+  <div><h3>${c.t("Installation & training", "التركيب والتدريب")}</h3><p>${c.t("Application specialists who help your team get the most from every system.", "أخصائيو تطبيقات يساعدون فريقك على الاستفادة القصوى من كل نظام.")}</p></div>
+  <div><h3>${c.t("Long-term support", "دعم طويل الأمد")}</h3><p>${c.t("Responsive technical service and after-sales support.", "خدمة فنية سريعة ودعم ما بعد البيع.")}</p></div>
 </div>`;
 }
 
